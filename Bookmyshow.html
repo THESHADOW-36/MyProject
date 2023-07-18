@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Book My Show</title>
+    <script src="https://kit.fontawesome.com/e331b9ba14.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Roboto, Sans-serif;
+        }
+
+        #bg-img {
+            background-image: url(/Image/Spiderman1.jpg);
+            width: 100%;
+            height: 100%;
+        }
+
+        #poster {
+            /* border: 1px solid red; */
+            width: 91%;
+            height: 540px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #img-1 {
+            /* border: 1px solid blue; */
+            width: 22%;
+            margin-top: 50px;
+            margin-bottom: 60px;
+            background-color: black;
+            border-radius: 8px;
+        }
+
+        #text {
+            /* border: 1px solid white; */
+            width: 75%;
+            margin-top: 38px;
+        }
+
+        #text-1 {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+
+        #text-2 {
+            /* border: 1px solid green; */
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            margin-top: 20px;
+        }
+
+        #text-3 {
+            background-color: #333333;
+            width: 420px;
+            height: 75px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        #text-4 {
+            background-color: white;
+            width: 360px;
+            text-align: center;
+            padding: 4px;
+            border-radius: 2px;
+            margin-top: 23px;
+        }
+
+        #text-5 {
+            background-color: white;
+            width: 460px;
+            padding: 4px;
+            border-radius: 2px;
+            margin-top: 8px;
+        }
+
+        #poster-button {
+            background-color: #F84464;
+            color: #ffffff; 
+            width: 220px;
+            height: 50px;
+            text-align: center;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            font-size: medium;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div
+            style=" width: 100%; height: 70px; display: flex; justify-content: space-between ;background-color: #333545;">
+            <div style="display: flex;margin-left: 60px;">
+                <div>
+                    <img style="height: 100%;width: 100%;" src="./Image/bookmyshow-logo-vectorr.png"
+                        alt="Bookmyshow-logo">
+                </div>
+                <div
+                    style=" display: flex; background-color: white;height: 40px;margin-top:15px;width: 530px; border-radius: 4px ;">
+                    <div style="margin-right: 10px; margin-left: 10px; margin-top: 10px;">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <input placeholder="Search for Movies, Events, Plays, Sports and Activities"
+                            style="font-size: 14px; border:none; outline: none; width: 400px;">
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; margin-top: 25px; margin-right: 60px;">
+                <div>
+                    <select name="" id=""
+                        style="outline: none; border: none; border-radius: 2px;background-color:#333545 ;color: whitesmoke;">
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Pune">Pune</option>
+                    </select>
+                </div>
+                <div style="margin-left: 20px; margin-right: 20px;margin-top: -3px">
+                    <button
+                        style=" height: 25px; width: 60px; border: none; background-color: #F84464; color: white; border-radius: 5px;">Sign
+                        in</button>
+                </div>
+                <div style="color: white;">
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </div>
+            </div>
+        </div>
+        <div style="height: 35px;background-color: #222539;">
+            <div style="display: flex; justify-content: space-between;width:91%;height: 35px;margin: auto;">
+                <div style="color: white; display: flex; justify-content: space-between;width: 35%;margin-top: 10px;">
+                    <h3 style="font-size: 14px; font-weight: normal;">Movies</h3>
+                    <div style="margin-top: -7px;">
+                        <p style="color: red;font-size: 9px; margin-left: 40px;">
+                            New
+                        </p>
+                        <h3 style="margin-top: -3px; font-size: 14px; font-weight: normal;">Stream</h3>
+                    </div>
+                    <h3 style="font-size: 14px; font-weight: normal;">Events</h3>
+                    <h3 style="font-size: 14px; font-weight: normal;">Plays</h3>
+                    <h3 style="font-size: 14px; font-weight: normal;">Sports</h3>
+                    <h3 style="font-size: 14px; font-weight: normal;">Activities</h3>
+                    <h3 style="font-size: 14px; font-weight: normal;">Buzz</h3>
+                </div>
+                <div style="color: white;display: flex; justify-content: space-between;width: 25%;margin-top: 10px;">
+                    <h3 style="font-size: 13px; font-weight: normal;">ListYourShow</h3>
+                    <h3 style="font-size: 13px; font-weight: normal;">Corporates</h3>
+                    <h3 style="font-size: 13px; font-weight: normal;">Offers</h3>
+                    <h3 style="font-size: 13px; font-weight: normal;">Gift Cards</h3>
+                </div>
+            </div>
+        </div>
+        <div id="bg-img">
+            <div id="poster">
+                <div id="img-1">
+                    <img style="height: 94%; width: 100%;border-top-left-radius:8px;border-top-right-radius: 8px;"
+                        src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/spider-man-across-the-spider-verse-et00347275-1684425314.jpg"
+                        alt="">
+                    <p style="color: white; text-align: center;font-size: small;margin-top: 3px;">In Cinemas</p>
+                </div>
+                <div id="text">
+                    <div id="text-1">
+                        <div style="width: 480px;font-size: large;">
+                            <h1>Spider-Man: Across The Spider-Verse</h1>
+                        </div>
+                        <div
+                            style="background-color: rgb(45, 42, 42); width: 120px;height: 46px;display: flex;justify-content: space-evenly;">
+                            <i class="fa-solid fa-share-nodes fa-xl"
+                                style="color: rgb(222, 222, 222); margin-top: 22px;"></i>
+                            <p style="font-weight: bold;font-size:large;margin-top: 12px;color: rgb(222, 222, 222)">
+                                Share</p>
+                        </div>
+                    </div>
+                    <div id="text-2">
+                        <i style="margin-top:14px;color: #F07584;" class="fa-solid fa-star fa-xl"></i>
+                        <h2>9.3/10</h2>
+                        <p style="margin-top: 9px;">49K Votes ></p>
+                    </div>
+                    <div id="text-3">
+                        <div style="width: 85%; height: 50px; margin: auto;display: flex;justify-content: space-between;padding-top:15px ;">
+                            <div style="color: white;">
+                                <h3>Add your rating & review</h3>
+                                <p style="color: #d0cbcb;margin-top: 5px;">Your ratings matter</p>
+                            </div>
+                            <button style="background-color: white;width: 90px;height: 35px;text-align: center;font-weight: bold;border: none;border-radius: 8px;font-size: medium;color:  #333333;">
+                                Rate Now
+                            </button>
+                        </div>
+                    </div>
+                    <div id="text-4">
+                        <p>2D, ICE, 4DX, MX4D, IMAX 2D, 2D SCREEN X</p>
+                    </div>
+                    <div id="text-5">
+                        <p>English, Hindi, Telugu, Punjabi, Gujarati, Marathi, Malayalam, Bengali, Tamil, Kannada</p>
+                    </div>
+                    <div>
+                        <p style="color: white;margin-top: 25px;">2h 20m • Action , Adventure , Animation • UA • 1 Jun, 2023</p>
+                    </div>
+                    <button id="poster-button">
+                        Book tickets
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div style="height: 200px;"></div>
+    </div>
+</body>
