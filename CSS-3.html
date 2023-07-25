@@ -1,11 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS-3</title>
-</head>
-<body>
     
+    <style>
+        /* .text {
+            text-align: left right center justify;
+            text-align-last: left right center justify;
+
+            text-decoration-line: overline line-through underline (overline underline);
+            text-decoration-style: solid;
+            text-decoration-color: black;
+            text-decoration-thickness: 5px;
+
+            text-transform: capitalize lowercase uppercase;
+
+            text-indent: 40px;
+            word-spacing: 15px;
+            letter-spacing: 5px;
+            line-height: 50px;
+            white-space: nowrap wrap pre-wrap;
+        } */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .line {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border: 3px dashed black;
+        }
+
+        .text {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .outline-1 {
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .outline-2 {
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 50px;
+        }
+
+        .ol {
+            border: 5px solid red;
+            outline-width: 6px;
+            outline-style: solid;
+            outline-color: black;
+            outline-offset: 0;
+        }
+
+        .ol-0 {
+            border: 5px solid red;
+            outline-width: 6px;
+            outline-style: solid;
+            outline-color: black;
+            outline-offset: 5px;
+        }
+
+        .ol-1 {
+            outline-width: 8px;
+            outline-style: dashed;
+            outline-color: orangered;
+        }
+
+        .ol-2 {
+            outline-width: 10px;
+            outline-style: dotted;
+            outline-color: green;
+        }
+
+        .ol-3 {
+            outline-width: 8px;
+            outline-style: double;
+            outline-color: blue;
+        }
+
+        .text-1 {
+            border: 9px solid black;
+            border-radius: 10px;
+        }
+
+        .td-1 {
+            margin-top: 30px;
+            text-align: center;
+            text-decoration-line: overline;
+            text-decoration-thickness: 4px;
+            text-decoration-style: solid;
+            text-decoration-color: black;
+        }
+
+        .td-2 {
+            margin-top: 30px;
+            text-align: center;
+            text-decoration-line: line-through;
+            text-decoration-thickness: 3px;
+            text-decoration-style: dashed;
+            text-decoration-color: red;
+        }
+
+        .td-3 {
+            margin-top: 30px;
+            text-align: center;
+            text-decoration-line: underline;
+            text-decoration-thickness: 5px;
+            text-decoration-style: dotted;
+            text-decoration-color: green;
+        }
+
+        .td-4 {
+            margin-top: 30px;
+            text-align: center;
+            text-decoration-line: overline underline;
+            text-decoration-thickness: 3px;
+            text-decoration-style: double;
+            text-decoration-color: blue;
+            line-height: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <hr class="line">
+
+    <h1 class="text">Outline Types</h1>
+    <div class="outline-1">
+        <div class="ol">
+            <h1>Border = 5px solid red</h1>
+            <h1>Outline-width = 5px</h1>
+            <h1>Outline-style = Solid</h1>
+            <h1>Outline-color = Black</h1>
+        </div>
+        <div class="ol-0">
+            <h1>Border = 5px solid red</h1>
+            <h1>Outline-width = 5px</h1>
+            <h1>Outline-style = Solid</h1>
+            <h1>Outline-color = Black</h1>
+            <h1>Outline-offset = 5px</h1>
+        </div>
+    </div>
+    <div style="margin: 60px 0px;"></div>
+    <div class="outline-2">
+        <div class="ol-1">
+            <h1>Outline-width = 5px</h1>
+            <h1>Outline-style = Dashed</h1>
+            <h1>Outline-color = Orangered</h1>
+        </div>
+        <div class="ol-2">
+            <h1>Outline-width = 10px</h1>
+            <h1>Outline-style = Dotted</h1>
+            <h1>Outline-color = Green</h1>
+        </div>
+        <div class="ol-3">
+            <h1>Outline-width = px</h1>
+            <h1>Outline-style = Double</h1>
+            <h1>Outline-color = Blue</h1>
+        </div>
+    </div>
+
+    <hr class="line">
+
+    <div class="text-1">
+        <h1 style="text-align: center;">Text-Align</h1>
+        <div style="border: 3px solid black;"></div>
+        <div style="padding: 20px;">
+
+            <div>
+                <h2 style="text-align: center;">Text-Align:Left</h2>
+                <div
+                    style="border: 2px solid rgb(55, 55, 55);width: 30%;margin: auto;margin-top: 10px;margin-bottom: 10px;">
+                </div>
+                <h3 style="text-align: left;">
+                    Text-align:Left | Text-align:Left | Text-align:Left | Text-align:Left | Text-align:Left |
+                    Text-align:Left | Text-align:Left | Text-align:Left | Text-align:Left | Text-align:Left |
+                    Text-align:Left | Text-align:Left | Text-align:Left | Text-align:Left | Text-align:Left |
+                    Text-align:Left | Text-align:Left | Text-align:Left | Text-align:Left | Text-align:Left |
+                    Text-align:Left | Text-align:Left |
+                </h3>
+            </div>
+            <div>
+                <h2 style="text-align: center;margin-top: 30px;">Text-Align:Right</h2>
+                <div
+                    style="border: 2px solid rgb(55, 55, 55);width: 30%;margin: auto;margin-top: 10px;margin-bottom: 10px;">
+                </div>
+                <h3 style="text-align: right;">
+                    Text-align:right | Text-align:right | Text-align:right | Text-align:right | Text-align:right |
+                    Text-align:right | Text-align:right | Text-align:right | Text-align:right | Text-align:right |
+                    Text-align:right | Text-align:right | Text-align:right | Text-align:right | Text-align:right |
+                    Text-align:right | Text-align:right | Text-align:right | Text-align:right | Text-align:right |
+                    Text-align:right | Text-align:right
+                </h3>
+            </div>
+            <div>
+                <h2 style="text-align: center;margin-top: 30px;">Text-Align:Center</h2>
+                <div
+                    style="border: 2px solid rgb(55, 55, 55);width: 30%;margin: auto;margin-top: 10px;margin-bottom: 10px;">
+                </div>
+                <h3 style="text-align: center;">
+                    Text-align:center | Text-align:center | Text-align:center | Text-align:center | Text-align:center |
+                    Text-align:center | Text-align:center | Text-align:center | Text-align:center | Text-align:center |
+                    Text-align:center | Text-align:center | Text-align:center | Text-align:center | Text-align:center |
+                    Text-align:center | Text-align:center | Text-align:center | Text-align:center | Text-align:center |
+                    Text-align:center | Text-align:center
+                </h3>
+            </div>
+            <div>
+                <h2 style="text-align: center;margin-top: 30px;">Text-Align:Justify</h2>
+                <div
+                    style="border: 2px solid rgb(55, 55, 55);width: 30%;margin: auto;margin-top: 10px;margin-bottom: 10px;">
+                </div>
+                <h3 style="text-align: justify;">
+                    Text-align:justify | Text-align:justify | Text-align:justify | Text-align:justify |
+                    Text-align:justify |
+                    Text-align:justify | Text-align:justify | Text-align:justify | Text-align:justify |
+                    Text-align:justify |
+                    Text-align:justify | Text-align:justify | Text-align:justify | Text-align:justify |
+                    Text-align:justify |
+                    Text-align:justify | Text-align:justify | Text-align:justify | Text-align:justify |
+                    Text-align:justify |
+                    Text-align:justify | Text-align:justify
+                </h3>
+            </div>
+            <div>
+                <h2 style="text-align: center;margin-top: 30px;">Text-Align-Last:Left</h2>
+                <div
+                    style="border: 2px solid rgb(55, 55, 55);width: 30%;margin: auto;margin-top: 10px;margin-bottom: 10px;">
+                </div>
+                <h3 style="text-align-last:left;">
+                    Text-atext-align-last:left | Text-atext-align-last:left | Text-atext-align-last:left |
+                    Text-atext-align-last:left | Text-atext-align-last:left |
+                    Text-atext-align-last:left | Text-atext-align-last:left | Text-atext-align-last:left |
+                    Text-atext-align-last:left | Text-atext-align-last:left |
+                    Text-atext-align-last:left | Text-atext-align-last:left | Text-atext-align-last:left |
+                    Text-atext-align-last:left | Text-atext-align-last:left |
+                    Text-atext-align-last:left | Text-atext-align-last:left | Text-atext-align-last:left |
+                    Text-atext-align-last:left | Text-atext-align-last:left
+                </h3>
+            </div>
+            <div>
+                <h2 style="text-align: center;margin-top: 30px;">Text-Align-Last:Right</h2>
+                <div
+                    style="border: 2px solid rgb(55, 55, 55);width: 30%;margin: auto;margin-top: 10px;margin-bottom: 10px;">
+                </div>
+                <h3 style="text-align-last:right;">
+                    Text-atext-align-last:right | Text-atext-align-last:right | Text-atext-align-last:right |
+                    Text-atext-align-last:right | Text-atext-align-last:right |
+                    Text-atext-align-last:right | Text-atext-align-last:right | Text-atext-align-last:right |
+                    Text-atext-align-last:right | Text-atext-align-last:right |
+                    Text-atext-align-last:right | Text-atext-align-last:right | Text-atext-align-last:right |
+                    Text-atext-align-last:right | Text-atext-align-last:right |
+                    Text-atext-align-last:right | Text-atext-align-last:right | Text-atext-align-last:right |
+                    Text-atext-align-last:right | Text-atext-align-last:right
+                </h3>
+            </div>
+            <div>
+                <h2 style="text-align: center;margin-top: 30px;">Text-Align-Last:Center</h2>
+                <div
+                    style="border: 2px solid rgb(55, 55, 55);width: 30%;margin: auto;margin-top: 10px;margin-bottom: 10px;">
+                </div>
+                <h3 style="text-align-last:center;">
+                    Text-atext-align-last:center | Text-atext-align-last:center | Text-atext-align-last:center |
+                    Text-atext-align-last:center | Text-atext-align-last:center |
+                    Text-atext-align-last:center | Text-atext-align-last:center | Text-atext-align-last:center |
+                    Text-atext-align-last:center | Text-atext-align-last:center |
+                    Text-atext-align-last:center | Text-atext-align-last:center | Text-atext-align-last:center |
+                    Text-atext-align-last:center | Text-atext-align-last:center |
+                    Text-atext-align-last:center | Text-atext-align-last:center | Text-atext-align-last:center |
+                    Text-atext-align-last:center | Text-atext-align-last:center
+                </h3>
+            </div>
+
+        </div>
+    </div>
+
+    <hr class="line">
+
+    <div class="text-1">
+        <h1 style="text-align: center;">Text-Decoration</h1>
+        <div style="border: 3px solid black;"></div>
+        <div style="padding: 20px;">
+
+            <div>
+                <h2 class="td-1">
+                    Text-decoration-line: Overline;
+                    Text-decoration-thickness: 4px;
+                    Text-decoration-style: Solid;
+                    Text-decoration-color: Black;
+                </h2>
+                <h2 class="td-2">
+                    Text-decoration-line: Line-through;
+                    Text-decoration-thickness: 3px;
+                    Text-decoration-style: Dashed;
+                    Text-decoration-color: Red;
+                </h2>
+                <h2 class="td-3">
+                    Text-decoration-line: Underline;
+                    Text-decoration-thickness: 5px;
+                    Text-decoration-style: Dotted;
+                    Text-decoration-color: Green;
+                </h2>
+                <h2 class="td-4">
+                    Text-decoration-line: Overline Underline;
+                    Text-decoration-thickness: 3px;
+                    Text-decoration-style: Double;
+                    Text-decoration-color: Blue;
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <hr class="line">
+
+    <div class="text-1">
+        <h1 style="text-align: center;">Text-Transform</h1>
+        <div style="border: 3px solid black;"></div>
+        <div style="padding: 20px;">
+
+            <div>
+                <h2 style="text-transform: capitalize; text-align: center;margin-bottom: 15px;">text-transform:
+                    capitalize</h2>
+                <h2 style="text-transform: lowercase; text-align: center;margin-bottom: 15px;">text-transform: lowercase
+                </h2>
+                <h2 style="text-transform: uppercase; text-align: center;margin-bottom: 15px;">text-transform: uppercase
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <hr class="line">
+
+    <div class="text-1">
+        <h1 style="text-align: center;">Spacing & Line</h1>
+        <div style="border: 3px solid black;"></div>
+        <div style="padding: 20px;">
+
+            <div>
+                <h2 style="text-align: center;">Text-Indent</h2>
+                <div
+                    style="border: 2px solid rgb(55, 55, 55);width: 30%;margin: auto;margin-top: 10px;margin-bottom: 10px;">
+                </div>
+                <h3 style="text-indent: 200px;">
+                    text-indent: 200px | text-indent: 200px | text-indent: 200px | text-indent: 200px | text-indent: 200px |
+                    text-indent: 200px | text-indent: 200px | text-indent: 200px | text-indent: 200px | text-indent: 200px |
+                    text-indent: 200px | text-indent: 200px | text-indent: 200px | text-indent: 200px | text-indent: 200px |
+                    text-indent: 200px | text-indent: 200px | text-indent: 200px | text-indent: 200px | text-indent: 200px |
+                    text-indent: 200px | text-indent: 200px |
+                </h3>
+            </div>
+            <div>
+                <h2 style="text-align: center;margin-top: 30px;">Word-Spacing</h2>
+                <div
+                    style="border: 2px solid rgb(55, 55, 55);width: 30%;margin: auto;margin-top: 10px;margin-bottom: 10px;">
+                </div>
+                <h3 style="word-spacing: 15px;">
+                    word-spacing: 15px | word-spacing: 15px | word-spacing: 15px | word-spacing: 15px | word-spacing: 15px |
+                    word-spacing: 15px | word-spacing: 15px | word-spacing: 15px | word-spacing: 15px | word-spacing: 15px |
+                    word-spacing: 15px | word-spacing: 15px | word-spacing: 15px | word-spacing: 15px | word-spacing: 15px |
+                    word-spacing: 15px | word-spacing: 15px | word-spacing: 15px | word-spacing: 15px | word-spacing: 15px |
+                    word-spacing: 15px | word-spacing: 15px                 
+                </h3>
+            </div>
+            <div>
+                <h2 style="text-align: center;margin-top: 30px;">Letter-Spacing</h2>
+                <div
+                    style="border: 2px solid rgb(55, 55, 55);width: 30%;margin: auto;margin-top: 10px;margin-bottom: 10px;">
+                </div>
+                <h3 style="letter-spacing: 10px;">
+                    letter-spacing: 10px | letter-spacing: 10px | letter-spacing: 10px | letter-spacing: 10px | letter-spacing: 10px |
+                    letter-spacing: 10px | letter-spacing: 10px | letter-spacing: 10px | letter-spacing: 10px | letter-spacing: 10px |
+                    letter-spacing: 10px | letter-spacing: 10px | letter-spacing: 10px | letter-spacing: 10px | letter-spacing: 10px |
+                    letter-spacing: 10px | letter-spacing: 10px | letter-spacing: 10px | letter-spacing: 10px | letter-spacing: 10px |
+                    letter-spacing: 10px | letter-spacing: 10px                 
+                </h3>
+            </div>
+            <div>
+                <h2 style="text-align: center;margin-top: 30px;">Line-Height</h2>
+                <div
+                    style="border: 2px solid rgb(55, 55, 55);width: 30%;margin: auto;margin-top: 10px;margin-bottom: 10px;">
+                </div>
+                <h3 style="line-height:50px;">
+                    line-height: 50px | line-height: 50px | line-height: 50px | line-height: 50px | line-height: 50px |
+                    line-height: 50px | line-height: 50px | line-height: 50px | line-height: 50px | line-height: 50px |
+                    line-height: 50px | line-height: 50px | line-height: 50px | line-height: 50px | line-height: 50px |
+                    line-height: 50px | line-height: 50px | line-height: 50px | line-height: 50px | line-height: 50px |
+                    line-height: 50px | line-height: 50px | line-height: 50px | line-height: 50px | line-height: 50px |
+                    line-height: 50px | line-height: 50px | line-height: 50px | line-height: 50px | line-height: 50px |
+                    line-height: 50px | line-height: 50px | line-height: 50px | line-height: 50px | line-height: 50px |
+                    line-height: 50px | line-height: 50px | line-height: 50px | line-height: 50px | line-height: 50px |
+                    line-height: 50px | line-height: 50px                 
+                </h3>
+            </div>
+        </div>
+    </div>
+    
+    <hr class="line">
+    
+    <div class="text-1">
+        <h1 style="text-align: center;">White-Space</h1>
+        <div style="border: 3px solid black;"></div>
+        <div style="padding: 20px;">
+
+            <div>
+                <h2 style="text-align: center;">White-Space: Pre-Wrap</h2>
+                <div
+                    style="border: 2px solid rgb(55, 55, 55);width: 30%;margin: auto;margin-top: 10px;margin-bottom: 10px;">
+                </div>
+                <h3 style="white-space: pre-wrap">
+                    white-space: pre-wrap | white-space: pre-wrap | white-space: pre-wrap | white-space: pre-wrap | white-space: pre-wrap |
+                    white-space: pre-wrap | white-space: pre-wrap | white-space: pre-wrap | white-space: pre-wrap | white-space: pre-wrap |
+                    white-space: pre-wrap | white-space: pre-wrap | white-space: pre-wrap | white-space: pre-wrap | white-space: pre-wrap |
+                    white-space: pre-wrap | white-space: pre-wrap | white-space: pre-wrap | white-space: pre-wrap | white-space: pre-wrap |
+                    white-space: pre-wrap | white-space: pre-wrap |
+                </h3>
+            </div>
+            <div>
+                <h2 style="text-align: center;margin-top: 30px;">White-Space: Wrap</h2>
+                <div
+                    style="border: 2px solid rgb(55, 55, 55);width: 30%;margin: auto;margin-top: 10px;margin-bottom: 10px;">
+                </div>
+                <h3 style="white-space: wrap;">
+                    white-space: wrap | white-space: wrap | white-space: wrap | white-space: wrap | white-space: wrap |
+                    white-space: wrap | white-space: wrap | white-space: wrap | white-space: wrap | white-space: wrap |
+                    white-space: wrap | white-space: wrap | white-space: wrap | white-space: wrap | white-space: wrap |
+                    white-space: wrap | white-space: wrap | white-space: wrap | white-space: wrap | white-space: wrap |
+                    white-space: wrap | white-space: wrap                 
+                </h3>
+            </div>
+            <div>
+                <h2 style="text-align: center;margin-top: 30px;">White-Space: Nowrap</h2>
+                <div
+                    style="border: 2px solid rgb(55, 55, 55);width: 30%;margin: auto;margin-top: 10px;margin-bottom: 10px;">
+                </div>
+                <h3 style="white-space: nowrap;">
+                    white-space: nowrap | white-space: nowrap | white-space: nowrap | white-space: nowrap | white-space: nowrap |
+                    white-space: nowrap | white-space: nowrap | white-space: nowrap | white-space: nowrap | white-space: nowrap |
+                    white-space: nowrap | white-space: nowrap | white-space: nowrap | white-space: nowrap | white-space: nowrap |
+                    white-space: nowrap | white-space: nowrap | white-space: nowrap | white-space: nowrap | white-space: nowrap |
+                    white-space: nowrap | white-space: nowrap                 
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <hr class="line">
 </body>
+
 </html>
