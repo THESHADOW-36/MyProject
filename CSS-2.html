@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bodylayout {
+            /* text-align: center; */
+            border: 9px solid black;
+            padding: 10px;
+        }
+
+        h1 {
+            border: 8px solid rgb(8, 45, 112);
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;border: 9px solid black;border-radius: 5px;">Margin 0px</h1>
+    <div class="bodylayout">
+        <h1 style="margin-top:30px;">Margin-top: 30px</h1>
+        <h1 style="margin-bottom:30px;">Margin-bottom: 30px</h1>
+        <h1 style="margin-left: 200px;">Margin-left: 100px</h1>
+        <h1 style="margin-right:200px;">Margin-right: 30px</h1>
+        <h1 style="margin:40px 150px;">Margin: 40px 150px (Top-Bottom | Left-Right)</h1>
+        <h1 style="margin:40px 200px 30px 250px;">Margin: 40px 200px 30px 250px (Top-Right-Bottom-Left)</h1>
+        <h1 style="margin: 100px;">Margin 100px (Applicable to all direction)</h1>
+    </div>
+
+    <hr style="border: 18px dotted black;">
+
+    <h1 style="text-align: center;border: 9px solid black;border-radius: 5px;">Padding 0px</h1>
+    <div class="bodylayout">
+        <h1 style="padding-top:35px;">Padding-top: 35px</h1>
+        <h1 style="padding-bottom:35px;">Padding-bottom: 35px</h1>
+        <h1 style="padding-left: 150px;">Padding-left: 150px</h1>
+        <h1 style="padding-right:80px;text-align: right;">Padding-right: 80px</h1>
+        <h1 style="padding:40px 150px;">Padding: 40px 150px (Top-Bottom | Left-Right)</h1>
+        <h1 style="padding:60px 200px 30px 250px;">Padding: 60px 200px 30px 250px (Top-Right-Bottom-Left)</h1>
+        <h1 style="padding: 100px;">Padding 100px (Applicable to all direction)</h1>
+    </div>
+</body>
+
+</html>
