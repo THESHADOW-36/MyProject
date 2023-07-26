@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Desktop */
+        #text {
+            background-color: rgb(69, 69, 69);
+            color: white;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        #numbers {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            background-color: rgb(222, 0, 0);
+        }
+
+        #numbers>h1 {
+            border: 5px solid black;
+            width: 20%;
+            padding: 100px 0px;
+            font-size: 50px;
+        }
+
+        #numbers-2 {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row-reverse;
+            text-align: center;
+            background-color: rgb(0, 21, 255);
+        }
+
+        #numbers-2>h1 {
+            border: 5px solid rgb(191, 191, 191);
+            width: 20%;
+            padding: 100px 0px;
+            font-size: 50px;
+            color: rgb(225, 225, 225);
+        }
+
+
+        /* Tablet */
+        @media screen and (min-width : 480px) and (max-width : 750px) {
+            #text {
+                background-color: rgb(69, 69, 69);
+                color: white;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            #numbers {
+                background-color: orangered;
+                width: 100%;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            #numbers>h1 {
+                border: 5px solid black;
+                width: 97%;
+                margin: auto;
+                padding: 100px 0px;
+                margin: 10px 0px;
+                font-size: 50px;
+            }
+
+            #numbers-2 {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column-reverse;
+                text-align: center;
+                background-color: rgb(0, 145, 255);
+            }
+
+            #numbers-2>h1 {
+                border: 5px solid black;
+                color: black;
+                width: 97%;
+                padding: 100px 0px;
+                margin: 10px 0px;
+                font-size: 50px;
+            }
+        }
+
+
+        /* Mobile */
+        @media screen and (max-width : 480px) {
+            #text {
+                background-color: rgb(69, 69, 69);
+                color: white;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            #numbers {
+                background-color: rgb(255, 196, 0);
+                width: 100%;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            #numbers>h1 {
+                border: 5px solid black;
+                width: 97%;
+                margin: auto;
+                padding: 100px 0px;
+                margin: 10px 0px;
+                font-size: 50px;
+            }
+
+            #numbers-2 {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column-reverse;
+                text-align: center;
+                background-color: rgb(0, 255, 204);
+            }
+
+            #numbers-2>h1 {
+                border: 5px solid black;
+                color: black;
+                width: 97%;
+                padding: 100px 0px;
+                margin: 10px 0px;
+                font-size: 50px;
+            }
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 id="text">Flex-Direction: Row/Column</h1>
+        <div id="numbers">
+            <h1>1</h1>
+            <h1>2</h1>
+            <h1>3</h1>
+            <h1>4</h1>
+        </div>
+    </div>
+
+    <div>
+        <h1 id="text" style="margin-top: 40px;">Flex-Direction: Row/Column-Reverse</h1>
+        <div id="numbers-2">
+            <h1>1</h1>
+            <h1>2</h1>
+            <h1>3</h1>
+            <h1>4</h1>
+        </div>
+    </div>
+</body>
+
+</html>
