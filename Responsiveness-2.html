@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness-2</title>
+    <style>
+        #grandparent {
+            border: 3px solid black;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #grandparent>div {
+            border: 3px solid red;
+            width: 23%;
+            height: 300px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #grandparent>div:nth-child(3)>div {
+            border: 3px solid green;
+            width: 98%;
+            height: 70px;
+        }
+
+        #grandparent>div:nth-child(3)>div:nth-child(2) {
+            display: flex;
+        }
+
+        #grandparent>div:nth-child(3)>div:nth-child(2)>div {
+            width: 100%;
+            border: 3px solid blue;
+        }
+
+        @media screen and (max-width: 680px) {
+            #grandparent {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            #grandparent>div {
+                border: 3px solid green;
+                width: 99%;
+                height: 300px;
+            }
+
+            #grandparent>div:nth-child(2) {
+                display: none;
+            }
+            
+            #grandparent>div:nth-child(3) {
+                width: 99%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            
+            #grandparent>div:nth-child(3)>div {
+                width: 33%;
+                border: 3px solid rgb(255, 0, 0);
+                height: 295px;
+            }
+
+            #grandparent>div:nth-child(3)>div:nth-child(4) {
+                display: none;
+            }
+            #grandparent>div:nth-child(3)>div:nth-child(2){
+                width: 33%;
+                display: flex;
+                flex-direction:column;
+            }
+            #grandparent>div:nth-child(3)>div:nth-child(2)>div{
+                border: 3px solid rgb(0, 8, 255);
+                width: 98%;
+                height: 295px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="grandparent">
+        <div>1 Children</div>
+        <div>2 Children</div>
+        <div>
+            <div>1 Grand Chlidren</div>
+            <div>
+                <div>1 Great Grand Chlidren</div>
+                <div>2 Great Grand Chlidren</div>
+            </div>
+            <div>3 Grand Chlidren</div>
+            <div>4 Grand Chlidren</div>
+        </div>
+        <div>4 Children</div>
+    </div>
+</body>
+
+</html>
