@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog</title>
+    <script src="https://kit.fontawesome.com/e331b9ba14.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            font-family: "Space Grotesk", sans-serif;
+        }
+
+        .nav {
+            /* border: 1px solid white; */
+            width: 96%;
+            height: 110px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-logo {
+            /* border: 1px solid grey; */
+            width: 10%;
+            padding: 46px 0px;
+            font-weight: bold;
+        }
+
+        .nav-logo>p:nth-child(2) {
+            display: none;
+        }
+
+        .nav-content {
+            /* border: 1px solid yellow; */
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+            padding: 47px 0px;
+        }
+
+        .nav-icon>div:nth-child(2) {
+            display: none;
+        }
+
+        .nav-icon {
+            /* border: 1px solid yellowgreen; */
+            width: 10%;
+            padding: 45px 0px;
+        }
+
+        .nav-icon-1 {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .body-content-1 {
+            /* border: 1px solid white; */
+            text-align: center;
+        }
+
+        .body-logo img {
+            height: 108px;
+            margin-top: 100px;
+            margin-bottom: 35px;
+        }
+
+        .body-title h1 {
+            font-size: 70px;
+            font-weight: normal;
+            letter-spacing: 5px;
+        }
+
+        .body-title p {
+            font-size: 18px;
+            color: rgb(182, 182, 182);
+            line-height: 25px;
+            margin-top: 20px;
+            margin-bottom: 60px;
+            letter-spacing: 1px;
+        }
+
+        .body-button button {
+            background-color: rgb(164, 162, 162);
+            color: black;
+            padding: 12px 30px 12px 30px;
+            border: none;
+            font-size: 16px;
+            border-radius: 22px;
+            letter-spacing: 0.5px;
+        }
+
+        .body-content-2 {
+            /* border: 1px solid white; */
+            width: 91%;
+            height: 520px;
+            margin: auto;
+            margin-top: 185px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .body-text {
+            /* border: 1px solid yellow; */
+            width: 26%;
+            height: 520px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .body-text-t p {
+            color: rgb(182, 182, 182);
+            font-size: 17px;
+        }
+
+        .body-text-t h4 {
+            margin-top: 10px;
+            font-size: 41px;
+            font-weight: normal;
+            letter-spacing: 3px;
+            line-height: 50px;
+        }
+
+        .body-text-b>p {
+            font-size: 18px;
+            color: rgb(182, 182, 182);
+            line-height: 25px;
+            align-items: flex-end;
+            /* margin-bottom: 100px; */
+        }
+
+        .body-text-b button {
+            margin: 52px 0px 12px 0px;
+        }
+
+        .body-img {
+            /* border: 1px solid orange; */
+            width: 65%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .body-img div {
+            width: 47%;
+            height: 520px;
+        }
+
+        .body-img div img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+        @media screen and (max-width:990px) {
+            .nav-logo>p:nth-child(1) {
+                display: none;
+            }
+
+            .nav-content {
+                display: none;
+            }
+
+            .nav-icon>div:nth-child(1) {
+                display: none;
+            }
+
+            .nav-logo>p:nth-child(2) {
+                display: block;
+                text-align: center;
+            }
+
+            .nav-icon>div:nth-child(2) {
+                display: block;
+                text-align: center;
+            }
+
+
+            .body-content-2 {
+                width: 95%;
+                flex-direction: column;
+            }
+
+            .body-text {
+                width: 100%;
+            }
+
+            .body-text-b>p {
+                letter-spacing: 0.5px;
+                padding-right: 20px;
+            }
+
+            .body-img {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .body-img div {
+                width: 48%;
+                height: 520px;
+            }
+
+            .body-img div img {
+                width: 100%;
+                height: 516px;
+            }
+        }
+
+        @media screen and (max-width: 765px) {
+            .body-content-2 {
+                width: 93%;
+            }
+            .body-text-b>p {
+                letter-spacing: 0.5px;
+                padding-right: 15px;
+            }
+
+            .body-img {
+                flex-direction: column;
+            }
+
+            .body-img div {
+                width: 100%;
+                height: 516px;
+                margin-bottom: 50px;
+            }
+        }
+
+        #footer {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="nav">
+            <div class="nav-logo">
+                <p>Tech Blog</p>
+                <p>BoldM5</p>
+            </div>
+            <div class="nav-content">
+                <p>Home</p>
+                <p>Blog</p>
+                <p>Articles</p>
+                <p>About Us</p>
+                <p>FAQ</p>
+            </div>
+            <div class="nav-icon">
+                <div class="nav-icon-1">
+                    <div><i class="fa-brands fa-facebook-f fa-l "></i></div>
+                    <div><i class="fa-brands fa-twitter "></i></div>
+                    <div><i class="fa-brands fa-instagram fa-lg"></i></div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="body">
+        <div class="body-content-1">
+            <div class="body-logo">
+                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/logo.png" alt="">
+            </div>
+            <div class="body-title">
+                <h1>Tech Blog</h1>
+                <p>Accusamus ea excepturi hic impedit iste neque soluta, sunt tempore <br>
+                    voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="body-button">
+                <button>
+                    Read more
+                    <i style="color: black; background-color: rgb(164, 162, 162);margin-left: 10px;"
+                        class="fa-solid fa-play"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="body-content-2">
+            <div class="body-text">
+                <div class="body-text-t">
+                    <p>TECHNOLOGIES</p>
+                    <h4>Most popular <br> articles</h4>
+                </div>
+                <div class="body-text-b">
+                    <p>Dolor sit amet, consectetur adipisicing elit. Aliquid autem beatae consectetur cumque dolores
+                        dolorum
+                        enim inventore iure minus nostrum nulla numquam quam quia quod, reprehenderit.</p>
+                    <div class="body-button">
+                        <button>
+                            Read more
+                            <i style="color: black; background-color: rgb(164, 162, 162);margin-left: 10px;"
+                                class="fa-solid fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="body-img">
+                <div>
+                    <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg" alt="">
+                </div>
+                <div>
+                    <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>
