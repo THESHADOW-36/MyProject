@@ -6,13 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Blog</title>
     <script src="https://kit.fontawesome.com/e331b9ba14.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Space+Grotesk:300,400,500,600,700&amp;display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Space+Grotesk:300,400,500,600,700&amp;display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
     <style>
         * {
             margin: 0;
             padding: 0;
-            background-color: rgb(0, 0, 0);
             color: rgb(255, 255, 255);
             font-family: "Space Grotesk", sans-serif;
+            transition: 0.3s;
+        }
+
+        body {
+            background-color: rgb(0, 0, 0);
+            padding-bottom: 500px;
         }
 
         .nav {
@@ -41,6 +52,16 @@
             display: flex;
             justify-content: space-around;
             padding: 47px 0px;
+            transition: 0.3s;
+        }
+
+        .nav-content>p {
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .nav-content>p:hover {
+            color: rgba(255, 255, 255, 0.8);
         }
 
         .nav-icon>div:nth-child(2) {
@@ -58,30 +79,36 @@
             justify-content: space-evenly;
         }
 
-        .body-content-1 {
+        .nav-icon-1 div {
+            cursor: pointer;
+        }
+
+        .nav-icon-1 :hover {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        #body-content-1 {
             /* border: 1px solid white; */
             text-align: center;
         }
 
         .body-logo img {
             height: 108px;
-            margin-top: 100px;
-            margin-bottom: 35px;
+            margin-top: 110px;
+            margin-bottom: 30px;
         }
 
         .body-title h1 {
-            font-size: 70px;
+            font-size: 72px;
             font-weight: normal;
-            letter-spacing: 5px;
         }
 
         .body-title p {
-            font-size: 18px;
+            font-size: 17px;
             color: rgb(182, 182, 182);
             line-height: 25px;
-            margin-top: 20px;
+            margin-top: 16px;
             margin-bottom: 60px;
-            letter-spacing: 1px;
         }
 
         .body-button button {
@@ -92,9 +119,11 @@
             font-size: 16px;
             border-radius: 22px;
             letter-spacing: 0.5px;
+            background-image: linear-gradient(to right, rgb(164, 162, 162), white);
+            cursor: pointer;
         }
 
-        .body-content-2 {
+        #body-content-2 {
             /* border: 1px solid white; */
             width: 91%;
             height: 520px;
@@ -115,14 +144,14 @@
 
         .body-text-t p {
             color: rgb(182, 182, 182);
-            font-size: 17px;
+            font-size: 19px;
         }
 
         .body-text-t h4 {
             margin-top: 10px;
             font-size: 41px;
             font-weight: normal;
-            letter-spacing: 3px;
+            letter-spacing: 1px;
             line-height: 50px;
         }
 
@@ -131,11 +160,13 @@
             color: rgb(182, 182, 182);
             line-height: 25px;
             align-items: flex-end;
+            font-family: "DM Sans", sans-serif;
             /* margin-bottom: 100px; */
         }
 
         .body-text-b button {
             margin: 52px 0px 12px 0px;
+            background-image: linear-gradient(to right, rgb(164, 162, 162), white);
         }
 
         .body-img {
@@ -145,15 +176,467 @@
             justify-content: space-between;
         }
 
-        .body-img div {
+        .body-img-box {
             width: 47%;
             height: 520px;
+            background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg);
+            background-size: cover;
         }
 
-        .body-img div img {
+        .body-img-innerbox {
+            opacity: 0;
+            width: 300px;
+            height: 380px;
+            margin: auto;
+            margin-top: 38px;
+            margin-bottom: 38px;
+            background-image: linear-gradient(to right, rgb(164, 162, 162), white);
+            padding-top: 64px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .body-img-innerbox-img {
+            background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image2.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 244px;
+            height: 272px;
+            margin: auto;
+        }
+
+        .body-img-innerbox-img button {
+            color: black;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            background-image: linear-gradient(to right, rgb(164, 162, 162), white);
+            padding: 12px 26px 12px 26px;
+            margin: 115px 50px;
+        }
+
+        .body-img-innerbox-text {
+            margin-top: 25px;
+        }
+
+        .body-img-innerbox-text>p {
+            padding: 0px 28px;
+            color: black;
+            line-height: 30px;
+        }
+
+        .body-img-innerbox-text>p:nth-child(1) {
+            font-size: 18px;
+        }
+
+        .body-img-innerbox:hover {
+            opacity: 1;
+        }
+
+        #body-content-3 {
+            /* border: 1px solid white; */
+            width: 83%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 160px;
+        }
+
+        .bc3-text1 {
+            font-size: 40px;
+            width: 55%;
+            letter-spacing: 1px;
+        }
+
+        .bc3-text2 {
+            color: rgb(182, 182, 182);
+            font-size: 18px;
+            width: 35%;
+            margin-right: 10px;
+            line-height: 25px;
+        }
+
+        .vertical-line {
+            border-left: 1px solid rgb(53, 53, 53);
+            height: 160px;
+            margin-right: 30px;
+            margin-left: 20px;
+        }
+
+        #body-content-4 {
+            /* border: 1px solid white; */
+            width: 91%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 160px;
+        }
+
+        #body-content-4>div {
+            /* border: 1px solid yellow; */
+            width: 15.4%;
+            height: 260px;
+        }
+
+        .bc4-text>p:nth-child(1) {
+            font-size: 34px;
+            letter-spacing: 1px;
+        }
+
+        .bc4-text>p:nth-child(2) {
+            font-size: 18px;
+            margin-top: 15px;
+            line-height: 26px;
+            color: rgb(182, 182, 182);
+        }
+
+        .bc4-img1 {
+            background: black;
+            background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image4.jpg);
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bc4-img1 button {
+            opacity: 0;
+            color: black;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            background-image: linear-gradient(to right, rgb(164, 162, 162), white);
+            padding: 12px 26px 12px 26px;
+            transition: 0.5s;
+        }
+
+        .bc4-img1 button:hover {
+            opacity: 1;
+        }
+
+        .bc4-img2 {
+            background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image5.jpg);
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bc4-img2 button {
+            opacity: 0;
+            color: black;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            background-image: linear-gradient(to right, rgb(164, 162, 162), white);
+            padding: 12px 26px 12px 26px;
+            transition: 0.5s;
+        }
+
+        .bc4-img2 button:hover {
+            opacity: 1;
+        }
+
+        .bc4-img3 {
+            background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image8.jpg);
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bc4-img3 button {
+            opacity: 0;
+            color: black;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            background-image: linear-gradient(to right, rgb(164, 162, 162), white);
+            padding: 12px 26px 12px 26px;
+            transition: 0.5s;
+        }
+
+        .bc4-img3 button:hover {
+            opacity: 1;
+        }
+
+        .bc4-img4 {
+            background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image12.jpg);
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bc4-img4 button {
+            opacity: 0;
+            color: black;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            background-image: linear-gradient(to right, rgb(164, 162, 162), white);
+            padding: 12px 26px 12px 26px;
+            transition: 0.5s;
+        }
+
+        .bc4-img4 button:hover {
+            opacity: 1;
+        }
+
+        .bc4-img5 {
+            background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image15.jpg);
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bc4-img5 button {
+            opacity: 0;
+            color: black;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            background-image: linear-gradient(to right, rgb(164, 162, 162), white);
+            padding: 12px 26px 12px 26px;
+            transition: 0.5s;
+        }
+
+        .bc4-img5 button:hover {
+            opacity: 1;
+        }
+
+        #body-content-5 {
+            margin-top: 160px;
+            font-size: 70px;
+            letter-spacing: 2px;
+        }
+
+        .bc5-text1 {
+            border-top: 1px solid rgb(40, 40, 40);
+            padding: 15px 2px;
+        }
+
+        .bc5-text2 {
+            border-top: 1px solid rgb(40, 40, 40);
+            border-bottom: 1px solid rgb(40, 40, 40);
+            padding: 15px 8px;
+            text-align: right;
+        }
+
+        #body-content-6 {
+            /* border: 1px solid white; */
+            width: 82%;
+            margin: auto;
+            margin-top: 160px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bc6-box {
+            /* border: 1px solid yellow; */
+            width: 31.5%;
+            height: 430px;
+        }
+
+        .bc6-box img:hover {
+            background-image: linear-gradient(black, white);
+        }
+
+        .bc6-box img {
+            width: 100%;
+            height: 346px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .bc6-box img:hover {
+            opacity: 0.8;
+        }
+
+        .bc6-box>p:nth-child(2) {
+            font-family: "Space Grotesk", sans-serif;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .bc6-box>p:nth-child(3) {
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 34px;
+            margin-top: 8px;
+            cursor: pointer;
+        }
+
+        #body-content-7 {
+            /* border: 1px solid white; */
+            width: 100%;
+            height: 540px;
+            margin-top: 250px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .bc7-text {
+            /* border: 1px solid yellow; */
+            width: 42%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bc7-text-box {
+            /* border: 1px solid red; */
+            text-align: center;
+            padding: 0px 130px 0px 110px;
+        }
+
+        .bc7-text-box>p:nth-child(1) {
+            font-size: 42px;
+            margin-bottom: 45px;
+            line-height: 48px;
+        }
+
+        .bc7-text-box>p:nth-child(2) {
+            color: rgb(182, 182, 182);
+            font-size: 19px;
+            font-family: "DM Sans", sans-serif;
+            line-height: 24px;
+        }
+
+        .bc7-img {
+            /* border: 1px solid green;d */
+            width: 58%;
+            background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image11.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bc7-img button {
+            color: black;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            background-image: linear-gradient(to right, rgb(164, 162, 162), white);
+            padding: 12px 26px 12px 26px;
+        }
+
+        #body-content-8 {
+            /* border: 1px solid white; */
+            margin-top: 80px;
+            height: 670px;
+            background-image: url(https://mobirise.com/extensions/boldm5/tech-blog/assets/images/background1.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .bc8-transparent {
+            background-color: rgba(0, 0, 0, 0.8);
             width: 100%;
             height: 100%;
+        }  
+
+        .bc8-text {
+            /* border: 1px solid yellow; */
+            width: 500px;
+            padding: 80px 0px 0px 60px;
         }
+
+        .bc8-text > p:nth-child(1) {
+            font-size: 42px;
+            line-height: 48px;
+        }
+
+        .bc8-text > p:nth-child(2) {
+            font-size: 17.5px;
+            color: rgb(182, 182, 182);
+            margin-top: 20px;
+            line-height: 26px;
+        }
+
+        #body-content-9 {
+            /* border: 1px solid white; */
+            display: flex;
+            width: 82%;
+            height: 960px;
+            margin: auto;
+            margin-top: 80px;
+        }
+
+        .bc9-text {
+            /* border: 1px solid red; */
+            flex: 1;
+        }
+
+        .bc9-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .bc9-text-words-1 a{
+            text-decoration: none;
+            font-size: 35px;
+            display: block;
+            padding: 42px 0px;
+        }
+
+        .bc9-text-words-2 a{
+            border-top: 1px solid rgba(200, 200, 200, 0.2);
+            width: 85%;
+            text-decoration: none;
+            font-size: 35px;
+            display: block;
+            padding: 42px 0px;
+        }
+
+        .bc9-img {
+            /* border: 1px solid red; */
+            flex: 1;
+            padding-left: 10px;
+        }
+
+        .bc9-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        #body-content-10 {
+            border: 1px solid white;
+            margin-top: 160px;
+            height: 630px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bc10-img {
+            border: 1px solid red;
+            width: 50%;
+            height: 100%
+        }
+
+        .bc10-text {
+            border: 1px solid green;
+            width: 50%;
+            height: 100%
+        }
+
+
 
 
 
@@ -181,7 +664,7 @@
             }
 
 
-            .body-content-2 {
+            #body-content-2 {
                 width: 95%;
                 flex-direction: column;
             }
@@ -213,9 +696,10 @@
         }
 
         @media screen and (max-width: 765px) {
-            .body-content-2 {
+            #body-content-2 {
                 width: 93%;
             }
+
             .body-text-b>p {
                 letter-spacing: 0.5px;
                 padding-right: 15px;
@@ -265,7 +749,7 @@
         </div>
     </div>
     <div id="body">
-        <div class="body-content-1">
+        <div id="body-content-1">
             <div class="body-logo">
                 <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/logo.png" alt="">
             </div>
@@ -277,13 +761,12 @@
             <div class="body-button">
                 <button>
                     Read more
-                    <i style="color: black; background-color: rgb(164, 162, 162);margin-left: 10px;"
-                        class="fa-solid fa-play"></i>
+                    <i style="color: black; background-color: white;margin-left: 10px;" class="fa-solid fa-play"></i>
                 </button>
             </div>
         </div>
 
-        <div class="body-content-2">
+        <div id="body-content-2">
             <div class="body-text">
                 <div class="body-text-t">
                     <p>TECHNOLOGIES</p>
@@ -296,20 +779,157 @@
                     <div class="body-button">
                         <button>
                             Read more
-                            <i style="color: black; background-color: rgb(164, 162, 162);margin-left: 10px;"
+                            <i style="color: black; background-color: white;margin-left: 10px;"
                                 class="fa-solid fa-play"></i>
                         </button>
                     </div>
                 </div>
             </div>
             <div class="body-img">
-                <div>
-                    <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg" alt="">
+                <div class="body-img-box">
+                    <div class="body-img-innerbox">
+                        <div class="body-img-innerbox-img">
+                            <button>See card <i style="color: black; margin-left: 10px;"
+                                    class="fa-solid fa-play"></i></button>
+                        </div>
+                        <div class="body-img-innerbox-text">
+                            <p>Mobile phone</p>
+                            <p>$100.00</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image6.jpg" alt="">
+                <div class="body-img-box">
+                    <div class="body-img-innerbox">
+                        <div class="body-img-innerbox-img">
+                            <button>See card <i style="color: black; margin-left: 10px;"
+                                    class="fa-solid fa-play"></i></button>
+                        </div>
+                        <div class="body-img-innerbox-text">
+                            <p>Mobile phone</p>
+                            <p>$100.00</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <div id="body-content-3">
+            <p class="bc3-text1">Modern compact, perfectly <br> new design</p>
+            <div class="vertical-line"></div>
+            <p class="bc3-text2">Numquam, quo recusandae sunt voluptates. Assumenda cumque dolorem eius excepturi
+                inventore laboriosam provident quam suscipit voluptate voluptates.</p>
+        </div>
+
+        <div id="body-content-4">
+            <div class="bc4-text">
+                <p>Our website</p>
+                <p>Follow us tech@blog.com</p>
+            </div>
+            <div class="bc4-img1">
+                <button>See card</button>
+            </div>
+            <div class="bc4-img2">
+                <button>See card</button>
+            </div>
+            <div class="bc4-img3">
+                <button>See card</button>
+            </div>
+            <div class="bc4-img4">
+                <button>See card</button>
+            </div>
+            <div class="bc4-img5">
+                <button>See card</button>
+            </div>
+        </div>
+
+        <div id="body-content-5">
+            <div class="bc5-text1">
+                <p>Popular-Tech-Blog</p>
+            </div>
+            <div class="bc5-text2">
+                <p>Useful-Tech-Blog</p>
+            </div>
+        </div>
+
+        <div id="body-content-6">
+            <div class="bc6-box">
+                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image10.jpg" alt="">
+                <p><u>MOBILE</u> <u>EARBUDS</u></p>
+                <p>Smartphones</p>
+            </div>
+            <div class="bc6-box">
+                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image8.jpg" alt="">
+                <p><u>MOBILE</u> <u>EARBUDS</u></p>
+                <p>Bubs</p>
+            </div>
+            <div class="bc6-box">
+                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image2.jpg" alt="">
+                <p><u>MOBILE</u> <u>EARBUDS</u></p>
+                <p>Smart watch</p>
+            </div>
+        </div>
+
+        <div id="body-content-7">
+            <div class="bc7-text">
+                <div class="bc7-text-box">
+                    <p>Read our <br> news</p>
+                    <p>Consectetur adipisicing elit. Architecto atque culpa eius, error est expedita facilis fuga
+                        impedit inventore labore laborum neque obcaecati odit, placeat quo quod repellendus tenetur
+                        voluptates.</p>
+                </div>
+            </div>
+            <div class="bc7-img">
+                <button>Read news <i style="color: black; background-color: white;margin-left: 12px;"
+                        class="fa-solid fa-play"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="body-content-8">
+            <div class="bc8-transparent">
+                <div class="bc8-text">
+                    <p>Easy to use for everyone</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad autem distinctio, ea eum harum id illo itaque laborum maxime natus quaerat quia quo reiciendis.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="body-content-9">
+            <div class="bc9-text">
+                <div class="bc9-text-words-1">
+                    <a href="">
+                        Programming
+                    </a>
+                </div>
+                <div class="bc9-text-words-2">
+                    <a href="">
+                        Research
+                    </a>
+                </div>
+                <div class="bc9-text-words-2">
+                    <a href="">
+                        Development
+                    </a>
+                </div>
+                <div class="bc9-text-words-2">
+                    <a href="">
+                        Phases
+                    </a>
+                </div>
+                <div class="bc9-text-words-2">
+                    <a href="">
+                        Design
+                    </a>
+                </div>
+            </div>
+            <div class="bc9-img">
+                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image1.jpg" alt="">
+            </div>
+        </div>
+
+        <div id="body-content-10">
+            <div class="bc10-img"></div>
+            <div class="bc10-text"></div>
         </div>
     </div>
     <div id="footer"></div>
