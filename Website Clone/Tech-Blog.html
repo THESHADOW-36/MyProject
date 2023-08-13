@@ -475,10 +475,13 @@
         }
 
         #body-content-6 {
-            border: 1px solid white;
+            /* border: 1px solid white; */
             width: 82%;
             margin: auto;
             margin-top: 160px;
+        }
+
+        .bc6-box-layout {
             display: flex;
             justify-content: space-between;
         }
@@ -518,7 +521,7 @@
         }
 
         #body-content-7 {
-            border: 1px solid white;
+            /* border: 1px solid white; */
             width: 100%;
             height: 540px;
             margin-top: 250px;
@@ -1059,7 +1062,6 @@
             .bc4-text-box {
                 width: 100%;
                 height: 150px;
-                padding: 10px;
             }
 
             .bc4-img {
@@ -1078,19 +1080,25 @@
                 font-size: 56px;
             }
 
-            /* #body-content-6 {
-                width: 69%;
-                display: grid;
-                grid-template-columns: 48% 48%;
+            #body-content-6 {
+                width: 100%;
             }
 
-            .bc6-box {
-                width: 100%;
-            } */
+            .bc6-box-layout {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .bc6-box-layout div {
+                width: 323px;
+                margin: 12px 12px 90px 12px;
+            }
 
             #body-content-7 {
                 flex-direction: column;
                 height: 720px;
+                margin-top: 170px;
             }
 
             .bc7-text {
@@ -1106,16 +1114,151 @@
             }
 
             .bc7-img {
-                border: 1px solid white;
+                /* border: 1px solid white; */
                 width: 100%;
                 height: 400px;
                 margin-top: 100px;
             }
+
+            #body-content-8 {
+                height: 570px;
+            }
+
+            .bc8-text {
+                width: 95%;
+                padding: 80px 0px 0px 30px;
+            }
+
+            .bc8-text>p:nth-child(1) {
+                font-size: 42px;
+            }
+
+            #body-content-9 {
+                width: 68%;
+                flex-direction: column;
+            }
+
+            .bc9-text-words-1 a {
+                padding: 32px 0px;
+            }
+
+            .bc9-text-words-2 a {
+                padding: 32px 0px;
+            }
+
+            .bc9-img {
+                padding-left: 0px;
+            }
+
+            .bc9-img img {
+                margin-top: 20px;
+                height: 400px;
+            }
+
+            #body-content-10 {
+                flex-direction: column;
+                height: 700px;
+            }
+
+            .bc10-img {
+                width: 100%;
+                height: 319px;
+            }
+
+            .bc10-img-bg {
+                width: 100%;
+            }
+
+            .bc10-img-layout {
+                width: 93%;
+                height: 250px;
+                margin: 40px 0px;
+            }
+
+            .bc10-img-layout-pad {
+                padding: 30px;
+            }
+
+            .bc10-text {
+                width: 100%;
+            }
+
+            .bc10-text-pad {
+                padding: 32px 25px 0px 25px;
+                height: 0px;
+            }
+
+            .bc10-text-500 {
+                font-size: 56px;
+            }
+
+            .bc10-text-text {
+                margin-top: 5px;
+            }
+
+            .bc10-text-box2 {
+                margin-top: 28px;
+            }
+
+            .bc10-text-para {
+                letter-spacing: -0.3px;
+            }
+
+            .bc10-text button {
+                margin-top: 40px;
+            }
+
+            #body-content-11 {
+                flex-direction: column-reverse;
+                margin-top: 100px;
+                height: 750px;
+                justify-content: start;
+            }
+
+            .bc11-img {
+                width: 100%;
+                height: 400px;
+                margin-bottom: 80px;
+            }
+
+            .bc11-text {
+                width: 95%;
+                margin: auto;
+            }
+
+            .bc11-text-box-1 {
+                width: 100%;
+                justify-content: space-between;
+                margin: 15px 0px;
+            }
+
+            .bc11-text-box-2 {
+                width: 100%;
+                justify-content: space-between;
+                margin: 15px 0px;
+            }
+
+            #footer-content {
+                padding: 50px 25px;
+                width: 100%;
+                height: 400px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            #footer-content>div {
+                width: 100%;
+                margin-bottom: 0px;
+            }
         }
+
+
+
 
         @media screen and (max-width: 765px) {
             #body-content-2 {
                 width: 93%;
+                height: 1500px;
             }
 
             .bc2-text-b>p {
@@ -1125,12 +1268,115 @@
 
             .bc2-img {
                 flex-direction: column;
+                width: 100%;
             }
 
-            .bc2-img div {
+            .bc2-img-box {
                 width: 100%;
-                height: 516px;
                 margin-bottom: 50px;
+            }
+
+            .bc2-img-innerbox {
+                width: 95%;
+                padding-top: 20px;
+                height: 456px;
+            }
+
+            .bc2-img-innerbox-img1 {
+                width: 94%;
+            }
+
+            .bc2-img-innerbox-text {
+                margin-top: 100px;
+            }
+
+            .bc2-img-innerbox-text>p {
+                padding: 0px 20px;
+            }
+
+            #body-content-3 {
+                margin-top: 200px;
+                width: 65%;
+            }
+
+            .bc3-text1 br {
+                display: none;
+            }
+
+            .bc3-text1 {
+                line-height: 52px;
+            }
+
+            .bc3-text2 {
+                letter-spacing: -0.2px;
+            }
+
+            #body-content-4 {
+                width: 94%;
+            }
+
+            .bc4-text>p:nth-child(2) {
+                margin-top: 18px;
+            }
+
+            .bc4-img>div {
+                width: 100%;
+                margin: 0px 0px 40px 0px;
+            }
+
+            #body-content-5 {
+                margin-top: 150px;
+            }
+
+            #body-content-5>div {
+                font-size: 70px;
+            }
+
+            .bc6-box-layout {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .bc6-box-layout div {
+                width: 65.5%;
+                margin: 0px 0px 90px 0px;
+            }
+
+            #body-content-7 {
+                margin-top: 175px;
+            }
+
+            .bc7-text {
+                width: 100%;
+            }
+
+            .bc7-text-box {
+                padding: 0px 25px;
+            }
+
+            .bc8-text {
+                width: 95%;
+                padding: 80px 0px 0px 28px;
+            }
+
+            .bc9-text-words-1 a {
+                padding: 16px 0px;
+            }
+
+            .bc9-text-words-2 a {
+                padding: 16px 0px;
+            }
+
+            #footer-content {
+                height: 700px;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                margin-bottom: 100px;
+            }
+
+            #footer-content>div {
+                margin-top: 50px;
             }
         }
     </style>
@@ -1271,20 +1517,22 @@
         </div>
 
         <div id="body-content-6">
-            <div class="bc6-box">
-                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image10.jpg" alt="">
-                <p><u>MOBILE</u> <u>EARBUDS</u></p>
-                <p>Smartphones</p>
-            </div>
-            <div class="bc6-box">
-                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image8.jpg" alt="">
-                <p><u>MOBILE</u> <u>EARBUDS</u></p>
-                <p>Bubs</p>
-            </div>
-            <div class="bc6-box">
-                <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image2.jpg" alt="">
-                <p><u>MOBILE</u> <u>EARBUDS</u></p>
-                <p>Smart watch</p>
+            <div class="bc6-box-layout">
+                <div class="bc6-box">
+                    <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image10.jpg" alt="">
+                    <p><u>MOBILE</u> <u>EARBUDS</u></p>
+                    <p>Smartphones</p>
+                </div>
+                <div class="bc6-box">
+                    <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image8.jpg" alt="">
+                    <p><u>MOBILE</u> <u>EARBUDS</u></p>
+                    <p>Bubs</p>
+                </div>
+                <div class="bc6-box">
+                    <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/image2.jpg" alt="">
+                    <p><u>MOBILE</u> <u>EARBUDS</u></p>
+                    <p>Smart watch</p>
+                </div>
             </div>
         </div>
 
@@ -1375,7 +1623,8 @@
                         <p class="bc10-text-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
                             ea
                             eum eveniet ex explicabo, facilis, incidunt maxime quibusdam quidem quod saepe, tempora
-                            temporibus unde. Consectetur dolor id nesciunt placeat reprehenderit.</p>
+                            temporibus unde. Consectetur dolor id nesciunt placeat reprehenderit.
+                        </p>
                         <button>
                             Read more
                             <i style="color: black; background-color: white;margin-left: 10px;"
@@ -1456,7 +1705,7 @@
                     <img src="https://mobirise.com/extensions/boldm5/tech-blog/assets/images/logo.png" alt="">
                 </div>
                 <p class="fc1-text1">Ab debitis dolorem dolorum</p>
-                <p class="fc1-text2">© COPYRIGHT 2030 MOBIRISE - ALL RIGHTS RESERVED</p>
+                <p class="fc1-text2">© COPYRIGHT 2030 MOBIRISE - <br> ALL RIGHTS RESERVED</p>
             </div>
             <div class="footer-content-2">
                 <p class="fc2-text1">Weisgasse 403 87274 Herzogenrath</p>
