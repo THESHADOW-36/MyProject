@@ -39,6 +39,10 @@
         }
 
         #body {
+            height: 1025px;
+        }
+
+        #body1 {
             width: 100%;
             height: 288px;
             background-color: rgb(223, 223, 223);
@@ -114,30 +118,23 @@
             padding-right: 15px;
         }
 
-        .tagline2 {
-            background-color: white;
-            font-weight: bold;
-            text-align: center;
-            padding-right: 15px;
-        }
-
         .mid-content {
-            border: 1px solid red;
+            /* border: 1px solid red; */
             width: 72.5%;
             margin: auto;
             display: flex;
             justify-content: space-between;
         }
 
-        .photosec-content{
-            border: 1px solid blue;
+        .photosec-content {
+            /* border: 1px solid blue; */
             margin-top: 40px;
             display: flex;
             justify-content: space-between;
         }
 
         .icon-img {
-            border: 1px solid green;
+            /* border: 1px solid green; */
             width: 49%;
         }
 
@@ -156,27 +153,27 @@
             border-radius: 10px;
         }
 
-        .icon-img-box div:nth-child(1){
+        .icon-img-box div:nth-child(1) {
             color: rgb(59, 89, 152);
         }
 
-        .icon-img-box div:nth-child(2){
+        .icon-img-box div:nth-child(2) {
             color: rgb(0, 172, 238);
         }
 
-        .icon-img-box div:nth-child(3){
+        .icon-img-box div:nth-child(3) {
             color: rgb(219, 74, 57);
         }
 
-        .icon-img-box div:nth-child(4){
+        .icon-img-box div:nth-child(4) {
             color: rgb(206, 227, 248);
         }
 
-        .icon-img-box div:nth-child(5){
+        .icon-img-box div:nth-child(5) {
             color: rgb(235, 73, 36);
         }
 
-        .ad-img-box{
+        .ad-img-box {
             border: 1px solid rgb(214, 214, 214);
             display: flex;
             justify-content: center;
@@ -187,40 +184,158 @@
         }
 
         .html-design-text {
-            border: 1px solid green;
+            /* border: 1px solid green; */
             width: 40%;
+            color: rgb(135, 135, 135);
+            display: flex;
+        }
+
+        .icon{
+            margin-right: 10px;
+        }
+        
+        .icon img {
+            height: 100%;
         }
 
         .html-design-text1 {
-            display: flex;
             font-weight: bold;
         }
 
         .html-design-text2 {
-            display: flex;
-            margin-top: 28px;
+            margin-top: 29px;
+        }
+
+        .html-design-text>div>div {
+            margin-right: 10px;
         }
 
         .keywords {
             display: flex;
         }
 
-        .keywords p {
-            margin-left: 12px;
+        .keywords div {
+            margin-top: 35px;
         }
 
+        .keywords p {
+            margin-left: 15px;
+            margin-top: 35px;
+            color: rgb(0, 178, 216);
+        }
 
+        .keywords p:nth-child(2){
+            margin-left: 8px;
+        }
+
+        .button {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 35px;
+        }
+
+        .button button {
+            font-size: 38.4px;
+            padding: 12px 30px;
+            width: 49%;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .button button:nth-child(1) {
+            color: rgb(176, 106, 0);
+            background-color: rgb(245, 199, 3);
+        }
+
+        .button button:nth-child(2) {
+            color: white;
+            background-color: rgb(140, 189, 46);
+        }
 
         .mid-content-left {
             width: 66%;
         }
-        
+
+        .mid-content-last-text {
+            display: flex;
+            height: 25px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .mid-content-last-text p {
+            display: flex;
+            align-items: center;
+            color: rgb(0, 178, 216);
+        }
+
+        .mid-content-last-text div {
+            margin: 0px 7px;
+        }
+
         .mid-content-right {
+            /* border: 1px solid blue; */
             width: 31.2%;
         }
 
+        .tagline2 {
+            background-color: white;
+            font-weight: bold;
+            text-align: center;
+            padding-right: 15px;
+        }
+
+        .ad-1 {
+            margin-top: 40px;
+            margin-left: 1px;
+        }
+
+        .ad-2 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .ad-2 div {
+            /* border: 1px solid red; */
+            width: 125px;
+            height: 125px;
+        }
+
+        .ad-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: rgb(230, 230, 230);
+        }
+
+        .ad-text p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11.5px;
+            font-weight: 800;
+            color: rgb(124, 124, 124);
+        }
+
         #footer {
-            height: 1000px;
+            width: 100%;
+            height: 75px;
+            background-color: rgb(226, 226, 226);
+            display: flex;
+            align-items: center;
+        }
+
+        .f-text {
+            /* border: 1px solid red; */
+            width: 72.5%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .f-text p {
+            font-size: 12.8px;
+            color: rgb(121, 121, 121);
         }
     </style>
 </head>
@@ -240,121 +355,131 @@
         </div>
     </div>
     <div id="body">
-        <div class="title">
-            <div class="title-text">
-                <p>Free CSS</p>
-                <p>Free CSS Templates, CSS Layouts & More!</p>
-            </div>
-            <div class="title-img">
-                <img src="./../Image/elegantthemes-468x60.gif" alt="Advertisement">
-            </div>
-        </div>
-
-        <div class="menu">
-            <p>Free CSS Templates</p>
-            <p>Premium CSS Templates</p>
-            <p>Free CSS Layouts</p>
-            <p>Free CSS Menus</p>
-        </div>
-
-        <div class="ad-banner">
-            <img src="./../Image/elegantthemes-900x120.jpg" alt="Ad-img">
-        </div>
-
-        <!-- <div class="tagline">
-            <div>
-                <p>PHOTOSEC FREE CSS TEMPLATE</p>
-            </div>
-            <div>
-                <p>OUR SPONSORS</p>
-            </div>
-        </div> -->
-
-        <div class="mid-content">
-            <div class="mid-content-left">
-                <div class="tagline">
-                    <div class="tagline1">
-                        <p>PHOTOSEC FREE CSS TEMPLATE</p>
-                    </div>
+        <div id="body1">
+            <div class="title">
+                <div class="title-text">
+                    <p>Free CSS</p>
+                    <p>Free CSS Templates, CSS Layouts & More!</p>
                 </div>
-                <div class="photosec-content">
-                    <div class="icon-img">
-                        <div class="icon-img-box">
-                            <div><i class="fa-brands fa-facebook-f fa-xl"></i></div>
-                            <div><i class="fa-brands fa-twitter fa-xl"></i></div>
-                            <div><i class="fa-brands fa-google-plus-g fa-xl"></i></div>
-                            <div><i class="fa-brands fa-reddit-alien fa-2xl"></i></div>
-                            <div><i class="fa-brands fa-stumbleupon fa-2xl"></i></div>
-                        </div>
-                        <div class="ad-img-box">
-                            <img src="./../Image/photosec.jpg" alt="">
+                <div class="title-img">
+                    <img src="./../Image/elegantthemes-468x60.gif" alt="Advertisement">
+                </div>
+            </div>
+
+            <div class="menu">
+                <p>Free CSS Templates</p>
+                <p>Premium CSS Templates</p>
+                <p>Free CSS Layouts</p>
+                <p>Free CSS Menus</p>
+            </div>
+
+            <div class="ad-banner">
+                <img src="./../Image/elegantthemes-900x120.jpg" alt="Ad-img">
+            </div>
+
+            <div class="mid-content">
+                <div class="mid-content-left">
+                    <div class="tagline">
+                        <div class="tagline1">
+                            <p>PHOTOSEC FREE CSS TEMPLATE</p>
                         </div>
                     </div>
-                    <div class="html-design-text">
-                        <div class="html-design-text1">
-                            <div>O</div>
-                            <p>HTML Design</p>
+                    <div class="photosec-content">
+                        <div class="icon-img">
+                            <div class="icon-img-box">
+                                <div><i class="fa-brands fa-facebook-f fa-xl"></i></div>
+                                <div><i class="fa-brands fa-twitter fa-xl"></i></div>
+                                <div><i class="fa-brands fa-google-plus-g fa-xl"></i></div>
+                                <div><i class="fa-brands fa-reddit-alien fa-2xl"></i></div>
+                                <div><i class="fa-brands fa-stumbleupon fa-2xl"></i></div>
+                            </div>
+                            <div class="ad-img-box">
+                                <img src="./../Image/photosec.jpg" alt="">
+                            </div>
                         </div>
-                        <div class="html-design-text2">
-                            <div>O</div>
-                            <p>HTML 5</p>
-                        </div>
-                        <div class="html-design-text2">
-                            <div>O</div>
-                            <p>Responsive, Mixed Columns</p>
-                        </div>
-                        <div class="html-design-text2">
-                            <div>O</div>
-                            <p>Mixed</p>
-                        </div>
-                        <div class="html-design-text2">
-                            <i style="color: black;" class="fa-solid fa-square"></i>
-                        </div>
-                        <div class="html-design-text2">
-                            <div>O</div>
-                            <p>Creative Commons</p>
-                        </div>
-                        <div class="html-design-text2">
-                            <div>O</div>
-                            <p>17 July 2023</p>
+                        <div class="html-design-text">
+                            <div class="icon">
+                                <img src="./../Image/download2.png" alt="">
+                            </div>
+                            <div>
+                                <div class="html-design-text1">
+                                    <p>HTML Design</p>
+                                </div>
+                                <div class="html-design-text2">
+                                    <p>HTML 5</p>
+                                </div>
+                                <div class="html-design-text2">
+                                    <p>Responsive, Mixed Columns</p>
+                                </div>
+                                <div class="html-design-text2">
+                                    <p>Mixed</p>
+                                </div>
+                                <div class="html-design-text2">
+                                    <i style="color: brown;" class="fa-solid fa-square"></i>
+                                    <i style="color: gray" class="fa-solid fa-square"></i>
+                                    <i style="color: orangered;" class="fa-solid fa-square"></i>
+                                    <i style="color: red;" class="fa-solid fa-square"></i>
+                                </div>
+                                <div class="html-design-text2">
+                                    <p>Creative Commons</p>
+                                </div>
+                                <div class="html-design-text2">
+                                    <p>17 July 2023</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="keywords">
+                        <div>
+                            <img src="./../Image/download-tag.png" alt="">
+                        </div>
+                        <p>Art or Photography,</p>
+                        <p>Bootstrap,</p>
+                        <p>jQuery,</p>
+                        <p>Portfolio,</p>
+                        <p>Services,</p>
+                        <p>Responsive</p>
+                    </div>
+                    <div class="button">
+                        <button>DOWNLOAD</button>
+                        <button>LIVE DEMO</button>
+                    </div>
+                    <div class="mid-content-last-text">
+                        <p>« Hostit Template</p>
+                        <div class="vertical-line"></div>
+                        <p>Templates</p>
+                        <div class="vertical-line"></div>
+                        <p>-</p>
+                    </div>
                 </div>
-                <div class="keywords">
-                    <div><i class="fa-solid fa-tag"></i></div>
-                    <p>Art or Photography,</p>
-                    <p>Bootstrap,</p>
-                    <p>jQuery,</p>
-                    <p>Portfolio,</p>
-                    <p>Services,</p>
-                    <p>Responsive</p>
-                </div>
-                <div class="button">
-                    <button></button>
-                    <button></button>
-                </div>
-                <div class="mid-content-last-text">
-                    <p></p>
-                </div>
-            </div>
-            <div class="mid-content-right">
-                <div class="tagline">
-                    <div class="tagline2">
-                        <p>OUR SPONSORS</p>
+                <div class="mid-content-right">
+                    <div class="tagline">
+                        <div class="tagline2">
+                            <p>OUR SPONSORS</p>
+                        </div>
                     </div>
                     <div class="ad-1">
-                        <img src="" alt="">
+                        <img src="./../Image/elegantthemes-300x250.gif" alt="">
                     </div>
                     <div class="ad-2">
-                        <div></div>
-                        <div></div>
+                        <div>
+                            <img src="./../Image/1647862131-125x125-4.png" alt="">
+                        </div>
+                        <div class="ad-text">
+                            <p>Advertise <br> Here</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="footer"></div>
+    <div id="footer">
+        <div class="f-text">
+            <p>Copyright © 2007 - 2023 - Free CSS. All Rights Reserved</p>
+            <p>XML Sitemap | Privacy</p>
+        </div>
+    </div>
 </body>
 
 </html>
