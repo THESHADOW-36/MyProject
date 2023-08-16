@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-shirts for Men</title>
+    <script src="https://kit.fontawesome.com/e331b9ba14.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: montserrat, sans-serif;
+            font-weight: 400;
+        }
+
+        #screen {
+            width: 100%;
+        }
+
+        #nav-bar {
+            /* border: 1px solid red; */
+            height: 83.5px;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+
+        .nav-1 {
+            /* border: 1px solid red; */
+            width: 85%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-1-l {
+            /* border: 1px solid blue; */
+            width: 315px;
+            height: 14px;
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0px;
+        }
+
+        .nav-1-l>p {
+            font-size: 11px;
+            color: rgba(38, 38, 38, 0.8);
+        }
+
+        .nav-1-r {
+            /* border: 1px solid green; */
+            width: 140px;
+            display: flex;
+            justify-content: space-between;
+            padding: 6px;
+        }
+
+        .nav-1-r>p {
+            font-size: 11px;
+            color: rgba(38, 38, 38, 0.8);
+        }
+
+        .nav-2 {
+            /* border: 1px solid green; */
+            width: 85%;
+            height: 50px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-2-l {
+            width: 465px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-2-r {
+            /* border: 1px solid red; */
+            width: 465px;
+            display: flex;
+            justify-content: space-around;
+            color: rgba(90, 90, 90, 0.9);
+        }
+
+        .search-bar {
+            background-color: rgb(234, 234, 234);
+            width: 260px;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 6px;
+        }
+
+        .padd {
+            padding: 16px 0px;
+        }
+
+        #path {
+            /* border: 1px solid black; */
+            width: 84%;
+            margin: auto;
+            margin-top: 12px;
+        }
+
+        .path-name {
+            display: flex;
+        }
+
+        .path-name p {
+            font-size: 12px;
+            color: rgb(80, 80, 80);
+        }
+
+        .slash {
+            margin: 0px 15px;
+        }
+
+        #title {
+            /* border: 1px solid red; */
+            width: 86%;
+            margin: auto;
+            display: flex;
+            margin-top: 60px;
+        }
+
+        #title>p:nth-child(1) {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        #title>p:nth-child(2) {
+            font-size: 24px;
+            margin-left: 10px;
+            color: rgb(148, 148, 148);
+        }
+
+        .underline {
+            border-top: 2px solid rgb(251, 209, 57);
+            width: 115px;
+            margin-left: 98px;
+            margin-top: 6px;
+        }
+
+        #body-content {
+            border: 1px solid black;
+            width: 84%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .filters {
+            border: 1px solid red;
+            width: 23%;
+        }
+
+        #body-content {
+            margin-top: 48px;
+        }
+
+        .filter-text {
+            font-size: 12px;
+            font-weight: 700;
+            color: rgba(45, 45, 45, 0.6);
+        }
+
+        .category {
+            margin-top: 10px;
+        }
+
+        .category-box {
+            border-bottom: 1px solid rgb(165, 165, 165);
+            display: flex;
+            justify-content: space-between;
+            padding: 13px 0px 15px 0px;
+        }
+
+        .category-box p {
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .layout {
+            border: 1px solid blue;
+            width: 73.5%;
+        }
+
+        .layout-img {
+            border: 1px solid rgb(185, 185, 185);
+            border-radius: 3px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="nav-bar">
+            <div style="background-color: rgb(238, 238, 238);">
+                <div class="nav-1">
+                    <div class="nav-1-l">
+                        <p>Offers</p>
+                        <p>Fanbook</p>
+                        <div
+                            style="font-size: 11px; color: rgba(38, 38, 38, 0.8); display: flex;justify-content:space-between;">
+                            <i style="margin-right: 5px;" class="fa-solid fa-mobile"></i>
+                            <p>Download App</p>
+                        </div>
+                        <p>TriBe Membership</p>
+                    </div>
+                    <div class="nav-1-r">
+                        <p>Contact Us</p>
+                        <p>Track Order</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background-color: rgb(255, 255, 255);">
+                <div class="nav-2">
+                    <div class="nav-2-l">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <img style="width: 150px;padding: 12px 0px;"
+                                    src="https://images.bewakoof.com/web/ic-desktop-bwkf-trademark-logo.svg" alt="">
+                            </div>
+                        </div>
+                        <div
+                            style="width: 260px; display: flex; justify-content: space-between;padding: 17px 0px; font-size: 13px; letter-spacing: 1px;">
+                            <p>MEN</p>
+                            <p>WOMEN</p>
+                            <p>MOBILE COVERS</p>
+                        </div>
+                    </div>
+                    <div class="nav-2-r">
+                        <div class="search-bar" style="padding: 10px 0px;margin: 4px 0px;">
+                            <div>
+                                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Search by product, category or collection"
+                                    style="width: 210px;border: none;background-color: rgb(234, 234, 234);font-size: 11px;">
+                            </div>
+                        </div>
+                        <div style="border-left: 1px solid rgb(133, 133, 133);margin: 13px 0px"></div>
+                        <div class="padd">Login</div>
+                        <div class="padd">
+                            <i class="fa-regular fa-heart fa-lg"></i>
+                        </div>
+                        <div class="padd">
+                            <i class="fa-solid fa-lock fa-lg"></i>
+                        </div>
+                        <div style="padding: 10px 0px;">
+                            <img style="width: 29px;"
+                                src="https://images.bewakoof.com/web/india-flag-round-1639566913.png" alt="indian-flag">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div id="path">
+        <div class="path-name">
+            <p>Home</p>
+            <p class="slash">/</p>
+            <p>Men Clothing</p>
+            <p class="slash">/</p>
+            <p>Oversized T-shirts</p>
+            <p class="slash">/</p>
+            <p>Oversized T-Shirts for Men</p>
+        </div>
+    </div>
+    <div id="title">
+        <p>Oversized T-Shirts for Men</p>
+        <p>(1246)</p>
+    </div>
+    <div class="underline"></div>
+    <div id="body-content">
+        <div class="filters">
+            <p class="filter-text">FILTERS</p>
+            <div class="category">
+                <div class="category-box">
+                    <p>Gender</p>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="category-box">
+                    <p>Sizes</p>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="category-box">
+                    <p>Brand</p>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="category-box">
+                    <p>Color</p>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="category-box">
+                    <p>Design</p>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="category-box">
+                    <p>Fit</p>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="category-box">
+                    <p>Sleeve</p>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="category-box">
+                    <p>Neck</p>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="category-box">
+                    <p>Type</p>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="category-box">
+                    <p>Ratings</p>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="category-box">
+                    <p>Discount</p>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                <div class="category-box">
+                    <p>Sort By</p>
+                    <div><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="layout">
+            <div class="layout-img">
+                <img class="img-pic" style="width: 220px; height: 297px;"
+                    src="https://images.bewakoof.com/t320/batman-outline-logo-full-sleeve-t-shirt-bml-black-283891-1679048952-1.jpg"
+                    alt="">
+                <div class="layout-text-box" style="padding: 8px 5px 12px 5px;">
+                    <div class="layout-text-name" style="width: 100%; display: flex; justify-content: space-between;">
+                        <div>
+                            <h3 style="font-size:12px; color: rgb(79, 83, 98);margin: 3px 0px;">Bewakoof®
+                            </h3>
+                            <p style="width:168px;font-size: 11px;margin: 3px 0px;color: rgb(115, 115, 115);">
+                                Men's
+                                Black Batman Outline Lo...</p>
+                        </div>
+                        <div>
+                            <i style="color: rgb(115, 115, 115);margin: 15px 5px 0px 0px;"
+                                class="fa-regular fa-heart fa-lg"></i>
+                        </div>
+                    </div>
+                    <div class="layout-text-rate" style="display: flex;">
+                        <p style="font-size: 16px;margin: 3px 0px;font-weight: bold;">₹599</p>
+                        <p
+                            style="text-decoration-line: line-through;font-size: 12px;margin: 6px 5px;color: rgb(148, 148, 148);">
+                            ₹1299</p>
+                        <p style="font-size: 12px;margin: 6px 0px;color: rgb(0, 184, 82);font-weight: bold;">
+                            53%
+                            OFF
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
