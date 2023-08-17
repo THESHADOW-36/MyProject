@@ -26,11 +26,32 @@
 
         #nav-bar {
             /* border: 1px solid red; */
-            height: 83.5px;
             width: 100%;
             position: sticky;
             top: 0;
             left: 0;
+            z-index: 1;
+        }
+
+        #nav-bar div p {
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration-line: none;
+            color: black;
+        }
+
+        a:hover {
+            font-weight: bold;
+        }
+
+        a:active {
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+        #nav-bar div p {
+            letter-spacing: -0.2px;
         }
 
         .nav-1 {
@@ -51,8 +72,9 @@
         }
 
         .nav-1-l>p {
-            font-size: 11px;
+            font-size: 10px;
             color: rgba(38, 38, 38, 0.8);
+            font-weight: 500;
         }
 
         .nav-1-r {
@@ -64,8 +86,9 @@
         }
 
         .nav-1-r>p {
-            font-size: 11px;
+            font-size: 10px;
             color: rgba(38, 38, 38, 0.8);
+            font-weight: 500;
         }
 
         .nav-2 {
@@ -150,7 +173,7 @@
         }
 
         #body-content {
-            border: 1px solid black;
+            /* border: 1px solid black; */
             width: 84%;
             margin: auto;
             display: flex;
@@ -158,8 +181,11 @@
         }
 
         .filters {
-            border: 1px solid red;
+            /* border: 1px solid red; */
             width: 23%;
+            height: 600px;
+            position: sticky;
+            top:0px;
         }
 
         #body-content {
@@ -187,17 +213,110 @@
             font-size: 14px;
             font-weight: 500;
         }
-        
-        .layout {
-            border: 1px solid blue;
-            width: 73.5%;
+
+        .grid-layout {
+            /* border: 1px solid blue; */
+            width: 73%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            /* display: grid;
+            grid-template-columns: 1fr 1fr 1fr; */
         }
 
         .layout-img {
-            border: 1px solid rgb(185, 185, 185);
-            border-radius: 3px;
+            /* border: 1px solid rgb(185, 185, 185); */
+            width: 32%;
+            height: 503px;
         }
 
+        .dress-type {
+            display: inline-block;
+            background-color: rgba(81, 81, 81, 0.8);
+            padding: 4px 8px 4px 8px;
+            position: absolute;
+            z-index: 0;
+        }
+
+        .dress-type p {
+            color: white;
+            font-size: 8px;
+            font-weight: 600;
+        }
+
+        .img-pic {
+            width: 100%;
+            height: 359px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .layout-text-name {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .layout-text h3 {
+            /* border: 1px solid red; */
+            font-size: 12px;
+            font-weight: 600;
+            color: rgb(79, 83, 98);
+            margin: 3px 0px;
+        }
+
+        .layout-text p {
+            /* border: 1px solid green; */
+            width: 100%;
+            font-size: 10px;
+            font-weight: 700;
+            color: rgb(115, 115, 115);
+            letter-spacing: -0.2px;
+            margin: 3px 0px;
+            color: rgb(115, 115, 115);
+        }
+
+        .heart-icon i {
+            color: rgb(115, 115, 115);
+            margin: 15px 5px 0px 0px;
+        }
+
+        .text-rate-1 {
+            display: flex;
+        }
+
+        .text-rate-1 p:nth-child(1) {
+            font-size: 16px;
+            margin: 3px 0px;
+            font-weight: 600;
+        }
+
+        .text-rate-1 p:nth-child(2) {
+            text-decoration-line: line-through;
+            font-size: 12px;
+            margin: 6px 5px;
+            color: rgb(148, 148, 148);
+        }
+
+        .text-rate-2 p {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: -0.2px;
+            margin-left: 12px;
+        }
+
+        .quality-text {
+            border: 1px solid rgb(115, 115, 115);
+            display: inline-block;
+            padding: 3px 8px 3px 8px;
+            margin-top: 12px;
+        }
+
+        .quality-text p {
+            color: rgb(115, 115, 115);
+            font-size: 10px;
+            font-weight: 600;
+        }
     </style>
 </head>
 
@@ -210,9 +329,9 @@
                         <p>Offers</p>
                         <p>Fanbook</p>
                         <div
-                            style="font-size: 11px; color: rgba(38, 38, 38, 0.8); display: flex;justify-content:space-between;">
+                            style="font-size: 10px; color: rgba(38, 38, 38, 0.8); display: flex;justify-content:space-between; font-weight: 500;">
                             <i style="margin-right: 5px;" class="fa-solid fa-mobile"></i>
-                            <p>Download App</p>
+                            <p style="font-weight: 500;">Download App</p>
                         </div>
                         <p>TriBe Membership</p>
                     </div>
@@ -234,9 +353,9 @@
                         </div>
                         <div
                             style="width: 260px; display: flex; justify-content: space-between;padding: 17px 0px; font-size: 13px; letter-spacing: 1px;">
-                            <p>MEN</p>
-                            <p>WOMEN</p>
-                            <p>MOBILE COVERS</p>
+                            <a href="./Bewakoof-Mens-Tshirts.html" target="_blank"><p>MEN</p></a>
+                            <a href=""><p>WOMEN</p></a>
+                            <a href=""><p>MOBILE COVERS</p></a>
                         </div>
                     </div>
                     <div class="nav-2-r">
@@ -246,7 +365,7 @@
                             </div>
                             <div>
                                 <input type="text" placeholder="Search by product, category or collection"
-                                    style="width: 210px;border: none;background-color: rgb(234, 234, 234);font-size: 11px;">
+                                    style="width: 210px;border: none;background-color: rgb(234, 234, 234);font-size: 10px;">
                             </div>
                         </div>
                         <div style="border-left: 1px solid rgb(133, 133, 133);margin: 13px 0px"></div>
@@ -266,111 +385,1213 @@
             </div>
             <hr>
         </div>
-    </div>
-    <div id="path">
-        <div class="path-name">
-            <p>Home</p>
-            <p class="slash">/</p>
-            <p>Men Clothing</p>
-            <p class="slash">/</p>
-            <p>Oversized T-shirts</p>
-            <p class="slash">/</p>
+        <div id="path">
+            <div class="path-name">
+                <p>Home</p>
+                <p class="slash">/</p>
+                <p>Men Clothing</p>
+                <p class="slash">/</p>
+                <p>Oversized T-shirts</p>
+                <p class="slash">/</p>
+                <p>Oversized T-Shirts for Men</p>
+            </div>
+        </div>
+        <div id="title">
             <p>Oversized T-Shirts for Men</p>
+            <p>(1246)</p>
         </div>
-    </div>
-    <div id="title">
-        <p>Oversized T-Shirts for Men</p>
-        <p>(1246)</p>
-    </div>
-    <div class="underline"></div>
-    <div id="body-content">
-        <div class="filters">
-            <p class="filter-text">FILTERS</p>
-            <div class="category">
-                <div class="category-box">
-                    <p>Gender</p>
-                    <div><i class="fa-solid fa-chevron-down"></i></div>
-                </div>
-                <div class="category-box">
-                    <p>Sizes</p>
-                    <div><i class="fa-solid fa-chevron-down"></i></div>
-                </div>
-                <div class="category-box">
-                    <p>Brand</p>
-                    <div><i class="fa-solid fa-chevron-down"></i></div>
-                </div>
-                <div class="category-box">
-                    <p>Color</p>
-                    <div><i class="fa-solid fa-chevron-down"></i></div>
-                </div>
-                <div class="category-box">
-                    <p>Design</p>
-                    <div><i class="fa-solid fa-chevron-down"></i></div>
-                </div>
-                <div class="category-box">
-                    <p>Fit</p>
-                    <div><i class="fa-solid fa-chevron-down"></i></div>
-                </div>
-                <div class="category-box">
-                    <p>Sleeve</p>
-                    <div><i class="fa-solid fa-chevron-down"></i></div>
-                </div>
-                <div class="category-box">
-                    <p>Neck</p>
-                    <div><i class="fa-solid fa-chevron-down"></i></div>
-                </div>
-                <div class="category-box">
-                    <p>Type</p>
-                    <div><i class="fa-solid fa-chevron-down"></i></div>
-                </div>
-                <div class="category-box">
-                    <p>Ratings</p>
-                    <div><i class="fa-solid fa-chevron-down"></i></div>
-                </div>
-                <div class="category-box">
-                    <p>Discount</p>
-                    <div><i class="fa-solid fa-chevron-down"></i></div>
-                </div>
-                <div class="category-box">
-                    <p>Sort By</p>
-                    <div><i class="fa-solid fa-chevron-down"></i></div>
+        <div class="underline"></div>
+        <div id="body-content">
+            <div class="filters">
+                <p class="filter-text">FILTERS</p>
+                <div class="category">
+                    <div class="category-box">
+                        <p>Gender</p>
+                        <div><i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="category-box">
+                        <p>Sizes</p>
+                        <div><i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="category-box">
+                        <p>Brand</p>
+                        <div><i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="category-box">
+                        <p>Color</p>
+                        <div><i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="category-box">
+                        <p>Design</p>
+                        <div><i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="category-box">
+                        <p>Fit</p>
+                        <div><i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="category-box">
+                        <p>Sleeve</p>
+                        <div><i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="category-box">
+                        <p>Neck</p>
+                        <div><i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="category-box">
+                        <p>Type</p>
+                        <div><i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="category-box">
+                        <p>Ratings</p>
+                        <div><i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="category-box">
+                        <p>Discount</p>
+                        <div><i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
+                    <div class="category-box">
+                        <p>Sort By</p>
+                        <div><i class="fa-solid fa-chevron-down"></i></div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="layout">
-            <div class="layout-img">
-                <img class="img-pic" style="width: 220px; height: 297px;"
-                    src="https://images.bewakoof.com/t320/batman-outline-logo-full-sleeve-t-shirt-bml-black-283891-1679048952-1.jpg"
-                    alt="">
-                <div class="layout-text-box" style="padding: 8px 5px 12px 5px;">
-                    <div class="layout-text-name" style="width: 100%; display: flex; justify-content: space-between;">
-                        <div>
-                            <h3 style="font-size:12px; color: rgb(79, 83, 98);margin: 3px 0px;">Bewakoof®
-                            </h3>
-                            <p style="width:168px;font-size: 11px;margin: 3px 0px;color: rgb(115, 115, 115);">
-                                Men's
-                                Black Batman Outline Lo...</p>
+            <div class="grid-layout">
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-green-don-t-care-graphic-print-oversized-t-shirt-609642-1691753748-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Garfield X Bewakoof Merchandise</h3>
+                                <p>Men's Green Don't Care Graphic Printed Over...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
                         </div>
-                        <div>
-                            <i style="color: rgb(115, 115, 115);margin: 15px 5px 0px 0px;"
-                                class="fa-regular fa-heart fa-lg"></i>
+                        <div class="text-rate-1">
+                            <p>₹649</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹599 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
                         </div>
                     </div>
-                    <div class="layout-text-rate" style="display: flex;">
-                        <p style="font-size: 16px;margin: 3px 0px;font-weight: bold;">₹599</p>
-                        <p
-                            style="text-decoration-line: line-through;font-size: 12px;margin: 6px 5px;color: rgb(148, 148, 148);">
-                            ₹1299</p>
-                        <p style="font-size: 12px;margin: 6px 0px;color: rgb(0, 184, 82);font-weight: bold;">
-                            53%
-                            OFF
-                        </p>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-white-limited-edition-graphic-print-oversized-t-shirt-609647-1691754337-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's White & Purple Limited Edition Ombre...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹699</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹649 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-black-the-legendary-graphic-print-oversized-t-shirt-609641-1691753874-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>bewakoof x official naruto mercha...</h3>
+                                <p>Men's Black The Legendary Graphic Printed O...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹649</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹599 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-red-limited-edition-graphic-print-oversized-t-shirt-609634-1691754663-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's Red Limited Edition Graphic Printed Ov...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹599</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹549 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-blue-limited-edition-graphic-print-oversized-t-shirt-609629-1691753545-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's Green Don't Care Graphic Printed Over...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹649</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹599 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-oversized-printed-t-shirt-579930-1689603821-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's Black Nost Graphic Printed Oversized T...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹599</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹549 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-purple-beast-within-2-0-oversized-t-shirt-581488-1677228989-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's Purple Beast Within Graphic Printed Ov...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹699</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹639 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-blue-instinct-graphic-printed-oversized-t-shirt-592473-1684486066-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's Blue Instinct Graphic Printed Oversized...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹499</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹459 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-white-vengeance-typography-oversized-t-shirt-519142-1680514083-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>official dc comics merchandise by...</h3>
+                                <p>Men's White Vengeance Typography Oversize...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹699</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹639 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-white-karma-circles-typography-oversized-t-shirt-489752-1681218931-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Garfield X Bewakoof Merchandise</h3>
+                                <p>Men's Green Don't Care Graphic Printed Over...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹699</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹639 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-red-moon-rider-graphic-printed-oversized-t-shirt-502017-1680169902-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's Red Moon Rider Graphic Printed Oversi...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹699</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹639 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-black-batman-riddle-bml-oversized-t-shirt-479765-1667519419-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>official dc comics merchandise by...</h3>
+                                <p>Men's Black Batman Riddle (Bml) Oversized T...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹699</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹639 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-blue-limited-edition-graphic-print-oversized-t-shirt-609629-1691753545-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's Green Don't Care Graphic Printed Over...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹649</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹599 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-oversized-printed-t-shirt-579930-1689603821-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's Black Nost Graphic Printed Oversized T...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹599</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹549 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-purple-beast-within-2-0-oversized-t-shirt-581488-1677228989-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's Purple Beast Within Graphic Printed Ov...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹699</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹639 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-blue-instinct-graphic-printed-oversized-t-shirt-592473-1684486066-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's Blue Instinct Graphic Printed Oversized...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹499</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹459 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-white-vengeance-typography-oversized-t-shirt-519142-1680514083-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>official dc comics merchandise by...</h3>
+                                <p>Men's White Vengeance Typography Oversize...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹699</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹639 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-white-karma-circles-typography-oversized-t-shirt-489752-1681218931-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Garfield X Bewakoof Merchandise</h3>
+                                <p>Men's Green Don't Care Graphic Printed Over...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹699</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹639 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-green-don-t-care-graphic-print-oversized-t-shirt-609642-1691753748-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Garfield X Bewakoof Merchandise</h3>
+                                <p>Men's Green Don't Care Graphic Printed Over...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹649</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹599 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-white-limited-edition-graphic-print-oversized-t-shirt-609647-1691754337-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's White & Purple Limited Edition Ombre...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹699</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹649 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-black-the-legendary-graphic-print-oversized-t-shirt-609641-1691753874-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>bewakoof x official naruto mercha...</h3>
+                                <p>Men's Black The Legendary Graphic Printed O...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹649</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹599 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-red-limited-edition-graphic-print-oversized-t-shirt-609634-1691754663-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's Red Limited Edition Graphic Printed Ov...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹599</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹549 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-blue-limited-edition-graphic-print-oversized-t-shirt-609629-1691753545-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's Green Don't Care Graphic Printed Over...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹649</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹599 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-oversized-printed-t-shirt-579930-1689603821-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's Black Nost Graphic Printed Oversized T...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹599</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹549 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-purple-beast-within-2-0-oversized-t-shirt-581488-1677228989-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's Purple Beast Within Graphic Printed Ov...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹699</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹639 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-blue-instinct-graphic-printed-oversized-t-shirt-592473-1684486066-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's Blue Instinct Graphic Printed Oversized...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹499</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹459 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-white-vengeance-typography-oversized-t-shirt-519142-1680514083-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>official dc comics merchandise by...</h3>
+                                <p>Men's White Vengeance Typography Oversize...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹699</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹639 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-white-karma-circles-typography-oversized-t-shirt-489752-1681218931-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Garfield X Bewakoof Merchandise</h3>
+                                <p>Men's Green Don't Care Graphic Printed Over...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹699</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹639 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-red-moon-rider-graphic-printed-oversized-t-shirt-502017-1680169902-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's Red Moon Rider Graphic Printed Oversi...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹699</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹639 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-black-batman-riddle-bml-oversized-t-shirt-479765-1667519419-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>official dc comics merchandise by...</h3>
+                                <p>Men's Black Batman Riddle (Bml) Oversized T...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹699</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹639 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-blue-limited-edition-graphic-print-oversized-t-shirt-609629-1691753545-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's Green Don't Care Graphic Printed Over...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹649</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹599 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-oversized-printed-t-shirt-579930-1689603821-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's Black Nost Graphic Printed Oversized T...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹599</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹549 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-purple-beast-within-2-0-oversized-t-shirt-581488-1677228989-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's Purple Beast Within Graphic Printed Ov...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹699</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹639 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-blue-instinct-graphic-printed-oversized-t-shirt-592473-1684486066-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's Blue Instinct Graphic Printed Oversized...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹499</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹459 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-white-vengeance-typography-oversized-t-shirt-519142-1680514083-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>official dc comics merchandise by...</h3>
+                                <p>Men's White Vengeance Typography Oversize...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹699</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹639 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-white-karma-circles-typography-oversized-t-shirt-489752-1681218931-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Garfield X Bewakoof Merchandise</h3>
+                                <p>Men's Green Don't Care Graphic Printed Over...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹699</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹639 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-green-don-t-care-graphic-print-oversized-t-shirt-609642-1691753748-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Garfield X Bewakoof Merchandise</h3>
+                                <p>Men's Green Don't Care Graphic Printed Over...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹649</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹599 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-s-white-limited-edition-graphic-print-oversized-t-shirt-609647-1691754337-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's White & Purple Limited Edition Ombre...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹699</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹649 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="layout-img">
+                    <div class="dress-type">
+                        <p>OVERSIZED FIT</p>
+                    </div>
+                    <img class="img-pic"
+                        src="https://images.bewakoof.com/t640/men-oversized-printed-t-shirt-579930-1689603821-1.jpg"
+                        alt="">
+                    <div class="layout-text-box">
+                        <div class="layout-text-name">
+                            <div class="layout-text">
+                                <h3>Bewakoof®</h3>
+                                <p>Men's Black Nost Graphic Printed Oversized T...</p>
+                            </div>
+                            <div class="heart-icon">
+                                <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="text-rate-1">
+                            <p>₹599</p>
+                            <p>₹1299</p>
+                        </div>
+                        <div class="text-rate-2">
+                            <p>₹549 For TriBe Members</p>
+                        </div>
+                        <div class="quality-text">
+                            <p>100% COTTON</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
