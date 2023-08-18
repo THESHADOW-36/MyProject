@@ -1,16 +1,16 @@
+// Find out all odd numbers from given array.
 var arrey = [5,4,31,63,54,51,68,77,82];
 var AdditionOfOddNumber = 0;
 var AdditionOfEvenNumber = 0;
-
+console.log("Odd Numbers")
 for (var i = 0; i < arrey.length; i++){
     if (arrey[i] % 2 != 0){
-        console.log (i,"-",arrey[i], "(Odd Numbers)")
-    } else {
-        console.log (i,"-",arrey[i], "(Even Numbers)")
-    }
+        console.log (arrey[i])
+    } 
 }
 console.log("----------------------------------------------------")
 
+// Find out addition of all odd numbers and even numbers from given array.
 for (var i = 0; i < arrey.length; i++){
     if (arrey[i] % 2 != 0){
         console.log(AdditionOfOddNumber, "+", arrey[i], "(Odd)")
@@ -23,9 +23,9 @@ for (var i = 0; i < arrey.length; i++){
     }
 }
 
+// Find out addition of two numbers from the given array which is equal to the target.
 console.log (AdditionOfOddNumber, "Addition of Odd Number")
 console.log (AdditionOfEvenNumber, "Addition of Even Number")
-
 console.log("----------------------------------------------------")
 
 var arrey1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 4, 5];
