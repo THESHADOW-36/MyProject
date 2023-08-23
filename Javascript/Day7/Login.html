@@ -39,7 +39,9 @@
                     console.log(array[i].email, array[i].password)
                 }
                 if (data == false) {
-                    alert('Please register a new account')
+                    alert('Incorrect Username/Password or Please register a new account')
+                    document.getElementById("name").value = "";
+                    document.getElementById("password").value = "";
                 }
             } else {
                 alert('All fields are mandatory to fill')

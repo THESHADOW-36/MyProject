@@ -38,8 +38,7 @@
             console.log(userName, userEmail, userPassword, userConfirmPassword)
             if (userName && userEmail && userPassword && userConfirmPassword) {
                 if (userPassword === userConfirmPassword) {
-                    var userObject = { email: userEmail, name: userName, password: userPassword }
-
+                    var userObject = { name: userName, email: userEmail,password: userPassword }
                     var array = JSON.parse(localStorage.getItem("users")) || [];
                     console.log(array, "~Check here")
                     array.push(userObject)
