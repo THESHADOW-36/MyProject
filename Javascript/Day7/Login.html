@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            padding: 30px 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="login(event)">
+        <label>Useremail</label><br />
+        <input type="text" id="name"><br />
+        <label>Password</label><br />
+        <input type="password" id="password"><br />
+        <br />
+        <input type="submit" value="login">
+    </form>
+
+    <script>
+        function login(event) {
+            event.preventDefault()
+            var userEmail = document.getElementById('name').value;
+            var userPassword = document.getElementById('password').value;
+            console.log(userEmail, userPassword)
+            if (userEmail && userPassword) {
+                var data = false;
+                var array = JSON.parse(localStorage.getItem('users'));
+                for (var i = 0; i < array.length; i++) {
+                    if (array[i].email == userEmail && array[i].password == userPassword) {
+                        alert('Hey there! Welcome to our page')
+                        data = true;
+                    }
+                    console.log(array[i].email, array[i].password)
+                }
+                if (data == false) {
+                    alert('Please register a new account')
+                }
+            } else {
+                alert('All fields are mandatory to fill')
+            }
+        }
+    </script>
+</body>
+
+</html>
