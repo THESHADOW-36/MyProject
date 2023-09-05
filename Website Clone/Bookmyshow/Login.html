@@ -15,10 +15,12 @@
 			margin: 0;
 			font-family: Roboto, Sans-serif;
 		}
-		body{
-			overflow:hidden;
+
+		body {
+			overflow: hidden;
 		}
-		#bg {
+
+		#login-signup {
 			position: fixed;
 			background-color: rgba(0, 0, 0, 0.596);
 			z-index: 10;
@@ -32,7 +34,7 @@
 		#log-layout {
 			background-color: white;
 			width: 425px;
-			height: 555px;
+			height: 570px;
 			border-radius: 6px;
 			font-family: Roboto, sans-serif;
 		}
@@ -41,12 +43,12 @@
 			padding: 20px 35px;
 		}
 
-		#log-pad2{
+		#log-pad2 {
 			padding: 0px 12px;
 		}
 
 		.top-header {
-			border: 1px solid red;
+			/* border: 1px solid red; */
 			display: flex;
 			justify-content: right;
 			color: rgb(51, 51, 51);
@@ -59,58 +61,168 @@
 			margin-top: 5px;
 		}
 
-		.login-bar {
-			border: 1px solid red;
-			margin-top: 16px;
+		.top-header i {
+			cursor: pointer;
 		}
 
-		.bar-layout{
-			border: 1px solid black;
+		.login-bar {
+			/* border: 1px solid red; */
+			margin-top: 35px;
+		}
+
+		.bar-layout {
+			border: 1px solid rgb(153, 153, 153);
 			border-radius: 4px;
 			display: flex;
-			padding: 12px 16px;
-			margin-top: 24px	;
+			align-items: center;
+			padding: 10px 18px;
+			margin-top: 24px;
+			cursor: pointer;
+			transition: 0.6s;
 		}
+
+		.bar-layout:hover {
+			border-color: rgb(240, 240, 240);
+			background-color: rgb(243, 243, 243);
+		}
+
 		.bar-layout p {
 			font-size: 14px;
 			font-weight: 500;
 			color: rgb(89, 89, 89);
-			margin-left: 60px;
+			margin-left: 62px;
 		}
-		.bar-layout:last-child p:last-child{
-			margin-left: 63px;
+
+		.bar-layout:nth-child(2) p:nth-child(2) {
+			margin-left: 66px;
+		}
+
+		.bar-layout:last-child p:last-child {
+			margin-left: 70px;
+		}
+
+		.or {
+			text-align: center;
+			font-size: 14px;
+			margin: 20px 0px;
+			color: rgb(89, 89, 89);
+		}
+
+		.sign-in-box {
+			/* border: 1px solid blue; */
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-size: 14px;
+			font-weight: 500;
+			word-spacing: -2px;
+			margin-top: 12px;
+		}
+
+		.sign-in :nth-child(1) {
+			margin-top: 0;
+		}
+
+		.sign-in-box input {
+			width: 190px;
+			height: 25px;
+			font-size: 14px;
+			padding: 0px 5px;
+			outline: none;
+			border: none;
+			border-bottom: 1px solid rgb(131, 131, 131);
+			transition: 0.2s;
+		}
+
+		.sign-in-box input:focus-visible {
+			border-bottom: 1px solid rgb(236, 51, 51);
+		}
+
+		.sign-in-but {
+			/* border: 1px solid red; */
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.sign-in-but button {
+			font-size: 14px;
+			font-weight: 500;
+			padding: 5px 25px;
+			margin-top: 25px;
+			border: none;
+			border-radius: 6px;
+			background-color: rgb(238, 47, 47);
+			color: white;
+			cursor: pointer;
+		}
+
+		.sign-in-but button:hover{
+			background-color: rgb(253, 13, 13);
+		}
+
+		.legal-notices {
+			text-align: center;
+			color: rgb(80, 80, 80);
+			font-size: 12px;
+			margin-top: 25px;
+		}
+
+		.legal-notices u{
+			cursor: pointer;
 		}
 	</style>
 </head>
 
 <body>
 	<div id="screen">
-		<div id="bg">
+		<div id="login-signup">
 			<div id="log-layout">
 				<div id="log-pad">
 					<div class="top-header">
 						<p>Get Started</p>
-						<div><i class="fa-solid fa-xmark fa-xl"></i></div>
+						<div><a href="Bookmyshow(Home).html"><i class="fa-solid fa-xmark fa-xl"></i></a></div>
 					</div>
 					<div id="log-pad2">
 						<div class="login-bar">
 							<div class="bar-layout">
-								<div><i class="fa-brands fa-google fa-lg"></i></div>
+								<div><img src="https://in.bmscdn.com/webin/common/icons/googlelogo.svg" alt=""></div>
 								<p>Continue with Google</p>
 							</div>
 							<div class="bar-layout">
-								<div><i class="fa-regular fa-envelope fa-lg"></i></div>
+								<div><img src="https://in.bmscdn.com/webin/common/icons/email.svg" alt=""></i></div>
 								<p>Continue with Email</p>
 							</div>
 							<div class="bar-layout">
-								<div><i class="fa-brands fa-apple fa-xl"></i></div>
+								<div><i class="fa-brands fa-apple fa-lg"></i></div>
 								<p>Continue with Apple</p>
 							</div>
 						</div>
-						<div>OR</div>
+						<div class="or">OR</div>
 						<div class="sign-in">
-							login
+							<div class="sign-in-box">
+								<label>Username</label>
+								<input type="text" placeholder="Username">
+							</div>
+							<div class="sign-in-box">
+								<label>Email</label>
+								<input type="email" placeholder="Enter your email or Create new">
+							</div>
+							<div class="sign-in-box">
+								<label>Password</label>
+								<input type="password" placeholder="Password">
+							</div>
+							<div class="sign-in-box">
+								<label for="">Confirm Password</label>
+								<input type="password" placeholder="ConfirmPassword">
+							</div>
 						</div>
+						<div class="sign-in-but">
+							<button>Sign In</button>
+							<button>Sign Up</button>
+						</div>
+					</div>
+					<div class="legal-notices">
+						<p>I agree to the <u>Terms & Conditions</u> & <u>Privacy Policy</u></p>
 					</div>
 				</div>
 			</div>
