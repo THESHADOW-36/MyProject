@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bewakoof Login</title>
+   <script src="https://kit.fontawesome.com/e331b9ba14.js" crossorigin="anonymous"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,900&display=swap"
+      rel="stylesheet">
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         font-family: montserrat, sans-serif;
+      }
+
+
+      #screen {
+         width: 100%;
+      }
+
+      #nav-bar div p {
+         cursor: pointer;
+      }
+
+      a {
+         text-decoration-line: none;
+         color: black;
+      }
+
+      a:hover {
+         font-weight: bold;
+      }
+
+      a:active {
+         color: rgba(0, 0, 0, 0.7);
+      }
+
+      #nav-bar {
+         /* border: 1px solid red; */
+         height: 83.5px;
+         width: 100%;
+         position: sticky;
+         top: 0;
+         left: 0;
+      }
+
+      #nav-bar div p {
+         letter-spacing: -0.2px;
+      }
+
+      .nav-1 {
+         /* border: 1px solid red; */
+         width: 85%;
+         margin: auto;
+         display: flex;
+         justify-content: space-between;
+      }
+
+      .nav-1-l {
+         /* border: 1px solid blue; */
+         width: 315px;
+         height: 14px;
+         display: flex;
+         justify-content: space-between;
+         padding: 6px 0px;
+      }
+
+      .nav-1-l>p {
+         font-size: 11px;
+         color: rgba(38, 38, 38, 0.8);
+         font-size: 10px;
+         font-weight: 500;
+      }
+
+      .nav-1-r {
+         /* border: 1px solid green; */
+         width: 140px;
+         display: flex;
+         justify-content: space-between;
+         padding: 6px;
+         font-size: 10px;
+         font-weight: 500;
+      }
+
+      .nav-1-r>p {
+         font-size: 11px;
+         color: rgba(38, 38, 38, 0.8);
+         font-size: 10px;
+         font-weight: 500;
+      }
+
+
+      .nav-2 {
+         /* border: 1px solid green; */
+         width: 85%;
+         height: 50px;
+         margin: auto;
+         display: flex;
+         justify-content: space-between;
+      }
+
+      .nav-2-l {
+         width: 465px;
+         display: flex;
+         justify-content: space-between;
+      }
+
+      .nav-2-r {
+         /* border: 1px solid red; */
+         width: 465px;
+         display: flex;
+         justify-content: space-around;
+         color: rgba(90, 90, 90, 0.9);
+      }
+
+      .search-bar {
+         background-color: rgb(234, 234, 234);
+         width: 260px;
+         display: flex;
+         justify-content: space-around;
+         border-radius: 6px;
+      }
+
+      .padd {
+         padding: 16px 0px;
+      }
+
+      #body-content{
+         /* border: 1px solid black; */
+         width: 100%;
+         display: flex;
+         justify-content:space-between;
+      }
+      #welcome{
+         /* border: 1px solid red; */
+         width: 50%;
+         height: 559px;
+         background-image:linear-gradient(rgb(255, 255, 255),rgba(255, 234, 143, 0.442));
+      }
+      .welcome-text{
+         /* border: 1px solid green; */
+         display: flex;
+         justify-content: center;
+         padding-top: 32px;
+      }
+      .welcome-text p{
+         /* border: 1px solid red; */
+         font-size: 30px;
+         font-weight: 700;
+         letter-spacing: 0.5px;
+         display: flex;
+      }
+      .trademark{
+         font-size: 12px;
+         margin: 3px 1px 0px 2px;
+      }
+      .welcome-img {
+         width: 561px;
+         margin: auto;
+         padding-right: 34px;
+         margin-top: 100px;
+      }
+      .welcome-img img{
+         /* border: 1px solid red; */
+         width: 100%;
+      }
+
+      #login{
+         /* border: 1px solid blue; */
+         width: 50%;
+      }
+
+      .login-text{
+         /* border: 1px solid red; */
+         font-size: 24px;
+         font-weight: 700;
+         display: flex;
+         justify-content: center;
+         margin-top: 10px;
+      }
+
+      .latest-trending{
+         /* border: 1px solid red; */
+         color:rgb(160, 160, 160);
+         font-size: 18px;
+         font-weight: 500;
+         display: flex;
+         justify-content: center;
+         margin-top: 18px;
+      }
+      .trademark2{
+         font-size: 7.2px;
+         margin: 1px 1px 0px 2px;
+      }
+
+      .login-box{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin-top: 70px;
+      }
+
+      .loginWithNum{
+         border: 1px solid rgb(151, 151, 151);
+         border-radius: 5px;
+         width: 390px;
+         height: 60px;
+         display: flex;
+         align-items: center;
+      }
+      .loginWithNum-box{
+         background-color: rgb(245, 245, 245);
+         width: 73px;
+         height: 34px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-left: 10px;
+      }
+      .loginWithNum-box p {
+         margin: 0px 4px;
+      }
+      .loginWithNum-box div:last-child{
+         margin-bottom: 6px;
+         color: rgb(122, 122, 122);
+      }
+      .ind-flag img{
+         width: 18px;
+      }
+      .EMN{
+         font-size: 16px;
+         font-weight: 700;
+         border: none;
+         outline: none;
+         margin-left: 14px;
+      }
+
+      .login-box button {
+         border: none;
+         border-radius: 5px;
+         width: 390px;
+         height: 60px;
+         font-size: 20px;
+         font-weight: 500;
+         background-color: rgb(66, 162, 162);
+         color: white;
+         margin-top: 10px;
+         margin-bottom: 30px;
+      }
+
+      #OR{
+         width: 431px;
+         margin: auto;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .line-OR{
+         border-top: 1px solid rgb(206, 206, 206);
+         width: 200px;
+         margin: 2px 5px 0px 5px;
+      }
+
+      #login-with{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin-top: 40px;
+      }
+
+      .login-with-email{
+         border: 1px solid rgb(174, 174, 174);
+         border-radius: 5px;
+         width: 352px;
+         height: 37px;
+         font-weight: 700;
+         color: rgb(92, 92, 92);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+      .email-logo,.google-logo,.facebook-logo{
+         padding-top: 4px;
+         margin-right: 8px;
+      }
+      .email-logo img,.google-logo img,.facebook-logo img{
+         width: 18px;
+      }
+
+      .login-with-GF{
+         display: flex;
+      }
+
+      .login-with-google,.login-with-facebook{
+         border: 1px solid rgb(174, 174, 174);
+         border-radius: 5px;
+         width: 171px;
+         height: 37px;
+         font-weight: 700;
+         color: rgb(92, 92, 92);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: 20px 4px 40px 4px;
+      }
+
+      #policy{
+         font-size: 12px;
+         color: rgb(160, 160, 160);
+         display: flex;
+         justify-content: center;
+         margin-right: 70px;
+      }
+      .trademark3{
+         font-size: 4.8px;
+         margin: 1px 1px 0px 2px;
+      }
+      .TC,.PP{
+         color: rgb(66, 162, 162);
+         font-weight: 700;
+         cursor: pointer;
+         line-height: 26px;
+      }
+   </style>
+</head>
+
+<body>
+   <div id="screen">
+      <div id="nav-bar">
+         <div style="background-color: rgb(238, 238, 238);">
+            <div class="nav-1">
+               <div class="nav-1-l">
+                  <p>Offers</p>
+                  <p>Fanbook</p>
+                  <div
+                     style="font-size: 10px; color: rgba(38, 38, 38, 0.8); display: flex;justify-content:space-between;font-weight: 500;">
+                     <i style="margin-right: 5px;" class="fa-solid fa-mobile"></i>
+                     <p>Download App</p>
+                  </div>
+                  <p>TriBe Membership</p>
+               </div>
+               <div class="nav-1-r">
+                  <p>Contact Us</p>
+                  <p>Track Order</p>
+               </div>
+            </div>
+         </div>
+
+         <div style="background-color: rgb(255, 255, 255);">
+            <div class="nav-2">
+               <div class="nav-2-l">
+                  <div style="display: flex; justify-content: space-between;">
+                     <div>
+                        <img style="width: 150px;padding: 12px 0px;"
+                           src="https://images.bewakoof.com/web/ic-desktop-bwkf-trademark-logo.svg" alt="">
+                     </div>
+                  </div>
+                  <div
+                     style="width: 260px; display: flex; justify-content: space-between;padding: 17px 0px; font-size: 13px; letter-spacing: 1px;">
+                     <a href="./Bewakoof-Mens-Tshirts.html" target="_blank">
+                        <p>MEN</p>
+                     </a>
+                     <a href="">
+                        <p>WOMEN</p>
+                     </a>
+                     <a href="">
+                        <p>MOBILE COVERS</p>
+                     </a>
+                  </div>
+               </div>
+               <div class="nav-2-r">
+                  <div class="search-bar" style="padding: 10px 0px;margin: 4px 0px;">
+                     <div>
+                        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                     </div>
+                     <div>
+                        <input type="text" placeholder="Search by product, category or collection"
+                           style="width: 210px;border: none;background-color: rgb(234, 234, 234);font-size: 10px;">
+                     </div>
+                  </div>
+                  <div style="border-left: 1px solid rgb(133, 133, 133);margin: 13px 0px"></div>
+                  <div class="padd">Login</div>
+                  <div class="padd">
+                     <i class="fa-regular fa-heart fa-lg"></i>
+                  </div>
+                  <div class="padd">
+                     <i class="fa-solid fa-lock fa-lg"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+      </div>
+
+      <div id="body-content">
+         <div id="welcome">
+            <div class="welcome-text">
+               <p>Welcome to the world of Bewakoof<span class="trademark">®</span>!</p>
+            </div>
+            <div class="welcome-img">
+               <img src="https://images.bewakoof.com/web/group-19-1617704502.png" alt="">
+            </div>
+         </div>
+         <div id="login">
+            <div id="login-acess">
+               <p class="login-text">Log in / Sign up</p>
+               <p class="latest-trending">for Latest trends, exciting offers and everything Bewakoof<span class="trademark2">®</span>!</p>
+               <div class="login-box">
+                  <div class="loginWithNum">
+                     <div class="loginWithNum-box">
+                        <div class="ind-flag"><img src="https://images.bewakoof.com/web/india-flag-round-1639566913.png" alt=""></div>
+                        <p>+91</p>
+                        <div><i class="fa-solid fa-sort-down fa-sm"></i></div>
+                     </div>
+                     <input type="text" placeholder="Enter Moblie Number" class="EMN">
+                  </div>
+                  <button>CONTINUE</button>
+               </div>
+            </div>
+            <div id="OR">
+               <div class="line-OR"></div>
+               <p>OR</p>
+               <div class="line-OR"></div>
+            </div>
+            <div id="login-with">
+               <div class="login-with-email">
+                  <div class="email-logo">
+                     <img src="https://images.bewakoof.com/web/carbon-email-1620039620.png" alt="">
+                  </div>
+                  <p>CONTINUE WITH EMAIL</p>
+               </div>
+               <div class="login-with-GF">
+                  <div class="login-with-google">
+                     <div class="google-logo">
+                        <img src="https://images.bewakoof.com/web/group-3-2x-1558356035.png" alt="">
+                     </div>
+                     <p>GOOGLE</p>
+                  </div>
+                  <div class="login-with-facebook">
+                     <div class="facebook-logo">
+                        <img src="https://images.bewakoof.com/web/bi-facebook2x-1620886445.png" alt="">
+                     </div>
+                     <p>FACEBOOK</p>
+                  </div>
+               </div>
+            </div>
+            <div id="policy">
+               <p>By creating an account or logging in, you agree with <br> Bewakoof<sup class="trademark3">®</sup>'s <span class="TC">Terms and Conditions</span> and <span class="PP">Privacy Policy</span>.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>
