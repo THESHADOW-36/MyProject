@@ -16,7 +16,8 @@
          padding: 0;
          font-family: Roboto, sans-serif;
       }
-      body{
+
+      body {
          background-color: rgb(242, 242, 242);
       }
 
@@ -40,12 +41,13 @@
          font-size: 36px;
       }
 
-      #movie-type{
+      #movie-type {
          display: flex;
          align-items: center;
          margin-top: 8px;
       }
-      #movie-type div:nth-child(1){
+
+      #movie-type div:nth-child(1) {
          border: 2px solid rgb(173, 173, 173);
          height: 18px;
          border-radius: 20px;
@@ -56,10 +58,12 @@
          align-items: center;
          padding: 1px 3px 0px 1px;
          color: rgb(212, 212, 212);
-         margin-right:4px;
+         margin-right: 4px;
          margin-left: 2px;
       }
-      #movie-type div:nth-child(2),#movie-type div:nth-child(3){
+
+      #movie-type div:nth-child(2),
+      #movie-type div:nth-child(3) {
          border: 1px solid rgba(255, 255, 255, 0.5);
          border-radius: 10px;
          height: 15px;
@@ -72,7 +76,7 @@
          margin-left: 10px;
       }
 
-      #filters{
+      #filters {
          /* border: 1px solid red; */
          background-color: white;
          width: 100%;
@@ -81,31 +85,34 @@
          justify-content: space-between;
       }
 
-      .date{
+      .date {
          /* border: 1px solid green; */
          width: 24.6%;
          display: flex;
          align-items: center;
       }
 
-      .date div:nth-child(2){
+      .date div:nth-child(2) {
          margin-left: 12px;
-         background-color:rgb(248, 68, 100);
-         color: white;
-      }
-      .date div:nth-child(1){
-         margin-bottom: 6px;
-         margin-left: 5px;
-      }
-      .date div:last-child{
-         margin-left: 100px;
-         margin-bottom: 6px;
-      }
-      .date div:nth-child(2) p:nth-child(2){
+         background-color: rgb(248, 68, 100);
          color: white;
       }
 
-      .date-text{
+      .date div:nth-child(1) {
+         margin-bottom: 6px;
+         margin-left: 5px;
+      }
+
+      .date div:last-child {
+         margin-left: 100px;
+         margin-bottom: 6px;
+      }
+
+      .date div:nth-child(2) p:nth-child(2) {
+         color: white;
+      }
+
+      .date-text {
          /* background-color: rgb(248, 68, 100); */
          /* border: 1px solid rgb(248, 68, 100); */
          border-radius: 8px;
@@ -119,28 +126,31 @@
          flex-direction: column;
          align-items: center;
          justify-content: center;
-         cursor:pointer;
+         cursor: pointer;
       }
-      
-      .date-text:hover{
+
+      .date-text:hover {
          color: rgb(248, 68, 100);
       }
 
-      .date-text p:nth-child(2){
+      .date-text p:nth-child(2) {
          font-size: 16px;
          /* color: rgb(51, 51, 51); */
       }
-      .date-text p:nth-child(2):hover{
+
+      .date-text p:nth-child(2):hover {
          color: rgb(248, 68, 100);
       }
-      .filters{
+
+      .filters {
          /* border: 1px solid blue; */
          width: 50%;
          display: flex;
       }
-      .filter-lang{
+
+      .filter-lang {
          border-left: 1px solid rgb(231, 231, 231);
-         border-bottom: 3px solid rgb(248, 68, 100) ;
+         border-bottom: 3px solid rgb(248, 68, 100);
          width: 111px;
          display: flex;
          align-items: center;
@@ -149,14 +159,15 @@
          font-weight: 500;
          color: rgb(51, 51, 51);
       }
-      .filter-lang div{
+
+      .filter-lang div {
          color: rgb(153, 153, 153);
          margin-left: 40px;
          margin-right: -10px;
          margin-top: 6px;
       }
 
-      .filter-box{
+      .filter-box {
          border-left: 1px solid rgb(231, 231, 231);
          width: 132px;
          display: flex;
@@ -166,13 +177,15 @@
          font-weight: 400;
          color: rgb(51, 51, 51);
       }
-      .filter-box div{
+
+      .filter-box div {
          color: rgb(153, 153, 153);
          margin-left: 30px;
          margin-right: -12px;
          margin-top: 6px;
       }
-      .filter-icon{
+
+      .filter-icon {
          border-left: 1px solid rgb(231, 231, 231);
          width: 55px;
          display: flex;
@@ -180,6 +193,228 @@
          justify-content: center;
       }
 
+      #body-content {
+         /* border: 1px solid black; */
+         background-color: white;
+         width: 97.8%;
+         margin: auto;
+         margin-top: 12px;
+         margin-bottom: 12px;
+         padding-bottom: 85px;
+      }
+
+      .index {
+         /* border-bottom: 1px solid rgb(231, 231, 231); */
+         width: 100%;
+         height: 30px;
+         display: flex;
+         justify-content: right;
+         align-items: center;
+         font-size: 10px;
+         color: rgb(113, 113, 113);
+      }
+
+      .index p {
+         margin-right: 8px;
+         margin-left: 8px;
+      }
+
+      .index p:last-child {
+         margin-right: 12px;
+      }
+
+      .lan {
+         border: 1px solid rgb(62, 182, 82);
+         color: rgb(74, 189, 93);
+         font-weight: 800;
+         font-size: 8px;
+         padding: 1px 1px 0px 1px;
+      }
+
+      .booking-info-layout {
+         border-top: 1px solid rgb(231, 231, 231);
+         display: flex;
+      }
+
+      .booking-info {
+         /* border: 1px solid green; */
+         width: 25.5%;
+         padding: 13px 20px;
+      }
+
+      .booking-info-loc {
+         /* border: 1px solid violet; */
+         display: grid;
+         grid-template-columns: 20px 1fr 72px;
+      }
+
+      .heart {
+         display: flex;
+         padding-left: 3px;
+      }
+
+      .heart-r i {
+         color: rgb(153, 153, 153);
+         cursor: pointer;
+         transition: 0.3s;
+      }
+
+      .heart-s i {
+         margin-left: -16px;
+         color: transparent;
+         cursor: pointer;
+      }
+
+      .heart-s i:hover {
+         color: rgb(248, 68, 100);
+      }
+
+      .booking-info-loc>p {
+         color: rgb(26, 26, 26);
+         font-size: 12px;
+         font-weight: 700;
+         margin-left: 15px;
+      }
+
+      .info-logo {
+         /* border: 1px solid black; */
+         display: flex;
+         font-size: 10px;
+         font-weight: 500;
+         color: rgb(90, 90, 90);
+      }
+
+      .info-logo div img {
+         width: 16px;
+         margin-right: 3px;
+      }
+
+      .info-logo p {
+         margin-top: 1px;
+      }
+
+      .booking-info-timing {
+         /* border: 1px solid blue; */
+         width: 67%;
+         padding: 18px 0px 13px 0px;
+      }
+
+      .info-timing-lay {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+         align-items: center;
+         justify-items: center;
+         cursor: pointer;
+      }
+
+      .timing-box {
+         border: 1px solid rgb(153, 153, 153);
+         border-radius: 4px;
+         width: 110px;
+         height: 40px;
+         font-size: 12px;
+         color: rgb(74, 189, 93);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         margin: 8px 0px;
+      }
+
+      .timing-box p:nth-child(2) {
+         font-size: 10px;
+      }
+
+      .cancellation-status {
+         display: flex;
+         font-size: 12px;
+         margin-top: 8px;
+         color: rgb(108, 108, 108);
+      }
+
+      .cancellation-status div i {
+         font-size: 7px;
+         margin-left: 8px;
+         margin-right: 10px;
+      }
+
+      .features-avail {
+         /* border: 1px solid green; */
+         display: flex;
+         justify-content: space-between;
+         margin-top: 8px;
+      }
+
+      .m-ticket {
+         color: rgb(53, 172, 127);
+         display: flex;
+         align-items: center;
+         padding-left: 15px;
+      }
+
+      .m-ticket div i {
+         font-size: 20px;
+      }
+
+      .m-ticket p {
+         font-size: 12px;
+         margin-left: 6px;
+      }
+
+      .snacks {
+         color: rgb(255, 164, 38);
+         font-size: 12px;
+         display: flex;
+         align-items: center;
+         padding-left: 15px;
+         padding-right: 16px;
+      }
+
+      .snacks div img {
+         width: 22px;
+         margin-right: 6px;
+      }
+
+      .warning div {
+         margin-left: 18px;
+      }
+
+      .warning div img {
+         width: 15px;
+         opacity: 0.7;
+      }
+
+      .offer-tag {
+         display: flex;
+         font-size: 12px;
+         color: rgb(125, 125, 125);
+         align-items: center;
+      }
+
+      .offer-tag div img {
+         width: 16px;
+         margin-right: 8px;
+         margin-top: 2px;
+      }
+
+      .offer-line {
+         border-left: 1px solid black;
+         height: 10px;
+         margin: 0px 5px;
+      }
+
+      #path {
+         background-color: white;
+         width: 100%;
+         height: 44px;
+         display: flex;
+         align-items: center;
+         font-size: 12px;
+      }
+      .path-text{
+         width: 95.5%;
+         margin: auto;
+      }
    </style>
 </head>
 
@@ -192,7 +427,7 @@
                <img style="height: 100%;width: 100%;" src="./Image/bookmyshow-logo-vectorr.png" alt="Bookmyshow-logo">
             </div>
             <div
-               style=" display: flex; background-color: white;height: 40px;margin-top:15px;width: 530px; border-radius: 4px ;">
+               style=" display: flex; background-color: white;height: 38px;margin-top:15px;width: 550px; border-radius: 4px ;">
                <div style="margin-right: 10px; margin-left: 10px; margin-top: 10px;">
                   <i class="fa-solid fa-magnifying-glass"></i>
                </div>
@@ -221,8 +456,8 @@
             </div>
          </div>
       </div>
-      <div style="height: 35px;background-color: #222539;">
-         <div style="display: flex; justify-content: space-between;width:91%;height: 35px;margin: auto;">
+      <div style="height: 44px;background-color: #222539;">
+         <div style="display: flex; justify-content: space-between;width:91%;height: 35px;margin: auto;padding-top: 3px;">
             <div style="color: white; display: flex; justify-content: space-between;width: 35%;margin-top: 10px;">
                <h3 style="font-size: 14px; font-weight: normal;">Movies</h3>
                <div style="margin-top: -7px;">
@@ -303,7 +538,511 @@
             </div>
          </div>
       </div>
+
+      <div id="body-content">
+         <div class="index">
+            <div><i style="color: rgb(74, 189, 93);" class="fa-solid fa-circle fa-xs"></i></div>
+            <p>AVAILABAL</p>
+            <div><i style="color: rgb(255, 102, 0);" class="fa-solid fa-circle fa-xs"></i></div>
+            <p>FAST FILLING</p>
+            <div class="lan">LAN</div>
+            <p>SUBTILTES LANGUAGE</p>
+         </div>
+
+         <div class="booking-info-layout">
+            <div class="booking-info">
+               <div class="booking-info-loc">
+                  <div class="heart">
+                     <div class="heart-r"><i class="fa-regular fa-heart"></i></div>
+                     <div class="heart-s"><i class="fa-solid fa-heart"></i></div>
+                  </div>
+                  <p>Bharat Cineplex: Kurla (W)</p>
+                  <div class="info-logo">
+                     <div><img src="https://in.bmscdn.com/moviemode/cinemaphotoshowcase/info.png" alt=""></div>
+                     <p>INFO</p>
+                  </div>
+               </div>
+            </div>
+            <div class="booking-info-timing">
+               <div class="info-timing-lay">
+                  <div class="timing-box">09:00 AM</div>
+                  <div class="timing-box">10:00 AM</div>
+                  <div class="timing-box">12:00 PM</div>
+                  <div class="timing-box">01:00 PM</div>
+                  <div class="timing-box">03:15 PM</div>
+                  <div class="timing-box">04:15 PM</div>
+                  <div class="timing-box">06:30 PM</div>
+                  <div class="timing-box">07:30 PM</div>
+                  <div class="timing-box">09:45 PM</div>
+                  <div class="timing-box">10:30 PM</div>
+               </div>
+               <div class="cancellation-status">
+                  <div><i style="color: rgb(255, 198, 16);" class="fa-solid fa-circle fa-2xs"></i></div>
+                  <p>Non-cancellable</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="booking-info-layout">
+            <div class="booking-info">
+               <div class="booking-info-loc">
+                  <div class="heart">
+                     <div class="heart-r"><i class="fa-regular fa-heart"></i></div>
+                     <div class="heart-s"><i class="fa-solid fa-heart"></i></div>
+                  </div>
+                  <p>Maratha Mandir: Mumbai Central</p>
+                  <div class="info-logo">
+                     <div><img src="https://in.bmscdn.com/moviemode/cinemaphotoshowcase/info.png" alt=""></div>
+                     <div><i class="fi fi-ts-hamburger-soda"></i></div>
+                     <p>INFO</p>
+                  </div>
+                  <div></div>
+                  <div class="features-avail">
+                     <div class="m-ticket">
+                        <div><i class="fa-solid fa-mobile-screen"></i></div>
+                        <p> M-Ticket</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="booking-info-timing">
+               <div class="info-timing-lay">
+                  <div class="timing-box">03:15 PM</div>
+                  <div class="timing-box">06:15 PM</div>
+                  <div class="timing-box">09:30 PM</div>
+               </div>
+               <div class="cancellation-status">
+                  <div><i style="color: rgb(255, 198, 16);" class="fa-solid fa-circle fa-2xs"></i></div>
+                  <p>Cancellation Available</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="booking-info-layout">
+            <div class="booking-info">
+               <div class="booking-info-loc">
+                  <div class="heart">
+                     <div class="heart-r"><i class="fa-regular fa-heart"></i></div>
+                     <div class="heart-s"><i class="fa-solid fa-heart"></i></div>
+                  </div>
+                  <p>NY Cinemas: Mulund</p>
+                  <div class="info-logo">
+                     <div><img src="https://in.bmscdn.com/moviemode/cinemaphotoshowcase/info.png" alt=""></div>
+                     <div><i class="fi fi-ts-hamburger-soda"></i></div>
+                     <p>INFO</p>
+                  </div>
+                  <div></div>
+                  <div class="features-avail">
+                     <!-- <div class="m-ticket">
+                        <div><i class="fa-solid fa-mobile-screen"></i></div>
+                        <p> M-Ticket</p>
+                     </div> -->
+                     <div class="snacks">
+                        <div><img src="./Image/burger.png" alt=""></div>
+                        <p>Food & Beverage</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="booking-info-timing">
+               <div class="info-timing-lay">
+                  <div class="timing-box">09:00 AM</div>
+                  <div class="timing-box">12:30 PM</div>
+                  <div class="timing-box">04:00 PM</div>
+                  <div class="timing-box">07:30 PM</div>
+                  <div class="timing-box">11:00 PM</div>
+               </div>
+               <div class="cancellation-status">
+                  <div><i style="color: rgb(255, 198, 16);" class="fa-solid fa-circle fa-2xs"></i></div>
+                  <p>Cancellation Available</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="booking-info-layout">
+            <div class="booking-info">
+               <div class="booking-info-loc">
+                  <div class="heart">
+                     <div class="heart-r"><i class="fa-regular fa-heart"></i></div>
+                     <div class="heart-s"><i class="fa-solid fa-heart"></i></div>
+                  </div>
+                  <p>Paradise Cinema: Mahim</p>
+                  <div class="info-logo">
+                     <div><img src="https://in.bmscdn.com/moviemode/cinemaphotoshowcase/info.png" alt=""></div>
+                     <div><i class="fi fi-ts-hamburger-soda"></i></div>
+                     <p>INFO</p>
+                  </div>
+                  <div></div>
+                  <div class="features-avail">
+                     <div class="m-ticket">
+                        <div><i class="fa-solid fa-mobile-screen"></i></div>
+                        <p> M-Ticket</p>
+                     </div>
+                     <div class="snacks">
+                        <div><img src="./Image/burger.png" alt=""></div>
+                        <p>Food & Beverage</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="booking-info-timing">
+               <div class="info-timing-lay">
+                  <div class="timing-box">12:00 PM</div>
+                  <div class="timing-box">03:15 PM</div>
+                  <div class="timing-box">06:30 PM</div>
+                  <div class="timing-box">09:45 PM</div>
+               </div>
+               <div class="cancellation-status">
+                  <div><i style="color: rgb(255, 198, 16);" class="fa-solid fa-circle fa-2xs"></i></div>
+                  <p>Cancellation Available</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="booking-info-layout">
+            <div class="booking-info">
+               <div class="booking-info-loc">
+                  <div class="heart">
+                     <div class="heart-r"><i class="fa-regular fa-heart"></i></div>
+                     <div class="heart-s"><i class="fa-solid fa-heart"></i></div>
+                  </div>
+                  <p>Premier Gold: Dongri</p>
+                  <div class="info-logo">
+                     <div><img src="https://in.bmscdn.com/moviemode/cinemaphotoshowcase/info.png" alt=""></div>
+                     <div><i class="fi fi-ts-hamburger-soda"></i></div>
+                     <p>INFO</p>
+                  </div>
+                  <div></div>
+                  <!-- <div class="features-avail">
+                     <div class="m-ticket">
+                        <div><i class="fa-solid fa-mobile-screen"></i></div>
+                        <p> M-Ticket</p>
+                     </div>
+                     <div class="snacks">
+                        <div><img src="./Image/burger.png" alt=""></div>
+                        <p>Food & Beverage</p>
+                     </div>
+                  </div> -->
+               </div>
+            </div>
+
+            <div class="booking-info-timing">
+               <div class="info-timing-lay">
+                  <div class="timing-box">12:15 PM</div>
+                  <div class="timing-box">03:30 PM</div>
+                  <div class="timing-box">06:45 PM</div>
+                  <div class="timing-box">10:00 PM</div>
+               </div>
+               <div class="cancellation-status">
+                  <div><i style="color: rgb(255, 198, 16);" class="fa-solid fa-circle fa-2xs"></i></div>
+                  <p>Cancellation Available</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="booking-info-layout">
+            <div class="booking-info">
+               <div class="booking-info-loc">
+                  <div class="heart">
+                     <div class="heart-r"><i class="fa-regular fa-heart"></i></div>
+                     <div class="heart-s"><i class="fa-solid fa-heart"></i></div>
+                  </div>
+                  <p>Cinepolis: VIP Viviana Mall, Thane</p>
+                  <div class="info-logo">
+                     <div><img src="https://in.bmscdn.com/moviemode/cinemaphotoshowcase/info.png" alt=""></div>
+                     <div><i class="fi fi-ts-hamburger-soda"></i></div>
+                     <p>INFO</p>
+                  </div>
+                  <div></div>
+                  <div class="features-avail">
+                     <div class="m-ticket">
+                        <div><i class="fa-solid fa-mobile-screen"></i></div>
+                        <p> M-Ticket</p>
+                     </div>
+                     <div class="snacks">
+                        <div><img src="./Image/burger.png" alt=""></div>
+                        <p>Food & Beverage</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="booking-info-timing">
+               <div class="info-timing-lay">
+                  <div class="timing-box">
+                     <p>09:20 AM</p>
+                     <p>DOLBY 7.1</p>
+                  </div>
+                  <div class="timing-box">
+                     <p>12:50 PM</p>
+                     <p>DOLBY 7.1</p>
+                  </div>
+                  <div class="timing-box">
+                     <p>04:25 PM</p>
+                     <p>DOLBY 7.1</p>
+                  </div>
+                  <div class="timing-box">
+                     <p>08:00 PM</p>
+                     <p>DOLBY 7.1</p>
+                  </div>
+                  <div class="timing-box">
+                     <p>11:35 PM</p>
+                     <p>DOLBY 7.1</p>
+                  </div>
+               </div>
+               <div class="cancellation-status">
+                  <div><i style="color: rgb(255, 198, 16);" class="fa-solid fa-circle fa-2xs"></i></div>
+                  <p>Non-cancellable</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="booking-info-layout">
+            <div class="booking-info">
+               <div class="booking-info-loc">
+                  <div class="heart">
+                     <div class="heart-r"><i class="fa-regular fa-heart"></i></div>
+                     <div class="heart-s"><i class="fa-solid fa-heart"></i></div>
+                  </div>
+                  <p>Vaishali Cinema: Badlapur</p>
+                  <div class="info-logo">
+                     <div><img src="https://in.bmscdn.com/moviemode/cinemaphotoshowcase/info.png" alt=""></div>
+                     <div><i class="fi fi-ts-hamburger-soda"></i></div>
+                     <p>INFO</p>
+                  </div>
+                  <div></div>
+                  <div class="warning">
+                     <div>
+                        <img src="https://icones.pro/wp-content/uploads/2021/05/icone-d-information-rouge.png" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="booking-info-timing">
+               <div class="info-timing-lay">
+                  <div class="timing-box">
+                     <p>12:00 PM</p>
+                  </div>
+                  <div class="timing-box">
+                     <p>03:00 PM</p>
+                  </div>
+                  <div class="timing-box">
+                     <p>06:00 PM</p>
+                  </div>
+                  <div class="timing-box">
+                     <p>09:15 PM</p>
+                  </div>
+               </div>
+               <div class="cancellation-status">
+                  <div><i style="color: rgb(255, 198, 16);" class="fa-solid fa-circle fa-2xs"></i></div>
+                  <p>Cancellation Available</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="booking-info-layout">
+            <div class="booking-info">
+               <div class="booking-info-loc">
+                  <div class="heart">
+                     <div class="heart-r"><i class="fa-regular fa-heart"></i></div>
+                     <div class="heart-s"><i class="fa-solid fa-heart"></i></div>
+                  </div>
+                  <p>G7 Multiplex: Bandra (W)</p>
+                  <div class="info-logo">
+                     <div><img src="https://in.bmscdn.com/moviemode/cinemaphotoshowcase/info.png" alt=""></div>
+                     <div><i class="fi fi-ts-hamburger-soda"></i></div>
+                     <p>INFO</p>
+                  </div>
+                  <div></div>
+                  <div class="features-avail">
+                     <div class="m-ticket">
+                        <div><i class="fa-solid fa-mobile-screen"></i></div>
+                        <p> M-Ticket</p>
+                     </div>
+                     <!-- <div class="snacks">
+                        <div><img src="./Image/burger.png" alt=""></div>
+                        <p>Food & Beverage</p>
+                     </div> -->
+                  </div>
+               </div>
+            </div>
+
+            <div class="booking-info-timing">
+               <div class="info-timing-lay">
+                  <div class="timing-box">
+                     <p>11:30 AM</p>
+                     <p>GALAXY</p>
+                  </div>
+                  <div class="timing-box">
+                     <p>02:45 PM</p>
+                     <p>GALAXY</p>
+                  </div>
+                  <div class="timing-box">
+                     <p>06:00 PM</p>
+                     <p>GALAXY</p>
+                  </div>
+                  <div class="timing-box">
+                     <p>09:15 PM</p>
+                     <p>GALAXY</p>
+                  </div>
+               </div>
+               <div class="cancellation-status">
+                  <div><i style="color: rgb(255, 198, 16);" class="fa-solid fa-circle fa-2xs"></i></div>
+                  <p>Cancellation Available</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="booking-info-layout">
+            <div class="booking-info">
+               <div class="booking-info-loc">
+                  <div class="heart">
+                     <div class="heart-r"><i class="fa-regular fa-heart"></i></div>
+                     <div class="heart-s"><i class="fa-solid fa-heart"></i></div>
+                  </div>
+                  <p>Woodland Cinemas: Virar (W)</p>
+                  <div class="info-logo">
+                     <div><img src="https://in.bmscdn.com/moviemode/cinemaphotoshowcase/info.png" alt=""></div>
+                     <div><i class="fi fi-ts-hamburger-soda"></i></div>
+                     <p>INFO</p>
+                  </div>
+                  <div></div>
+                  <div class="warning">
+                     <div>
+                        <img src="https://icones.pro/wp-content/uploads/2021/05/icone-d-information-rouge.png" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="booking-info-timing">
+               <div class="info-timing-lay">
+                  <div class="timing-box">
+                     <p>11:45 AM</p>
+                  </div>
+                  <div class="timing-box">
+                     <p>03:00 PM</p>
+                  </div>
+                  <div class="timing-box">
+                     <p>06:15 PM</p>
+                  </div>
+                  <div class="timing-box">
+                     <p>09:30 PM</p>
+                  </div>
+               </div>
+               <div class="cancellation-status">
+                  <div><i style="color: rgb(255, 198, 16);" class="fa-solid fa-circle fa-2xs"></i></div>
+                  <p>Cancellation Available</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="booking-info-layout">
+            <div class="booking-info">
+               <div class="booking-info-loc">
+                  <div class="heart">
+                     <div class="heart-r"><i class="fa-regular fa-heart"></i></div>
+                     <div class="heart-s"><i class="fa-solid fa-heart"></i></div>
+                  </div>
+                  <p>Aman Theatre: Ulhasnagar</p>
+                  <div class="info-logo">
+                     <div><img src="https://in.bmscdn.com/moviemode/cinemaphotoshowcase/info.png" alt=""></div>
+                     <div><i class="fi fi-ts-hamburger-soda"></i></div>
+                     <p>INFO</p>
+                  </div>
+                  <div></div>
+                  <div class="warning">
+                     <div>
+                        <img src="https://icones.pro/wp-content/uploads/2021/05/icone-d-information-rouge.png" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="booking-info-timing">
+               <div class="info-timing-lay">
+                  <div class="timing-box">
+                     <p>12:15 PM</p>
+                  </div>
+                  <div class="timing-box">
+                     <p>03:30 PM</p>
+                  </div>
+                  <div class="timing-box">
+                     <p>06:30 PM</p>
+                  </div>
+                  <div class="timing-box">
+                     <p>09:30 PM</p>
+                  </div>
+               </div>
+               <div class="cancellation-status">
+                  <div><i style="color: rgb(255, 198, 16);" class="fa-solid fa-circle fa-2xs"></i></div>
+                  <p>Cancellation Available</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="booking-info-layout">
+            <div class="booking-info">
+               <div class="booking-info-loc">
+                  <div class="heart">
+                     <div class="heart-r"><i class="fa-regular fa-heart"></i></div>
+                     <div class="heart-s"><i class="fa-solid fa-heart"></i></div>
+                  </div>
+                  <p>Venus Cinema: Ulhasnagar</p>
+                  <div class="info-logo">
+                     <div><img src="https://in.bmscdn.com/moviemode/cinemaphotoshowcase/info.png" alt=""></div>
+                     <div><i class="fi fi-ts-hamburger-soda"></i></div>
+                     <p>INFO</p>
+                  </div>
+                  <div></div>
+                  <div class="warning">
+                     <div>
+                        <img src="https://icones.pro/wp-content/uploads/2021/05/icone-d-information-rouge.png" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="booking-info-timing">
+               <div class="offer-tag">
+                  <div><img src="https://in.bmscdn.com/mobile/superstar/superstaroffer-3x.png" alt=""></div>
+                  <p>5% off for Superstars</p>
+                  <div class="offer-line"></div>
+                  <p>Use code: STAR5</p>
+               </div>
+               <div class="info-timing-lay">
+                  <div class="timing-box">
+                     <p>12:00 PM</p>
+                  </div>
+                  <div class="timing-box">
+                     <p>03:20 PM</p>
+                  </div>
+                  <div class="timing-box">
+                     <p>06:25 PM</p>
+                  </div>
+                  <div class="timing-box">
+                     <p>09:30 PM</p>
+                  </div>
+               </div>
+               <div class="cancellation-status">
+                  <div><i style="color: rgb(255, 198, 16);" class="fa-solid fa-circle fa-2xs"></i></div>
+                  <p>Cancellation Available</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="path">
+         <div class="path-text">
+            <p>Home → Movies in Mumbai → Jawan</p>
+         </div>
+      </div>
    </div>
 </body>
-<footer style="height: 500px;"></footer>
+<footer style="height: 20px;"></footer>
+
 </html>
