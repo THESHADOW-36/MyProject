@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Book My Show</title>
+   <script src="https://kit.fontawesome.com/e331b9ba14.js" crossorigin="anonymous"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         font-family: Roboto, sans-serif;
+      }
+      body{
+         background-color: rgb(242, 242, 242);
+      }
+
+      #movie-title {
+         background-color: rgb(51, 53, 69);
+         width: 100%;
+         height: 129px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      #movie-title-box {
+         /* border: 1px solid white; */
+         width: 97%;
+         margin-top: 30px;
+         color: white;
+      }
+
+      #movie-title-box p {
+         font-size: 36px;
+      }
+
+      #movie-type{
+         display: flex;
+         align-items: center;
+         margin-top: 8px;
+      }
+      #movie-type div:nth-child(1){
+         border: 2px solid rgb(173, 173, 173);
+         height: 18px;
+         border-radius: 20px;
+         font-size: 12px;
+         letter-spacing: -1px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 1px 3px 0px 1px;
+         color: rgb(212, 212, 212);
+         margin-right:4px;
+         margin-left: 2px;
+      }
+      #movie-type div:nth-child(2),#movie-type div:nth-child(3){
+         border: 1px solid rgba(255, 255, 255, 0.5);
+         border-radius: 10px;
+         height: 15px;
+         font-size: 10px;
+         color: rgba(255, 255, 255, 0.5);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 1px 7px;
+         margin-left: 10px;
+      }
+
+      #filters{
+         /* border: 1px solid red; */
+         background-color: white;
+         width: 100%;
+         height: 64px;
+         display: flex;
+         justify-content: space-between;
+      }
+
+      .date{
+         /* border: 1px solid green; */
+         width: 24.6%;
+         display: flex;
+         align-items: center;
+      }
+
+      .date div:nth-child(2){
+         margin-left: 12px;
+         background-color:rgb(248, 68, 100);
+         color: white;
+      }
+      .date div:nth-child(1){
+         margin-bottom: 6px;
+         margin-left: 5px;
+      }
+      .date div:last-child{
+         margin-left: 100px;
+         margin-bottom: 6px;
+      }
+      .date div:nth-child(2) p:nth-child(2){
+         color: white;
+      }
+
+      .date-text{
+         /* background-color: rgb(248, 68, 100); */
+         /* border: 1px solid rgb(248, 68, 100); */
+         border-radius: 8px;
+         color: rgb(78, 78, 78);
+         height: 42px;
+         width: 40px;
+         font-size: 10px;
+         font-weight: 500;
+         padding: 5px 15px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         cursor:pointer;
+      }
+      
+      .date-text:hover{
+         color: rgb(248, 68, 100);
+      }
+
+      .date-text p:nth-child(2){
+         font-size: 16px;
+         /* color: rgb(51, 51, 51); */
+      }
+      .date-text p:nth-child(2):hover{
+         color: rgb(248, 68, 100);
+      }
+      .filters{
+         /* border: 1px solid blue; */
+         width: 50%;
+         display: flex;
+      }
+      .filter-lang{
+         border-left: 1px solid rgb(231, 231, 231);
+         border-bottom: 3px solid rgb(248, 68, 100) ;
+         width: 111px;
+         display: flex;
+         align-items: center;
+         padding: 15px;
+         font-size: 14px;
+         font-weight: 500;
+         color: rgb(51, 51, 51);
+      }
+      .filter-lang div{
+         color: rgb(153, 153, 153);
+         margin-left: 40px;
+         margin-right: -10px;
+         margin-top: 6px;
+      }
+
+      .filter-box{
+         border-left: 1px solid rgb(231, 231, 231);
+         width: 132px;
+         display: flex;
+         align-items: center;
+         padding: 15px;
+         font-size: 12px;
+         font-weight: 400;
+         color: rgb(51, 51, 51);
+      }
+      .filter-box div{
+         color: rgb(153, 153, 153);
+         margin-left: 30px;
+         margin-right: -12px;
+         margin-top: 6px;
+      }
+      .filter-icon{
+         border-left: 1px solid rgb(231, 231, 231);
+         width: 55px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+   </style>
+</head>
+
+<body>
+   <div id="screen">
+      <div class="nav-bar"
+         style=" width: 100%; height: 70px; display: flex; justify-content: space-between ;background-color: #333545;">
+         <div style="display: flex;margin-left: 60px;">
+            <div>
+               <img style="height: 100%;width: 100%;" src="./Image/bookmyshow-logo-vectorr.png" alt="Bookmyshow-logo">
+            </div>
+            <div
+               style=" display: flex; background-color: white;height: 40px;margin-top:15px;width: 530px; border-radius: 4px ;">
+               <div style="margin-right: 10px; margin-left: 10px; margin-top: 10px;">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+               </div>
+               <div style="margin-top: 10px;">
+                  <input placeholder="Search for Movies, Events, Plays, Sports and Activities"
+                     style="font-size: 14px; border:none; outline: none; width: 400px;">
+               </div>
+            </div>
+         </div>
+         <div style="display: flex; margin-top: 25px; margin-right: 60px;">
+            <div>
+               <select name="" id=""
+                  style="outline: none; border: none; border-radius: 2px;background-color:#333545 ;color: whitesmoke;">
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Pune">Pune</option>
+               </select>
+            </div>
+            <div style="margin-left: 20px; margin-right: 20px;margin-top: -3px">
+               <button
+                  style=" height: 25px; width: 60px; border: none; background-color: #F84464; color: white; border-radius: 5px;">Sign
+                  in</button>
+            </div>
+            <div style="color: white;">
+               <i class="fa-solid fa-bars fa-xl"></i>
+            </div>
+         </div>
+      </div>
+      <div style="height: 35px;background-color: #222539;">
+         <div style="display: flex; justify-content: space-between;width:91%;height: 35px;margin: auto;">
+            <div style="color: white; display: flex; justify-content: space-between;width: 35%;margin-top: 10px;">
+               <h3 style="font-size: 14px; font-weight: normal;">Movies</h3>
+               <div style="margin-top: -7px;">
+                  <p style="color: red;font-size: 9px; margin-left: 40px;">
+                     New
+                  </p>
+                  <h3 style="margin-top: -3px; font-size: 14px; font-weight: normal;">Stream</h3>
+               </div>
+               <h3 style="font-size: 14px; font-weight: normal;">Events</h3>
+               <h3 style="font-size: 14px; font-weight: normal;">Plays</h3>
+               <h3 style="font-size: 14px; font-weight: normal;">Sports</h3>
+               <h3 style="font-size: 14px; font-weight: normal;">Activities</h3>
+               <h3 style="font-size: 14px; font-weight: normal;">Buzz</h3>
+            </div>
+            <div style="color: white;display: flex; justify-content: space-between;width: 25%;margin-top: 10px;">
+               <h3 style="font-size: 13px; font-weight: normal;">ListYourShow</h3>
+               <h3 style="font-size: 13px; font-weight: normal;">Corporates</h3>
+               <h3 style="font-size: 13px; font-weight: normal;">Offers</h3>
+               <h3 style="font-size: 13px; font-weight: normal;">Gift Cards</h3>
+            </div>
+         </div>
+      </div>
+
+      <div id="movie-title">
+         <div id="movie-title-box">
+            <p>Jawan - Hindi</p>
+            <div id="movie-type">
+               <div>UA</div>
+               <div>ACTION</div>
+               <div>THRILLER</div>
+            </div>
+         </div>
+      </div>
+
+      <div id="filters">
+         <div class="date">
+            <div><i class="fa-solid fa-chevron-left fa-lg"></i></div>
+            <div class="date-text">
+               <p>MON</p>
+               <p>11</p>
+               <p>SEP</p>
+            </div>
+            <div class="date-text">
+               <p>TUE</p>
+               <p>12</p>
+               <p>SEP</p>
+            </div>
+            <div class="date-text">
+               <p>WED</p>
+               <p>13</p>
+               <p>SEP</p>
+            </div>
+            <div class="date-text">
+               <p>THU</p>
+               <p>14</p>
+               <p>SEP</p>
+            </div>
+            <div><i class="fa-solid fa-chevron-right fa-lg"></i></div>
+         </div>
+         <div class="filters">
+            <div class="filter-lang">
+               <p>Hindi - 2D</p>
+               <div><i class="fa-solid fa-angle-down"></i></div>
+            </div>
+            <div class="filter-box">
+               <p>Filter Sub Regions </p>
+               <div><i class="fa-solid fa-angle-down"></i></div>
+            </div>
+            <div class="filter-box">
+               <p>Filter Price Range</p>
+               <div><i class="fa-solid fa-angle-down"></i></div>
+            </div>
+            <div class="filter-box">
+               <p>Filter Show Timings</p>
+            </div>
+            <div class="filter-icon">
+               <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+<footer style="height: 500px;"></footer>
+</html>
