@@ -43,10 +43,55 @@
       }
 
       .pgc-top-bg{
-         border: 1px solid violet;
+         /* background: linear-gradient(98.18deg, rgb(43, 49, 72) 2.87%, rgb(136, 63, 85) 59.96%, rgb(235, 78, 98) 98.36%); */
+         background: linear-gradient(98deg,rgb(43, 49, 72), rgb(136, 63, 85), rgb(235, 78, 98));
          width: 100%;
          height: 96px;
+         display: flex;
+         justify-content: center;
       }
+
+      .profile-info{
+         border: 1px solid green;
+         position: relative;
+         width: 83%;
+         color: white;
+         display: flex;
+         align-items: center;
+         margin-top: 32px;
+      }
+
+      .pro-pic{
+         border: 1px solid rgb(102, 102, 102);
+         background-color: white;
+         border-radius: 50px;
+         width: 94px;
+         height: 94px;
+         color: rgb(102, 102, 102);
+         font-size: 11px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+      .pro-pic img{
+         width: 30px;
+         opacity: 0.4;
+      }
+      .pro-pic p{
+         margin: 2px 6px 0px 0px;
+      }
+
+      .pro-name{
+         font-size: 21px;
+         font-weight: 700;
+         margin-left: 20px;
+      }
+
+      .account-info{
+
+      }
+      
    </style>
 </head>
 
@@ -128,10 +173,31 @@
 
       <div class="pg-content">
          <div class="pgc-top-bg">
-
+            <div class="profile-info">
+               <div class="pro-pic">
+                  <img src="https://www.svgrepo.com/download/904/photo-camera.svg" alt="">
+                  <p>+ Add</p>
+               </div>
+               <p class="pro-name">Hi, Shadow</p>
+            </div>
          </div>
          <div class="account-info">
-
+            <p class="acc-title">Account Details</p>
+            <div class="acc-email">
+               <p>Email Address</p>
+               <p>shadow@gmail.com</p>
+               <div class="edit">
+                  <div class="edit-icon">icon</div>
+                  <p>Edit</p>
+               </div>
+            </div>
+            <div class="mobile-num">
+               <p>Mobile Number</p>
+               <div class="add-num-lay">
+                  <p>+ Add Mobile Number</p>
+                  <p>Get a copy of the tickets on Whatsapp/SMS</p>
+               </div>
+            </div>
          </div>
       </div>
    </div>
