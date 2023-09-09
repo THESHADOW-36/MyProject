@@ -94,7 +94,7 @@
       }
 
       .account-info-lay {
-         border: 1px solid black;
+         /* border: 1px solid black; */
          background-color: white;
          height: 225px;
       }
@@ -159,7 +159,7 @@
       }
 
       .mobile-num {
-         border: 1px solid blue;
+         /* border: 1px solid blue; */
          margin-top: 40px;
          display: grid;
          grid-template-columns: 140px 1fr;
@@ -191,38 +191,43 @@
          margin-left: 14px;
       }
 
-      #personal-info-lay {
-         border: 1px solid black;
+      #personal-info-lay,
+      #address-info-lay {
+         /* border: 1px solid black; */
          background-color: white;
          margin-top: 15px;
          padding-top: 32px;
       }
 
-      .personal-info {
-         border: 1px solid red;
+      .personal-info,
+      .address-info {
+         /* border: 1px solid red; */
          width: 82%;
          margin: auto;
       }
 
-      .personal-info>p {
+      .personal-info>p,
+      .address-info>p {
          color: black;
          font-size: 18px;
          font-weight: 500;
          margin-bottom: 16px;
       }
 
-      .input-fields{
-         border: 1px solid blue;
+      .input-fields {
+         /* border: 1px solid blue; */
          display: flex;
          justify-content: space-between;
          align-items: center;
          margin-bottom: 30px;
       }
-      .input-fields label{
+
+      .input-fields label {
          font-size: 14px;
       }
-      .input-box{
-         border: 1px solid black;
+
+      .input-box {
+         border: 1px solid rgb(204, 204, 204);
          border-radius: 8px;
          width: 440px;
          height: 40px;
@@ -230,12 +235,111 @@
          align-items: center;
          justify-content: center;
       }
-      .input-box input{
+
+      .input-box input {
          border: none;
          outline: none;
          width: 422px;
          height: 30px;
          font-size: 16px;
+      }
+
+      .seletion-box {
+         width: 440px;
+         display: flex;
+      }
+
+      .seletion-box1 {
+         border: 1px solid rgb(204, 204, 204);
+         border-radius: 6px;
+         font-size: 14px;
+         color: rgb(51, 51, 51);
+         display: flex;
+         align-items: center;
+         padding: 6px 10px;
+         margin-right: 15px;
+      }
+
+      #policy {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin: 20px 0px;
+         font-size: 10px;
+         color: rgb(102, 102, 102);
+      }
+
+      #policy u {
+         cursor: pointer;
+      }
+
+      #path {
+         background-color: white;
+         width: 100%;
+         height: 44px;
+         display: flex;
+         align-items: center;
+         font-size: 12px;
+      }
+
+      .path-text {
+         width: 91.5%;
+         margin: auto;
+         color: rgb(170, 171, 172);
+      }
+
+      #privacy-note {
+         width: 91.5%;
+         margin: auto;
+         color: rgb(127, 127, 127);
+         padding: 15px 0px 30px 0px;
+      }
+
+      #privacy-note p:nth-child(1) {
+         font-weight: 500;
+      }
+
+      #privacy-note p:nth-child(2) {
+         font-size: 12px;
+         margin-top: 20px;
+      }
+      #privacy-note p:nth-child(2) span{
+         color: rgb(220, 53, 88);
+      }
+      #contact-today-lay{
+         background-color: rgb(49, 48, 53);
+         color: white;
+      }
+      .contact-today{
+         width: 91.5%;
+         margin: auto;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         padding: 15px 0px;
+      }
+      .listYourShow{
+         display: flex;
+         align-items: center;
+      }
+      .listYourShow p:nth-child(2){
+         font-size: 16px;
+         font-weight: 600;
+         margin-left: 10px;
+      }
+      .listYourShow p:nth-child(3){
+         font-size: 16px;
+         font-weight: 500;
+         margin-left: 10px;
+      }
+
+      .contact-button button{
+         border: none;
+         background-color: rgb(236, 94, 113);
+         border-radius: 3px;
+         color: white;
+         font-size: 16px;
+         padding: 10px 20px;
       }
    </style>
 </head>
@@ -296,7 +400,7 @@
                <h3 style="font-size: 14px; font-weight: normal;">Buzz</h3>
             </div>
             <div style="color: white;display: flex; justify-content: space-between;width: 25%;margin-top: 10px;">
-               <h3 style="font-size: 13px; font-weight: normal;">ListYourShow</h3>
+               <h3 style="font-size: 13px; font-weight: normal;">listYourShow</h3>
                <h3 style="font-size: 13px; font-weight: normal;">Corporates</h3>
                <h3 style="font-size: 13px; font-weight: normal;">Offers</h3>
                <h3 style="font-size: 13px; font-weight: normal;">Gift Cards</h3>
@@ -326,6 +430,7 @@
                <p class="pro-name">Hi, Shadow</p>
             </div>
          </div>
+
          <div class="account-info-lay">
             <div class="account-info">
                <p class="acc-title">Account Details</p>
@@ -349,6 +454,7 @@
                </div>
             </div>
          </div>
+
          <div id="personal-info-lay">
             <div class="personal-info">
                <p>Personal Details</p>
@@ -366,16 +472,81 @@
                </div>
                <div class="input-fields">
                   <label>Identity (Optional)</label>
-                  <div class="input-box"><input type="text"></div>
+                  <div class="seletion-box">
+                     <div class="seletion-box1">Woman</div>
+                     <div class="seletion-box1">Man</div>
+                  </div>
                </div>
                <div class="input-fields">
                   <label>Married ? (Optional)</label>
-                  <div class="input-box"><input type="text"></div>
+                  <div class="seletion-box">
+                     <div class="seletion-box1">Yes</div>
+                     <div class="seletion-box1">No</div>
+                  </div>
                </div>
+            </div>
+         </div>
+
+         <div id="address-info-lay">
+            <div class="address-info">
+               <p>Address (Optional)</p>
+               <div class="input-fields">
+                  <label>Area Pincode</label>
+                  <div class="input-box"><input type="text" placeholder="E.g 560001"></div>
+               </div>
+               <div class="input-fields">
+                  <label>Address Line 1</label>
+                  <div class="input-box"><input type="text" placeholder="Flat no., House no., Building,"></div>
+               </div>
+               <div class="input-fields">
+                  <label>Address LIne 2</label>
+                  <div class="input-box"><input type="text" placeholder="Area, Colony, Street, Sector, Village"></div>
+               </div>
+               <div class="input-fields">
+                  <label>Landmark</label>
+                  <div class="input-box"><input type="text" placeholder="E.g. Prithvi Theatre"></div>
+               </div>
+               <div class="input-fields">
+                  <label>Town / City</label>
+                  <div class="input-box"><input type="text" placeholder="E.g. Mumbai"></div>
+               </div>
+               <div class="input-fields">
+                  <label>State</label>
+                  <div class="input-box"><input type="text" placeholder="E.g. Maharashtra"></div>
+               </div>
+            </div>
+         </div>
+
+         <div id="policy">
+            <p>I agree to <u>Terms & Conditions</u> and <u>Privacy Policy</u></p>
+         </div>
+      </div>
+      <div id="path">
+         <div class="path-text">
+            <p>Online Tickets → My Profile edit</p>
+         </div>
+      </div>
+      <div id="privacy-note">
+         <p>Privacy Note</p>
+         <p>By using www.bookmyshow.com(our website), you are fully accepting the Privcay Policy available at
+            <span>https://bookmyshow.com/privacy</span> governing your access to Bookmyshow and provision of services by
+            Bookmyshow to you.If you do not accept terms mentioned in the <span>Privacy Policy</span>, you must not share any of your
+            personal information and immediately exit Bookmyshow.
+         </p>
+      </div>
+      <div id="contact-today-lay">
+         <div class="contact-today">
+            <div class="listYourShow">
+               <div><img src="https://in.bmscdn.com/webin/common/icons/hut.svg" alt=""></div>
+               <p>List your Show</p>
+               <p>Got a show, event, activity or a great experience? Partner with us & get listed on BookyShow</p>
+            </div>
+            <div class="contact-button">
+               <button>Contact today!</button>
             </div>
          </div>
       </div>
    </div>
 </body>
-<footer style="height: 500px;"></footer>
+
 </html>
