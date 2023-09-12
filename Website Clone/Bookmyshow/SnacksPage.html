@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Book My Show</title>
+   <script src="https://kit.fontawesome.com/e331b9ba14.js" crossorigin="anonymous"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet">
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         font-family: Roboto, sans-serif;
+      }
+
+      body{
+         background-color: rgb(242, 242, 242);
+         padding-bottom: 65px;
+      }
+
+      #title-bg {
+         background-color: rgb(31, 37, 51);
+         position: sticky;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 75px;
+         color: white;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+      #title-content {
+         /* border: 1px solid red; */
+         width: 98%;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-bottom: 6px;
+      }
+
+      #title-text {
+         /* border: 1px solid green; */
+         display: flex;
+         align-items: center;
+      }
+
+      #back-arrow {
+         margin-bottom: 8px;
+         margin-right: 16px;
+      }
+
+      #name {
+         display: flex;
+      }
+
+      #name>p {
+         font-size: 14px;
+      }
+
+      #name>div {
+         border: 1px solid rgb(255, 255, 255);
+         border-radius: 20px;
+         font-size: 10px;
+         letter-spacing: -1.5px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 1px 3px 1px 2px;
+         color: rgb(241, 241, 241);
+         margin: 0px 6px 0px 6px;
+      }
+
+      #address>p {
+         color: rgb(198, 198, 201);
+         font-size: 12px;
+         font-weight: 700;
+         margin-top: 8px;
+      }
+
+      #title-exit {
+         margin-right: 16px;
+         margin-bottom: 5px;
+      }
+
+      #mid-content {
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         padding-top: 10px;
+      }
+
+      #mid-left {
+         /* border: 1px solid red; */
+         width: 68.9%;
+      }
+
+      #advertisement img {
+         width: 100%;
+         height: 100%;
+         border-radius: 4px;
+         object-fit: cover;
+         object-position: center;
+      }
+
+      .white-bg {
+         background-color: white;
+      }
+
+      #mid-text {
+         padding-top: 10px;
+         padding-bottom: 10px;
+      }
+
+      #mid-text>h1 {
+         text-align: center;
+         font-size: 26px;
+         font-weight: 500;
+         font-family: Montserrat;
+         color: rgb(51, 51, 51);
+         letter-spacing: 3px;
+      }
+
+      #mid-text>h1>span {
+         color: rgb(192, 44, 57);
+      }
+
+      #mid-text>p {
+         color: rgb(102, 102, 102);
+         text-align: center;
+         font-size: 14px;
+         margin-top: 14px;
+      }
+
+      #filter {
+         background-color: white;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 10px 10px 15px 0px;
+      }
+
+      .filter-box {
+         border: 1px solid rgb(223, 227, 231);
+         border-radius: 12px;
+         font-size: 10px;
+         color: rgb(102, 102, 102);
+         padding: 4px 12px;
+         margin: 0px 7.5px;
+      }
+
+      #filter div:nth-child(1) {
+         border: 1px solid rgb(220, 53, 88);
+         background-color: rgb(220, 53, 88);
+         color: white;
+      }
+
+      #snack-details {
+         /* border: 1px solid blue; */
+         height: 550px;
+         overflow-y: scroll;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         margin: 0px 12px;
+         padding-top: 14px;
+      }
+
+      .snacks-content-lay {
+         /* border: 1px solid red; */
+         box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25);
+         border-radius: 8px;
+         height: 147px;
+         margin: 8px;
+      }
+
+      .sd-padding {
+         /* border: 1px solid blue; */
+         height: 115px;
+         display: flex;
+         padding: 16px;
+      }
+
+      .veg-logo img {
+         width: 12px;
+         margin-top: 5px;
+         margin-left: 5px;
+      }
+
+      .snack-pic img {
+         width: 79px;
+         margin-top: -5px;
+      }
+
+      .snacks-content {
+         /* border: 1px solid green; */
+         width: 301px;
+         margin-left: 14px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+      }
+
+      .snacks-name>p:nth-child(1) {
+         font-size: 14px;
+         font-weight: 500;
+         color: rgb(26, 26, 26);
+      }
+
+      .snacks-name>p:nth-child(2) {
+         font-size: 11px;
+         color: rgb(102, 102, 102);
+         margin-top: 8px;
+         /* margin-bottom: 40px; */
+      }
+
+      .snacks-rate {
+         display: flex;
+         justify-content: space-between;
+      }
+
+      .snacks-rate div:nth-child(1) {
+         font-size: 14px;
+         font-weight: 700;
+         margin-top: 4px;
+      }
+
+      .snacks-rate div:nth-child(2) {
+         border: 1px solid rgb(220, 53, 75);
+         border-radius: 8px;
+         color: rgb(220, 53, 75);
+         font-size: 14px;
+         padding: 5px 16px;
+      }
+
+      #note-inox{
+         color: rgb(150, 150, 150);
+         font-size: 11px;
+         margin: 46px 0px 0px 24px;
+      }
+
+      #inox{
+         margin-top: 10px;
+         margin-left: -4px;
+         padding-bottom: 20px;
+      }
+
+      #inox p:nth-child(1){
+         margin-left:4px;
+      }
+
+      #inox p:nth-child(2){
+         margin-top: 5px;
+      }
+
+
+
+      #mid-right {
+         border: 1px solid blue;
+         width: 29.8%;
+      }
+   </style>
+</head>
+
+<body>
+   <div id="screen">
+      <div id="title-bg">
+         <div id="title-content">
+            <div id="title-text">
+               <div id="back-arrow">
+                  <i class="fa-solid fa-chevron-left fa-xl"></i>
+               </div>
+               <div id="title-name">
+                  <div id="name">
+                     <p>
+                        Jawan
+                     </p>
+                     <div>
+                        <p>UA</p>
+                     </div>
+                  </div>
+                  <div id="address">
+                     <p>
+                        INOX: R-City, Ghatkopar | Today, 11 Sep, 11:55 PM
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div id="title-exit">
+               <i class="fa-solid fa-xmark"></i>
+            </div>
+         </div>
+      </div>
+
+      <div id="mid-content">
+         <div id="mid-left">
+            <div id="advertisement">
+               <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1687792420440_855x95.jpg" alt="">
+            </div>
+
+            <div class="white-bg">
+               <div id="mid-text">
+                  <h1>
+                     Grab a <span>bite!</span>
+                  </h1>
+                  <p>
+                     Prebook Your Meal and Save More!
+                  </p>
+               </div>
+
+               <div id="filter">
+                  <div class="filter-box">
+                     <p>ALL</p>
+                  </div>
+                  <div class="filter-box">
+                     <p>SNACKS</p>
+                  </div>
+                  <div class="filter-box">
+                     <p>POPCORN</p>
+                  </div>
+                  <div class="filter-box">
+                     <p>COMBOS</p>
+                  </div>
+                  <div class="filter-box">
+                     <p>BEVERAGES</p>
+                  </div>
+               </div>
+
+               <div id="snack-details">
+                  <div class="snacks-content-lay">
+                     <div class="sd-padding">
+                        <div class="snacks-img">
+                           <div class="veg-logo">
+                              <img
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ239Zo9cNimCavHbLvlhLg8mD_tRLV_lTMrUmYQqRy7ILUc8Fu_XxIZPi6jAoIiRMcuiE&usqp=CAU"
+                                 alt="">
+                           </div>
+                           <div class="snack-pic">
+                              <img src="https://in.bmscdn.com/fnb/v3/xxhdpi/1020006_06082018135441.png" alt="">
+                           </div>
+                        </div>
+                        <div class="snacks-content">
+                           <div class="snacks-name">
+                              <p>Jalapeno Nachos With Cheese & Salsa 180g</p>
+                              <p>Jalapeno Nachos With Cheese & Salsa (180g | 575 Kcal)</p>
+                           </div>
+                           <div class="snacks-rate">
+                              <div>₹380</div>
+                              <div>Add</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="snacks-content-lay">
+                     <div class="sd-padding">
+                        <div class="snacks-img">
+                           <div class="veg-logo">
+                              <img
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ239Zo9cNimCavHbLvlhLg8mD_tRLV_lTMrUmYQqRy7ILUc8Fu_XxIZPi6jAoIiRMcuiE&usqp=CAU"
+                                 alt="">
+                           </div>
+                           <div class="snack-pic">
+                              <img src="https://in.bmscdn.com/fnb/v3/xxhdpi/2000095_09072021113304.png" alt="">
+                           </div>
+                        </div>
+                        <div class="snacks-content">
+                           <div class="snacks-name">
+                              <p>Medium Tub Salted Popcorn 135g</p>
+                              <p>Medium Tub Salted Popcorn (135g | 422 Kcal)</p>
+                           </div>
+                           <div class="snacks-rate">
+                              <div>₹490</div>
+                              <div>Add</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="snacks-content-lay">
+                     <div class="sd-padding">
+                        <div class="snacks-img">
+                           <div class="veg-logo">
+                              <img
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ239Zo9cNimCavHbLvlhLg8mD_tRLV_lTMrUmYQqRy7ILUc8Fu_XxIZPi6jAoIiRMcuiE&usqp=CAU"
+                                 alt="">
+                           </div>
+                           <div class="snack-pic">
+                              <img src="https://in.bmscdn.com/fnb/v3/xxhdpi/1020011_17082018145045.png" alt="">
+                           </div>
+                        </div>
+                        <div class="snacks-content">
+                           <div class="snacks-name">
+                              <p>Regular Coke 540ml</p>
+                              <p>Regular Coke (540ml | 238 Kcal)</p>
+                           </div>
+                           <div class="snacks-rate">
+                              <div>₹350</div>
+                              <div>Add</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="snacks-content-lay">
+                     <div class="sd-padding">
+                        <div class="snacks-img">
+                           <div class="veg-logo">
+                              <img
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ239Zo9cNimCavHbLvlhLg8mD_tRLV_lTMrUmYQqRy7ILUc8Fu_XxIZPi6jAoIiRMcuiE&usqp=CAU"
+                                 alt="">
+                           </div>
+                           <div class="snack-pic">
+                              <img src="https://in.bmscdn.com/fnb/v3/xxhdpi/2000097_09072021113606.png" alt="">
+                           </div>
+                        </div>
+                        <div class="snacks-content">
+                           <div class="snacks-name">
+                              <p>Regular Tub Combo (Cheese)</p>
+                              <p>Regular Tub Cheese Popcorn 110g + Coke 450ml (531 Kcal)</p>
+                           </div>
+                           <div class="snacks-rate">
+                              <div>₹700</div>
+                              <div>Add</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="snacks-content-lay">
+                     <div class="sd-padding">
+                        <div class="snacks-img">
+                           <div class="veg-logo">
+                              <img
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ239Zo9cNimCavHbLvlhLg8mD_tRLV_lTMrUmYQqRy7ILUc8Fu_XxIZPi6jAoIiRMcuiE&usqp=CAU"
+                                 alt="">
+                           </div>
+                           <div class="snack-pic">
+                              <img src="https://in.bmscdn.com/fnb/v3/xxhdpi/2000096_09072021113726.png" alt="">
+                           </div>
+                        </div>
+                        <div class="snacks-content">
+                           <div class="snacks-name">
+                              <p>Medium Tub Combo (Cheese)</p>
+                              <p>Medium Tub Cheese Popcorn 165g + 2 Coke 450ml (896 Kcal)</p>
+                           </div>
+                           <div class="snacks-rate">
+                              <div>₹1020</div>
+                              <div>Add</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="snacks-content-lay">
+                     <div class="sd-padding">
+                        <div class="snacks-img">
+                           <div class="veg-logo">
+                              <img
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ239Zo9cNimCavHbLvlhLg8mD_tRLV_lTMrUmYQqRy7ILUc8Fu_XxIZPi6jAoIiRMcuiE&usqp=CAU"
+                                 alt="">
+                           </div>
+                           <div class="snack-pic">
+                              <img src="https://in.bmscdn.com/fnb/v3/xxhdpi/2001259_25042023140924.png" alt="">
+                           </div>
+                        </div>
+                        <div class="snacks-content">
+                           <div class="snacks-name">
+                              <p>Family Combo (Cheese)</p>
+                              <p>Regular Tub Cheese Popcorn 110g + Nachos 180g + 2 Coke 450ml (1304 Kcal)</p>
+                           </div>
+                           <div class="snacks-rate">
+                              <div>₹1260</div>
+                              <div>Add</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="snacks-content-lay">
+                     <div class="sd-padding">
+                        <div class="snacks-img">
+                           <div class="veg-logo">
+                              <img
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ239Zo9cNimCavHbLvlhLg8mD_tRLV_lTMrUmYQqRy7ILUc8Fu_XxIZPi6jAoIiRMcuiE&usqp=CAU"
+                                 alt="">
+                           </div>
+                           <div class="snack-pic">
+                              <img src="https://in.bmscdn.com/fnb/v3/xxhdpi/1020006_06082018135441.png" alt="">
+                           </div>
+                        </div>
+                        <div class="snacks-content">
+                           <div class="snacks-name">
+                              <p>Jalapeno Nachos With Cheese & Salsa 180g</p>
+                              <p>Jalapeno Nachos With Cheese & Salsa (180g | 575 Kcal)</p>
+                           </div>
+                           <div class="snacks-rate">
+                              <div>₹380</div>
+                              <div>Add</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="snacks-content-lay">
+                     <div class="sd-padding">
+                        <div class="snacks-img">
+                           <div class="veg-logo">
+                              <img
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ239Zo9cNimCavHbLvlhLg8mD_tRLV_lTMrUmYQqRy7ILUc8Fu_XxIZPi6jAoIiRMcuiE&usqp=CAU"
+                                 alt="">
+                           </div>
+                           <div class="snack-pic">
+                              <img src="https://in.bmscdn.com/fnb/v3/xxhdpi/2000095_09072021113304.png" alt="">
+                           </div>
+                        </div>
+                        <div class="snacks-content">
+                           <div class="snacks-name">
+                              <p>Medium Tub Salted Popcorn 135g</p>
+                              <p>Medium Tub Salted Popcorn (135g | 422 Kcal)</p>
+                           </div>
+                           <div class="snacks-rate">
+                              <div>₹490</div>
+                              <div>Add</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="snacks-content-lay">
+                     <div class="sd-padding">
+                        <div class="snacks-img">
+                           <div class="veg-logo">
+                              <img
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ239Zo9cNimCavHbLvlhLg8mD_tRLV_lTMrUmYQqRy7ILUc8Fu_XxIZPi6jAoIiRMcuiE&usqp=CAU"
+                                 alt="">
+                           </div>
+                           <div class="snack-pic">
+                              <img src="https://in.bmscdn.com/fnb/v3/xxhdpi/1020011_17082018145045.png" alt="">
+                           </div>
+                        </div>
+                        <div class="snacks-content">
+                           <div class="snacks-name">
+                              <p>Regular Coke 540ml</p>
+                              <p>Regular Coke (540ml | 238 Kcal)</p>
+                           </div>
+                           <div class="snacks-rate">
+                              <div>₹350</div>
+                              <div>Add</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="snacks-content-lay">
+                     <div class="sd-padding">
+                        <div class="snacks-img">
+                           <div class="veg-logo">
+                              <img
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ239Zo9cNimCavHbLvlhLg8mD_tRLV_lTMrUmYQqRy7ILUc8Fu_XxIZPi6jAoIiRMcuiE&usqp=CAU"
+                                 alt="">
+                           </div>
+                           <div class="snack-pic">
+                              <img src="https://in.bmscdn.com/fnb/v3/xxhdpi/2000097_09072021113606.png" alt="">
+                           </div>
+                        </div>
+                        <div class="snacks-content">
+                           <div class="snacks-name">
+                              <p>Regular Tub Combo (Cheese)</p>
+                              <p>Regular Tub Cheese Popcorn 110g + Coke 450ml (531 Kcal)</p>
+                           </div>
+                           <div class="snacks-rate">
+                              <div>₹700</div>
+                              <div>Add</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="snacks-content-lay">
+                     <div class="sd-padding">
+                        <div class="snacks-img">
+                           <div class="veg-logo">
+                              <img
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ239Zo9cNimCavHbLvlhLg8mD_tRLV_lTMrUmYQqRy7ILUc8Fu_XxIZPi6jAoIiRMcuiE&usqp=CAU"
+                                 alt="">
+                           </div>
+                           <div class="snack-pic">
+                              <img src="https://in.bmscdn.com/fnb/v3/xxhdpi/2000096_09072021113726.png" alt="">
+                           </div>
+                        </div>
+                        <div class="snacks-content">
+                           <div class="snacks-name">
+                              <p>Medium Tub Combo (Cheese)</p>
+                              <p>Medium Tub Cheese Popcorn 165g + 2 Coke 450ml (896 Kcal)</p>
+                           </div>
+                           <div class="snacks-rate">
+                              <div>₹1020</div>
+                              <div>Add</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="snacks-content-lay">
+                     <div class="sd-padding">
+                        <div class="snacks-img">
+                           <div class="veg-logo">
+                              <img
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ239Zo9cNimCavHbLvlhLg8mD_tRLV_lTMrUmYQqRy7ILUc8Fu_XxIZPi6jAoIiRMcuiE&usqp=CAU"
+                                 alt="">
+                           </div>
+                           <div class="snack-pic">
+                              <img src="https://in.bmscdn.com/fnb/v3/xxhdpi/2001259_25042023140924.png" alt="">
+                           </div>
+                        </div>
+                        <div class="snacks-content">
+                           <div class="snacks-name">
+                              <p>Family Combo (Cheese)</p>
+                              <p>Regular Tub Cheese Popcorn 110g + Nachos 180g + 2 Coke 450ml (1304 Kcal)</p>
+                           </div>
+                           <div class="snacks-rate">
+                              <div>₹1260</div>
+                              <div>Add</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="snacks-content-lay">
+                     <div class="sd-padding">
+                        <div class="snacks-img">
+                           <div class="veg-logo">
+                              <img
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ239Zo9cNimCavHbLvlhLg8mD_tRLV_lTMrUmYQqRy7ILUc8Fu_XxIZPi6jAoIiRMcuiE&usqp=CAU"
+                                 alt="">
+                           </div>
+                           <div class="snack-pic">
+                              <img src="https://in.bmscdn.com/fnb/v3/xxhdpi/1020006_06082018135441.png" alt="">
+                           </div>
+                        </div>
+                        <div class="snacks-content">
+                           <div class="snacks-name">
+                              <p>Jalapeno Nachos With Cheese & Salsa 180g</p>
+                              <p>Jalapeno Nachos With Cheese & Salsa (180g | 575 Kcal)</p>
+                           </div>
+                           <div class="snacks-rate">
+                              <div>₹380</div>
+                              <div>Add</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="snacks-content-lay">
+                     <div class="sd-padding">
+                        <div class="snacks-img">
+                           <div class="veg-logo">
+                              <img
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ239Zo9cNimCavHbLvlhLg8mD_tRLV_lTMrUmYQqRy7ILUc8Fu_XxIZPi6jAoIiRMcuiE&usqp=CAU"
+                                 alt="">
+                           </div>
+                           <div class="snack-pic">
+                              <img src="https://in.bmscdn.com/fnb/v3/xxhdpi/2000095_09072021113304.png" alt="">
+                           </div>
+                        </div>
+                        <div class="snacks-content">
+                           <div class="snacks-name">
+                              <p>Medium Tub Salted Popcorn 135g</p>
+                              <p>Medium Tub Salted Popcorn (135g | 422 Kcal)</p>
+                           </div>
+                           <div class="snacks-rate">
+                              <div>₹490</div>
+                              <div>Add</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="snacks-content-lay">
+                     <div class="sd-padding">
+                        <div class="snacks-img">
+                           <div class="veg-logo">
+                              <img
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ239Zo9cNimCavHbLvlhLg8mD_tRLV_lTMrUmYQqRy7ILUc8Fu_XxIZPi6jAoIiRMcuiE&usqp=CAU"
+                                 alt="">
+                           </div>
+                           <div class="snack-pic">
+                              <img src="https://in.bmscdn.com/fnb/v3/xxhdpi/1020011_17082018145045.png" alt="">
+                           </div>
+                        </div>
+                        <div class="snacks-content">
+                           <div class="snacks-name">
+                              <p>Regular Coke 540ml</p>
+                              <p>Regular Coke (540ml | 238 Kcal)</p>
+                           </div>
+                           <div class="snacks-rate">
+                              <div>₹350</div>
+                              <div>Add</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="snacks-content-lay">
+                     <div class="sd-padding">
+                        <div class="snacks-img">
+                           <div class="veg-logo">
+                              <img
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ239Zo9cNimCavHbLvlhLg8mD_tRLV_lTMrUmYQqRy7ILUc8Fu_XxIZPi6jAoIiRMcuiE&usqp=CAU"
+                                 alt="">
+                           </div>
+                           <div class="snack-pic">
+                              <img src="https://in.bmscdn.com/fnb/v3/xxhdpi/2000097_09072021113606.png" alt="">
+                           </div>
+                        </div>
+                        <div class="snacks-content">
+                           <div class="snacks-name">
+                              <p>Regular Tub Combo (Cheese)</p>
+                              <p>Regular Tub Cheese Popcorn 110g + Coke 450ml (531 Kcal)</p>
+                           </div>
+                           <div class="snacks-rate">
+                              <div>₹700</div>
+                              <div>Add</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="snacks-content-lay">
+                     <div class="sd-padding">
+                        <div class="snacks-img">
+                           <div class="veg-logo">
+                              <img
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ239Zo9cNimCavHbLvlhLg8mD_tRLV_lTMrUmYQqRy7ILUc8Fu_XxIZPi6jAoIiRMcuiE&usqp=CAU"
+                                 alt="">
+                           </div>
+                           <div class="snack-pic">
+                              <img src="https://in.bmscdn.com/fnb/v3/xxhdpi/2000096_09072021113726.png" alt="">
+                           </div>
+                        </div>
+                        <div class="snacks-content">
+                           <div class="snacks-name">
+                              <p>Medium Tub Combo (Cheese)</p>
+                              <p>Medium Tub Cheese Popcorn 165g + 2 Coke 450ml (896 Kcal)</p>
+                           </div>
+                           <div class="snacks-rate">
+                              <div>₹1020</div>
+                              <div>Add</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="snacks-content-lay">
+                     <div class="sd-padding">
+                        <div class="snacks-img">
+                           <div class="veg-logo">
+                              <img
+                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ239Zo9cNimCavHbLvlhLg8mD_tRLV_lTMrUmYQqRy7ILUc8Fu_XxIZPi6jAoIiRMcuiE&usqp=CAU"
+                                 alt="">
+                           </div>
+                           <div class="snack-pic">
+                              <img src="https://in.bmscdn.com/fnb/v3/xxhdpi/2001259_25042023140924.png" alt="">
+                           </div>
+                        </div>
+                        <div class="snacks-content">
+                           <div class="snacks-name">
+                              <p>Family Combo (Cheese)</p>
+                              <p>Regular Tub Cheese Popcorn 110g + Nachos 180g + 2 Coke 450ml (1304 Kcal)</p>
+                           </div>
+                           <div class="snacks-rate">
+                              <div>₹1260</div>
+                              <div>Add</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div id="note-inox">
+                  <div id="note">
+                     <p>'Note</p>
+                     <p>1. Images are for representation purposes only.</p>
+                     <p>2. Prices inclusive of taxes.</p>
+                     <p>3. All nutritional information is indicative, values are per serve as shared by the Cinema and
+                        may vary depending on the ingredients and portion size.</p>
+                     <p>4. An average active adult requires 2000 kcal energy per day, however, calorie needs may vary.
+                     </p>
+                     <p>'</p>
+                  </div>
+
+                  <div id="inox">
+                     <p>Inox T&C:</p>
+                     <p>1. Children above the age of 3 will need a separate ticket ,children will not be allowed in
+                        Adult movie .</p>
+                     <p>2. Please carry a valid age proof for A rated movies -18 years and over only would be given
+                        entry .</p>
+                     <p>3. Tickets are not refundable or transferable .</p>
+                     <p>4. Outside food and beverages are not allowed ,Right of admission is reserved.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+         <div id="mid-right">
+            right
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>
