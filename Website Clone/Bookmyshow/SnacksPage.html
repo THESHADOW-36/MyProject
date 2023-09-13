@@ -96,7 +96,6 @@
          width: 100%;
          display: flex;
          justify-content: space-between;
-         margin-top: 10px;
       }
 
       #mid-left {
@@ -460,17 +459,73 @@
 
       #m-ticket-lay,
       #box-office-lay{
+         border: 1px solid rgba(210, 210, 210, 0.6);
          background-color: white;
-         width: 194px;
+         width: 192px;
          height: 60px;
          display: flex;
       }
 
-      #input-radio{
-         
+      #m-ticket-lay{
+         margin-right: 8px;
       }
 
+      #input-radio{
+         width: 45px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 20px;
+      }
 
+      #input-radio input{
+         accent-color: rgb(220, 53, 88);
+      }
+
+      #m-ticket,#box-office{
+         border-left: 1px solid rgba(210, 210, 210, 0.6);
+         display: flex;
+         align-items: center;
+      }
+
+      #m-ticket>div , #box-office>div{
+         margin: 0px 12px 0px 14px;
+      }
+
+      #phone-logo img, #office-logo img{
+         width: 23px;
+      }
+
+      #m-ticket>p , #box-office>p{
+         color: rgb(220, 53, 88);
+         font-size: 10px;
+         margin-bottom: 8px;
+      }
+
+      #m-ticket-guide{
+         color: rgb(51, 51, 51);
+         font-size: 11px;
+         text-align: center;
+         margin: 16px 0px 0px 6px;
+      }
+
+      #proceeding{
+         color: rgb(64, 64, 64);
+         font-size: 12px;
+         text-align: center;
+         margin-top: 46px;
+         letter-spacing: 0.2px;
+      }
+
+      #total-amt-proceed{
+         background-color: rgb(248, 68, 100);
+         border-radius: 8px;
+         display: flex;
+         justify-content: space-between;
+         padding: 10px 16px;
+         margin-top: 4px;
+         color: white;
+      }
    </style>
 </head>
 
@@ -507,7 +562,7 @@
       <div id="mid-content">
          <div id="mid-left">
             <div id="advertisement">
-               <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1687792420440_855x95.jpg" alt="">
+               <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1688188454571_855x95.jpg" alt="">
             </div>
 
             <div class="white-bg">
@@ -1083,14 +1138,30 @@
                   <div id="m-ticket-lay">
                      <div id="input-radio"><input type="radio"></div>
                      <div id="m-ticket">
-                        <div><i class="fa-solid fa-mobile-screen"></i></div>
+                        <div id="phone-logo"><img src="./Image/Phone.png" alt=""></div>
                         <p>M-Ticket</p>
                      </div>
                   </div>
                   <div id="box-office-lay">
-
+                     <div id="input-radio"><input type="radio"></div>
+                     <div id="box-office">
+                        <div id="office-logo"><img src="./Image/Office.png" alt=""></div>
+                        <p>Box Office Pickup</p>
+                     </div>
                   </div>
                </div>
+            </div>
+
+            <div id="m-ticket-guide">
+               Show the m-ticket QR Code on your mobile to enter the cinema.
+            </div>
+            
+            <div id="proceeding">
+               <p>By proceeding, I express my consent to complete this transaction.</p>
+            </div>
+            <div id="total-amt-proceed">
+               <p>TOTAL: Rs. 963.48</p>
+               <p>Proceed</p>
             </div>
          </div>
       </div>
