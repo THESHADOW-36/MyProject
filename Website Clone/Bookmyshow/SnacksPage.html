@@ -21,7 +21,7 @@
          font-family: Roboto, sans-serif;
       }
 
-      body{
+      body {
          background-color: rgb(242, 242, 242);
          padding-bottom: 65px;
       }
@@ -96,12 +96,16 @@
          width: 100%;
          display: flex;
          justify-content: space-between;
-         padding-top: 10px;
+         margin-top: 10px;
       }
 
       #mid-left {
          /* border: 1px solid red; */
-         width: 68.9%;
+         width: 69%;
+      }
+
+      #advertisement {
+         height: 103px;
       }
 
       #advertisement img {
@@ -113,7 +117,9 @@
       }
 
       .white-bg {
+         border: 1px solid rgba(210, 210, 210, 0.5);
          background-color: white;
+         margin-top: 2px;
       }
 
       #mid-text {
@@ -241,32 +247,230 @@
          padding: 5px 16px;
       }
 
-      #note-inox{
+      #note-inox {
          color: rgb(150, 150, 150);
          font-size: 11px;
          margin: 46px 0px 0px 24px;
       }
 
-      #inox{
+      #inox {
          margin-top: 10px;
          margin-left: -4px;
          padding-bottom: 20px;
       }
 
-      #inox p:nth-child(1){
-         margin-left:4px;
+      #inox p:nth-child(1) {
+         margin-left: 4px;
       }
 
-      #inox p:nth-child(2){
+      #inox p:nth-child(2) {
          margin-top: 5px;
       }
 
 
 
       #mid-right {
-         border: 1px solid blue;
-         width: 29.8%;
+         width: 30%;
       }
+
+      #border-rgt{
+         border: 1px solid rgba(210, 210, 210, 0.5);
+      }
+
+      #booking-summary {
+         background-color: white;
+         padding: 30px 25px;
+      }
+
+      #bs-text {
+         color: rgb(192, 44, 57);
+         font-size: 14px;
+         font-weight: 300;
+         letter-spacing: 3px;
+      }
+
+      #ticket {
+         display: flex;
+         justify-content: space-between;
+         font-size: 14px;
+         color: rgb(31, 37, 51);
+         margin-top: 35px;
+      }
+
+      #seat-no>p>span {
+         font-size: 12px;
+      }
+
+      #seat-no p:nth-child(2) {
+         color: rgb(150, 150, 150);
+         font-size: 12px;
+         margin-top: 5px;
+         margin-left: 18px;
+      }
+
+      #con-fees-text {
+         display: flex;
+         justify-content: space-between;
+         font-size: 14px;
+         color: rgb(31, 37, 51);
+         margin-top: 14px;
+      }
+
+      #con-fees {
+         display: flex;
+      }
+
+      .down-arrow {
+         border: 1px solid rgb(150, 150, 150);
+         width: 11px;
+         height: 11px;
+         border-radius: 10px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 3px;
+         margin-right: 4px;
+         color: rgb(150, 150, 150);
+      }
+
+      .down-arrow i {
+         margin-top: 4px;
+         margin-right: 1px;
+      }
+
+      #con-fees p {
+         font-size: 12px;
+         margin-top: 2px;
+      }
+
+      .hori-line {
+         margin: 20px 0px 8px 0px;
+         border: 1px dotted rgb(213, 213, 213);
+      }
+
+      #total-amt {
+         display: flex;
+         justify-content: space-between;
+         font-size: 14px;
+         color: rgb(31, 37, 51);
+      }
+
+      .circle-cut {
+         display: flex;
+         justify-content: space-between;
+         color: rgb(242, 242, 242);
+         margin-top: 10px;
+      }
+
+      .circle-cut>div:nth-child(1) {
+         margin-left: -37px;
+      }
+
+      .circle-cut>div:nth-child(2) {
+         margin-right: -36px;
+      }
+
+      #bookASmile-lay {
+         background-color: rgb(245, 245, 245);
+         padding: 16px;
+         display: flex;
+         justify-content: space-between;
+         margin-top: 14px;
+      }
+
+      #BAS {
+         display: flex;
+         margin-top: 8px;
+      }
+
+      #BAS-img img {
+         width: 18px;
+         height: 18px;
+         margin-right: 5px;
+      }
+
+      #BAS-text p:nth-child(1) {
+         letter-spacing: 0.2px;
+      }
+
+      #BAS-text p:nth-child(2) {
+         font-size: 11px;
+         color: rgb(82, 82, 82);
+         letter-spacing: 0.2px;
+         margin-top: 4px;
+         margin-left: 8px;
+      }
+
+      #BAS-text p:nth-child(3) {
+         border-bottom: 1px dashed rgb(102, 102, 102);
+         font-size: 10px;
+         font-weight: 500;
+         color: rgb(102, 102, 102);
+         display: inline-block;
+         margin-top: 12px;
+         margin-left: 10px;
+         padding-bottom: 2px;
+      }
+
+      #contri-amt {
+         text-align: right;
+         margin-top: 8px;
+      }
+
+      #contri-amt p:nth-child(1) {
+         letter-spacing: 0.2px;
+      }
+
+      #contri-amt p:nth-child(2) {
+         font-size: 12px;
+         font-weight: 500;
+         color: rgb(220, 53, 88);
+         margin-top: 4px;
+      }
+
+      #current-state {
+         font-size: 12px;
+         color: rgb(102, 102, 102);
+         margin-top: 15px;
+      }
+
+      #current-state>span {
+         color: rgb(220, 53, 88);
+      }
+
+      #amt-pay {
+         background-color: rgb(255, 252, 220);
+         display: flex;
+         justify-content: space-between;
+         padding: 15px 25px;
+      }
+
+      #ticket-type>p{
+         font-size: 14px;
+         color: rgb(153, 153, 153);
+         letter-spacing: 2px;
+         text-align: center;
+         margin: 25px 0px 10px 0px;
+      }
+
+      #seletion-box{
+         display: flex;
+         
+      }
+
+      #m-ticket-lay,
+      #box-office-lay{
+         background-color: white;
+         width: 194px;
+         height: 60px;
+         display: flex;
+      }
+
+      #input-radio{
+         
+      }
+
+
    </style>
 </head>
 
@@ -812,7 +1016,82 @@
 
 
          <div id="mid-right">
-            right
+            <div id="border-rgt">
+               <div id="booking-summary">
+                  <div id="bs-text">
+                     <p>BOOKING SUMMARY</p>
+                  </div>
+
+                  <div id=ticket>
+                     <div id="seat-no">
+                        <p>CL-E9,E10 <span>( 2 Tickets )</span></p>
+                        <p>LASER</p>
+                     </div>
+                     <div class="rate">Rs. 860.00</div>
+                  </div>
+
+                  <div id="con-fees-text">
+                     <div id="con-fees">
+                        <div class="down-arrow"><i class="fa-solid fa-angle-down fa-2xs"></i></div>
+                        <p>Convenience fees</p>
+                     </div>
+                     <div class="rate">Rs.101.48</div>
+                  </div>
+
+                  <hr class="hori-line">
+
+                  <div id="total-amt">
+                     <p>Sub total</p>
+                     <p>Rs.961.48</p>
+                  </div>
+
+                  <div class="circle-cut">
+                     <div><i class="fa-solid fa-circle fa-xl"></i></div>
+                     <div><i class="fa-solid fa-circle fa-xl"></i></div>
+                  </div>
+
+                  <div id="bookASmile-lay">
+                     <div id="BAS">
+                        <div id="BAS-img">
+                           <img src="./Image/Screenshot 2023-09-13 155907.png" alt="">
+                        </div>
+                        <div id="BAS-text">
+                           <p>Contribution to BookASmile</p>
+                           <p>(₹1 per ticket has been added)</p>
+                           <p>VIEW T&C</p>
+                        </div>
+                     </div>
+                     <div id="contri-amt">
+                        <p>Rs. 2</p>
+                        <p>Remove</p>
+                     </div>
+                  </div>
+
+                  <div id="current-state">
+                     Your current state is <span>Maharashtra</span>
+                  </div>
+               </div>
+               <div id="amt-pay">
+                  <p>Amount Payable</p>
+                  <p>Rs. 963.48</p>
+               </div>
+            </div>
+
+            <div id="ticket-type">
+               <p>SELECT TICKET TYPE</p>
+               <div id="seletion-box">
+                  <div id="m-ticket-lay">
+                     <div id="input-radio"><input type="radio"></div>
+                     <div id="m-ticket">
+                        <div><i class="fa-solid fa-mobile-screen"></i></div>
+                        <p>M-Ticket</p>
+                     </div>
+                  </div>
+                  <div id="box-office-lay">
+
+                  </div>
+               </div>
+            </div>
          </div>
       </div>
    </div>
